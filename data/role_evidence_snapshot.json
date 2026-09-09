@@ -1,0 +1,4277 @@
+{
+  "snapshot_type": "role_evidence_database",
+  "catalog_summary": {
+    "total": 69,
+    "ip": 37,
+    "oop": 32
+  },
+  "roles": [
+    {
+      "role_internal_id": "catalog:ip:fw:cfd",
+      "phase": "IP",
+      "role_name_ko": "센터 포워드",
+      "role_families": [
+        "FW"
+      ],
+      "available_starting_positions": [
+        "FW"
+      ],
+      "abbreviation": {
+        "value": "CFD",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_CFD_DESCRIPTION_001",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 센터 포워드 역할 설명"
+        },
+        {
+          "evidence_id": "SI_FM26_DUAL_STRIKERS_2025",
+          "source_kind": "official",
+          "verification": "official_verified",
+          "title": "Dominate with Dual Strikers in FM26"
+        },
+        {
+          "evidence_id": "SI_FM26_LONE_STRIKERS_2025",
+          "source_kind": "official",
+          "verification": "official_verified",
+          "title": "Leading the line in FM26 with lone strikers"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "CFD_IP_GOAL_THREAT_CLASS",
+          "claim": "센터 포워드는 공 소유 시 goal threat 역할군으로 분류된다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_DUAL_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_PRIMARY_SCORER",
+          "claim": "센터 포워드는 원톱을 주 득점원으로 활용할 때 선택할 수 있는 역할군에 포함된다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_LONE_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_ATTRIBUTE_OFF_THE_BALL",
+          "claim": "공식 가이드가 센터 포워드의 핵심 능력치로 Off the Ball을 제시한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_DUAL_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_ATTRIBUTE_ACCELERATION",
+          "claim": "공식 가이드가 센터 포워드의 핵심 능력치로 Acceleration을 제시한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_DUAL_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_ATTRIBUTE_COMPOSURE",
+          "claim": "공식 가이드가 센터 포워드의 핵심 능력치로 Composure을 제시한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_DUAL_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_ATTRIBUTE_FINISHING",
+          "claim": "공식 가이드가 센터 포워드의 핵심 능력치로 Finishing을 제시한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_DUAL_STRIKERS_2025"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_LEAD_ATTACKING_LINE",
+          "claim": "공격 라인을 이끌고 최전방에서 공격을 진두지휘한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CFD_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_ATTACKING_FOCAL_POINT",
+          "claim": "공격의 중심점 역할을 수행한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CFD_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_DIRECT_GOAL_THREAT",
+          "claim": "직접 득점을 노린다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CFD_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CFD_IP_CREATE_SCORING_OPPORTUNITIES",
+          "claim": "팀에게 득점 기회를 제공한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CFD_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:fw:chf",
+      "phase": "IP",
+      "role_name_ko": "채널 포워드",
+      "role_families": [
+        "FW"
+      ],
+      "available_starting_positions": [
+        "FW"
+      ],
+      "abbreviation": {
+        "value": "CHF",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:if",
+      "phase": "IP",
+      "role_name_ko": "인사이드 포워드",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": "IF",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IF_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 IF 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "IF_IP_TAG_MOVE_INSIDE",
+          "claim": "안쪽으로 이동",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IF_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "IF_IP_TAG_GOAL_THREAT",
+          "claim": "득점 위협",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IF_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "IF_IP_HALFSPACE",
+          "claim": "공격 시 주로 하프스페이스 안으로 이동한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IF_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "move_into_halfspace"
+          ]
+        },
+        {
+          "behaviour_id": "IF_IP_OPEN_FULLBACK_SPACE",
+          "claim": "오버래핑하는 풀백을 위해 공간을 열어준다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IF_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "open_space_for_fullback"
+          ]
+        },
+        {
+          "behaviour_id": "IF_IP_CENTRAL_RECEIVING",
+          "claim": "경기장 중앙에서 공을 받을 수 있는 위치에 머문다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IF_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "receive_centrally"
+          ]
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [
+          {
+            "semantic_id": "receive_centrally",
+            "behaviour_id": "IF_IP_CENTRAL_RECEIVING",
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "space": [
+          {
+            "semantic_id": "open_space_for_fullback",
+            "behaviour_id": "IF_IP_OPEN_FULLBACK_SPACE",
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "movement": [
+          {
+            "semantic_id": "move_into_halfspace",
+            "behaviour_id": "IF_IP_HALFSPACE",
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ]
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [],
+        "reception_spaces": [
+          {
+            "concept_id": "central",
+            "semantic_id": "receive_centrally",
+            "behaviour_ids": [
+              "IF_IP_CENTRAL_RECEIVING"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "movement_targets": [
+          {
+            "concept_id": "halfspace",
+            "semantic_id": "move_into_halfspace",
+            "behaviour_ids": [
+              "IF_IP_HALFSPACE"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "movement_directions": [],
+        "structural_effects": [
+          {
+            "concept_id": "open_space_for_fullback",
+            "semantic_id": "open_space_for_fullback",
+            "behaviour_ids": [
+              "IF_IP_OPEN_FULLBACK_SPACE"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IF_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:am",
+      "phase": "IP",
+      "role_name_ko": "공격형 미드필더",
+      "role_families": [
+        "AM",
+        "CM"
+      ],
+      "available_starting_positions": [
+        "AM",
+        "CM"
+      ],
+      "abbreviation": {
+        "value": "AM",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_AM_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 AM 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "AM_IP_TAG_BETWEEN_LINES",
+          "claim": "라인 사이 공간을 찾음",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_AM_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "AM_IP_TAG_GOAL_THREAT",
+          "claim": "득점 위협",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_AM_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "AM_IP_RECEIVE_BETWEEN_LINES",
+          "claim": "상대 수비와 미드필더 사이에서 패스를 받는다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_AM_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "receive_between_lines"
+          ]
+        },
+        {
+          "behaviour_id": "AM_IP_CREATE_SELF",
+          "claim": "파이널 서드에서 자신에게 득점 기회를 만든다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_AM_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "AM_IP_CREATE_TEAMMATES",
+          "claim": "파이널 서드에서 동료에게 득점 기회를 만든다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_AM_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [
+          {
+            "semantic_id": "receive_between_lines",
+            "behaviour_id": "AM_IP_RECEIVE_BETWEEN_LINES",
+            "evidence_ids": [
+              "USER_FM26_AM_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [],
+        "reception_spaces": [
+          {
+            "concept_id": "between_lines",
+            "semantic_id": "receive_between_lines",
+            "behaviour_ids": [
+              "AM_IP_RECEIVE_BETWEEN_LINES"
+            ],
+            "evidence_ids": [
+              "USER_FM26_AM_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:wfd",
+      "phase": "IP",
+      "role_name_ko": "와이드 포워드",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": "WFD",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "SI_FM26_WIDE_FORWARD_2026",
+          "source_kind": "official",
+          "verification": "official_verified",
+          "title": "FM26의 와이드 포워드 마스터하는 법"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "WFD_IP_HYBRID",
+          "claim": "윙어와 스트라이커의 특성을 결합한 역할이다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "WFD_IP_MAINTAIN_WIDTH",
+          "claim": "공격을 전개할 때 측면 폭을 유지한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": [
+            "hold_width"
+          ]
+        },
+        {
+          "behaviour_id": "WFD_IP_RUN_BEHIND",
+          "claim": "상대 수비 뒤 공간을 향한 침투로 위협을 준다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": [
+            "attack_space_in_behind"
+          ]
+        },
+        {
+          "behaviour_id": "WFD_IP_SCORING_FOCUS",
+          "claim": "기회 제공보다는 직접 득점하는 데 우선순위를 둔다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "WFD_IP_BOX_CROSS_FINISH",
+          "claim": "크로스를 마무리하기 위해 박스 안으로 곧바로 들어갈 수 있다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": [
+            "enter_box_for_cross_finish"
+          ]
+        },
+        {
+          "behaviour_id": "WFD_IP_CENTRAL_LINK",
+          "claim": "중앙에서 동료와 공을 연결하는 플레이에 참여한다.",
+          "verification": "official",
+          "evidence_ids": [
+            "SI_FM26_WIDE_FORWARD_2026"
+          ],
+          "semantic_ids": []
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [
+          {
+            "semantic_id": "hold_width",
+            "behaviour_id": "WFD_IP_MAINTAIN_WIDTH",
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official",
+            "edge_eligible": true
+          }
+        ],
+        "movement": [
+          {
+            "semantic_id": "attack_space_in_behind",
+            "behaviour_id": "WFD_IP_RUN_BEHIND",
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official",
+            "edge_eligible": true
+          },
+          {
+            "semantic_id": "enter_box_for_cross_finish",
+            "behaviour_id": "WFD_IP_BOX_CROSS_FINISH",
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official",
+            "edge_eligible": true
+          }
+        ]
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [
+          {
+            "concept_id": "wide",
+            "semantic_id": "hold_width",
+            "behaviour_ids": [
+              "WFD_IP_MAINTAIN_WIDTH"
+            ],
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official"
+          }
+        ],
+        "reception_spaces": [],
+        "movement_targets": [
+          {
+            "concept_id": "in_behind",
+            "semantic_id": "attack_space_in_behind",
+            "behaviour_ids": [
+              "WFD_IP_RUN_BEHIND"
+            ],
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official"
+          },
+          {
+            "concept_id": "box",
+            "semantic_id": "enter_box_for_cross_finish",
+            "behaviour_ids": [
+              "WFD_IP_BOX_CROSS_FINISH"
+            ],
+            "evidence_ids": [
+              "SI_FM26_WIDE_FORWARD_2026"
+            ],
+            "verification": "official"
+          }
+        ],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:pw-legacy-name",
+      "phase": "IP",
+      "role_name_ko": "플레이메이커 윙어",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": "PW",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "unresolved",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:playmaking-winger"
+        ],
+        "note": "기존 확인명과 새 캡처의 ‘플레이메이킹 윙어’가 같은 역할인지 확인되지 않음."
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:dlp",
+      "phase": "IP",
+      "role_name_ko": "딥라잉 플레이메이커",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": "DLP",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_DLP_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 DLP 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "DLP_IP_TAG_HOLD_POSITION",
+          "claim": "포지션 고수",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "DLP_IP_TAG_FREEDOM",
+          "claim": "자유",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "DLP_IP_BETWEEN_DEFENCE_MIDFIELD",
+          "claim": "수비진과 미드필드 사이 공간에서 활동한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "occupy_between_defence_and_midfield"
+          ]
+        },
+        {
+          "behaviour_id": "DLP_IP_FORWARD_PASSES",
+          "claim": "경기장 전방으로 정확한 패스를 보내 공격을 시작한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "send_forward"
+          ]
+        },
+        {
+          "behaviour_id": "DLP_IP_CREATIVE_ROLE",
+          "claim": "창의적인 선수 역할을 주로 담당한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "DLP_IP_DEFENSIVE_REQUIREMENT",
+          "claim": "수비 기여에도 능숙해야 한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_DLP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        }
+      ],
+      "semantics": {
+        "send": [
+          {
+            "semantic_id": "send_forward",
+            "behaviour_id": "DLP_IP_FORWARD_PASSES",
+            "evidence_ids": [
+              "USER_FM26_DLP_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "receive": [],
+        "space": [
+          {
+            "semantic_id": "occupy_between_defence_and_midfield",
+            "behaviour_id": "DLP_IP_BETWEEN_DEFENCE_MIDFIELD",
+            "evidence_ids": [
+              "USER_FM26_DLP_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [
+          {
+            "concept_id": "between_defence_and_midfield",
+            "semantic_id": "occupy_between_defence_and_midfield",
+            "behaviour_ids": [
+              "DLP_IP_BETWEEN_DEFENCE_MIDFIELD"
+            ],
+            "evidence_ids": [
+              "USER_FM26_DLP_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:bbp",
+      "phase": "IP",
+      "role_name_ko": "박스 투 박스 플레이메이커",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": "BBP",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_BBP_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 BBP 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "BBP_IP_TAG_AMC",
+          "claim": "AMC 위치로 전방 배치",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_BBP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "BBP_IP_TAG_CREATIVE",
+          "claim": "창의적인 위협",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_BBP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "BBP_IP_ADVANCE_AMC",
+          "claim": "전진하여 공격형 미드필더 위치까지 올라간다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_BBP_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "advance_to_attacking_midfield"
+          ]
+        },
+        {
+          "behaviour_id": "BBP_IP_FINAL_THIRD_CREATIVITY",
+          "claim": "파이널 서드에서 창의적인 플레이를 수행한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_BBP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "BBP_IP_ALL_PITCH_ACTIVITY",
+          "claim": "다양한 역할을 수행하며 다른 플레이메이커 역할보다 우수한 체력을 바탕으로 경기장 전반에서 활동하는 성격이다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_BBP_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": [
+          {
+            "semantic_id": "advance_to_attacking_midfield",
+            "behaviour_id": "BBP_IP_ADVANCE_AMC",
+            "evidence_ids": [
+              "USER_FM26_BBP_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ]
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [
+          {
+            "concept_id": "attacking_midfield_zone",
+            "semantic_id": "advance_to_attacking_midfield",
+            "behaviour_ids": [
+              "BBP_IP_ADVANCE_AMC"
+            ],
+            "evidence_ids": [
+              "USER_FM26_BBP_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:wb",
+      "phase": "IP",
+      "role_name_ko": "윙백",
+      "role_families": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": "WB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_WB_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 WB 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "WB_IP_TAG_FORWARD",
+          "claim": "더욱 앞으로 전진",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_WB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "WB_IP_TAG_WIDE",
+          "claim": "넓은 진행 유지",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_WB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "WB_IP_HYBRID",
+          "claim": "풀백과 윙어의 역할을 결합한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_WB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "WB_IP_USE_FLANK",
+          "claim": "공격 시 팀이 측면을 완전히 이용할 수 있도록 한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_WB_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "use_wide_flank"
+          ]
+        },
+        {
+          "behaviour_id": "WB_IP_BUILDUP_LINE",
+          "claim": "후방 빌드업 단계에서는 수비수와 나란히 위치한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_WB_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "align_with_defenders_in_buildup"
+          ]
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [
+          {
+            "semantic_id": "use_wide_flank",
+            "behaviour_id": "WB_IP_USE_FLANK",
+            "evidence_ids": [
+              "USER_FM26_WB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          },
+          {
+            "semantic_id": "align_with_defenders_in_buildup",
+            "behaviour_id": "WB_IP_BUILDUP_LINE",
+            "evidence_ids": [
+              "USER_FM26_WB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [
+          {
+            "concept_id": "wide",
+            "semantic_id": "use_wide_flank",
+            "behaviour_ids": [
+              "WB_IP_USE_FLANK"
+            ],
+            "evidence_ids": [
+              "USER_FM26_WB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [
+          {
+            "concept_id": "buildup_line_alignment",
+            "semantic_id": "align_with_defenders_in_buildup",
+            "behaviour_ids": [
+              "WB_IP_BUILDUP_LINE"
+            ],
+            "evidence_ids": [
+              "USER_FM26_WB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:iwb",
+      "phase": "IP",
+      "role_name_ko": "인사이드 윙백",
+      "role_families": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": "IWB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IWB_DESCRIPTION",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 한국어 IWB 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "IWB_IP_TAG_HOLD",
+          "claim": "포지션 고수",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "IWB_IP_TAG_DM",
+          "claim": "DM 위치로 인사이드 배치",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "IWB_IP_CENTRAL_LINK",
+          "claim": "경기장 중앙으로 이동해 패스 연결을 지원한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "support_central_passing_links",
+            "move_inside"
+          ]
+        },
+        {
+          "behaviour_id": "IWB_IP_COUNTER_DEFENCE",
+          "claim": "공을 빼앗겼을 때 중앙에서의 역습을 저지하는 수비 역할을 한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "IWB_IP_NO_OVERLAP",
+          "claim": "오버래핑 공격을 하지 않는다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "no_overlapping_attack"
+          ]
+        },
+        {
+          "behaviour_id": "IWB_IP_NOT_BYLINE",
+          "claim": "골라인 근처에서 활동하는 역할이 아니다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IWB_DESCRIPTION"
+          ],
+          "semantic_ids": [
+            "avoid_byline"
+          ]
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [
+          {
+            "semantic_id": "support_central_passing_links",
+            "behaviour_id": "IWB_IP_CENTRAL_LINK",
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          },
+          {
+            "semantic_id": "avoid_byline",
+            "behaviour_id": "IWB_IP_NOT_BYLINE",
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ],
+        "movement": [
+          {
+            "semantic_id": "move_inside",
+            "behaviour_id": "IWB_IP_CENTRAL_LINK",
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          },
+          {
+            "semantic_id": "no_overlapping_attack",
+            "behaviour_id": "IWB_IP_NO_OVERLAP",
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": true
+          }
+        ]
+      },
+      "expected_role_space": {
+        "status": "supported",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [
+          {
+            "concept_id": "inside",
+            "semantic_id": "move_inside",
+            "behaviour_ids": [
+              "IWB_IP_CENTRAL_LINK"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "structural_effects": [
+          {
+            "concept_id": "support_central_passing_links",
+            "semantic_id": "support_central_passing_links",
+            "behaviour_ids": [
+              "IWB_IP_CENTRAL_LINK"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ],
+        "exclusions": [
+          {
+            "concept_id": "overlapping_attack",
+            "semantic_id": "no_overlapping_attack",
+            "behaviour_ids": [
+              "IWB_IP_NO_OVERLAP"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          },
+          {
+            "concept_id": "byline_activity",
+            "semantic_id": "avoid_byline",
+            "behaviour_ids": [
+              "IWB_IP_NOT_BYLINE"
+            ],
+            "evidence_ids": [
+              "USER_FM26_IWB_DESCRIPTION"
+            ],
+            "verification": "user_ingame_verified"
+          }
+        ]
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "등록된 항목은 검증된 역할 설명의 일부이며 전체 역할 움직임을 뜻하지 않는다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:cb",
+      "phase": "IP",
+      "role_name_ko": "중앙 수비수",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": "CB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_CB_DESCRIPTION_001",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 중앙 수비수 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "CB_IP_HOLD_POSITION",
+          "claim": "상대의 공격 위협에 신속히 대응할 수 있는 위치를 유지한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CB_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CB_IP_SUPPORT_POSSESSION",
+          "claim": "팀의 공 점유를 지원한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CB_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "CB_IP_SIMPLE_PASS_TO_CREATIVE_PLAYERS",
+          "claim": "창의적인 플레이를 하는 선수들에게 간단한 패스를 제공한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_CB_DESCRIPTION_001"
+          ],
+          "semantic_ids": [
+            "send_simple_pass"
+          ]
+        }
+      ],
+      "semantics": {
+        "send": [
+          {
+            "semantic_id": "send_simple_pass",
+            "behaviour_id": "CB_IP_SIMPLE_PASS_TO_CREATIVE_PLAYERS",
+            "evidence_ids": [
+              "USER_FM26_IP_CB_DESCRIPTION_001"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": false
+          }
+        ],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:bgk",
+      "phase": "IP",
+      "role_name_ko": "볼 플레잉 골키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": "BGK",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "partial",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_BGK_DESCRIPTION_001",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 볼 플레잉 골키퍼 역할 설명"
+        }
+      ],
+      "behaviours": [
+        {
+          "behaviour_id": "BGK_IP_ACTIVE_BUILDUP_PARTICIPATION",
+          "claim": "팀의 공격 전개 과정에서 적극적인 역할을 수행한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_BGK_DESCRIPTION_001"
+          ],
+          "semantic_ids": []
+        },
+        {
+          "behaviour_id": "BGK_IP_MOVE_TO_RECEIVE",
+          "claim": "자주 골대를 벗어나 공을 받을 수 있는 위치로 이동한다.",
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_BGK_DESCRIPTION_001"
+          ],
+          "semantic_ids": [
+            "move_to_receive"
+          ]
+        }
+      ],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": [
+          {
+            "semantic_id": "move_to_receive",
+            "behaviour_id": "BGK_IP_MOVE_TO_RECEIVE",
+            "evidence_ids": [
+              "USER_FM26_IP_BGK_DESCRIPTION_001"
+            ],
+            "verification": "user_ingame_verified",
+            "edge_eligible": false
+          }
+        ]
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:acb",
+      "phase": "IP",
+      "role_name_ko": "전진형 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": "ACB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_THREE_CB_ROLES",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "IP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_THREE_CB_ROLES"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:wcb",
+      "phase": "IP",
+      "role_name_ko": "와이드 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": "WCB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_THREE_CB_ROLES",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "IP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_THREE_CB_ROLES"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:ocb",
+      "phase": "IP",
+      "role_name_ko": "오버래핑 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": "OCB",
+        "verification": "user_ingame_verified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_THREE_CB_ROLES",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "IP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_IP_THREE_CB_ROLES"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:inside-winger",
+      "phase": "IP",
+      "role_name_ko": "인사이드 윙어",
+      "role_families": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:playmaking-winger",
+      "phase": "IP",
+      "role_name_ko": "플레이메이킹 윙어",
+      "role_families": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "unresolved",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:pw-legacy-name"
+        ],
+        "note": "기존 ‘플레이메이커 윙어’와 같은 역할인지 확인되지 않음."
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:winger",
+      "phase": "IP",
+      "role_name_ko": "윙어",
+      "role_families": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Winger",
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:advanced-playmaker",
+      "phase": "IP",
+      "role_name_ko": "전진형 플레이메이커",
+      "role_families": [
+        "AM",
+        "CM"
+      ],
+      "available_starting_positions": [
+        "AM",
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:channel-midfielder",
+      "phase": "IP",
+      "role_name_ko": "채널 미드필더",
+      "role_families": [
+        "AM",
+        "CM"
+      ],
+      "available_starting_positions": [
+        "AM",
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:free-role",
+      "phase": "IP",
+      "role_name_ko": "프리 롤",
+      "role_families": [
+        "AM"
+      ],
+      "available_starting_positions": [
+        "AM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:second-striker",
+      "phase": "IP",
+      "role_name_ko": "세컨드 스트라이커",
+      "role_families": [
+        "AM"
+      ],
+      "available_starting_positions": [
+        "AM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:central-midfielder",
+      "phase": "IP",
+      "role_name_ko": "중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:midfield-playmaker",
+      "phase": "IP",
+      "role_name_ko": "미드필드 플레이메이커",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:wide-central-midfielder",
+      "phase": "IP",
+      "role_name_ko": "와이드 중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wide-midfield:wide-midfielder",
+      "phase": "IP",
+      "role_name_ko": "와이드 미드필더",
+      "role_families": [
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:box-to-box-midfielder",
+      "phase": "IP",
+      "role_name_ko": "박스 투 박스 미드필더",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:defensive-midfielder",
+      "phase": "IP",
+      "role_name_ko": "수비형 미드필더",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:half-back",
+      "phase": "IP",
+      "role_name_ko": "하프백",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:advanced-wing-back",
+      "phase": "IP",
+      "role_name_ko": "전진형 윙백",
+      "role_families": [
+        "Wing-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:playmaking-wing-back",
+      "phase": "IP",
+      "role_name_ko": "플레이메이킹 윙백",
+      "role_families": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back",
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:full-back:full-back",
+      "phase": "IP",
+      "role_name_ko": "풀백",
+      "role_families": [
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:full-back:inside-full-back",
+      "phase": "IP",
+      "role_name_ko": "인사이드 풀백",
+      "role_families": [
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:ball-playing-centre-back",
+      "phase": "IP",
+      "role_name_ko": "볼 플레잉 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:stable-centre-back",
+      "phase": "IP",
+      "role_name_ko": "안정형 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:goalkeeper",
+      "phase": "IP",
+      "role_name_ko": "골키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:stable-goalkeeper",
+      "phase": "IP",
+      "role_name_ko": "안정형 골키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:inside-oriented-winger",
+      "phase": "OOP",
+      "role_name_ko": "인사이드 지향 윙어",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:tracking-winger",
+      "phase": "OOP",
+      "role_name_ko": "추적형 윙어",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:winger",
+      "phase": "OOP",
+      "role_name_ko": "윙어",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:wide-oriented-winger",
+      "phase": "OOP",
+      "role_name_ko": "측면 지향 윙어",
+      "role_families": [
+        "Winger"
+      ],
+      "available_starting_positions": [
+        "Winger"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:attacking-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "공격형 미드필더",
+      "role_families": [
+        "AM"
+      ],
+      "available_starting_positions": [
+        "AM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:central-oriented-attacking-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "중앙 지향 공격형 미드필더",
+      "role_families": [
+        "AM"
+      ],
+      "available_starting_positions": [
+        "AM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:tracking-attacking-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "추적형 공격형 미드필더",
+      "role_families": [
+        "AM"
+      ],
+      "available_starting_positions": [
+        "AM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:central-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:pressing-central-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "압박형 중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:screening-central-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "스크리닝 중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:wide-covering-central-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "와이드 커버링 중앙 미드필더",
+      "role_families": [
+        "CM"
+      ],
+      "available_starting_positions": [
+        "CM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "측면 지향 와이드 미드필더",
+      "role_families": [
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "추적형 와이드 미드필더",
+      "role_families": [
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:wide-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "와이드 미드필더",
+      "role_families": [
+        "Wide Midfield"
+      ],
+      "available_starting_positions": [
+        "Wide Midfield"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:dropping-defensive-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "드롭핑 수비형 미드필더",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:defensive-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "수비형 미드필더",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:screening-defensive-midfielder",
+      "phase": "OOP",
+      "role_name_ko": "스크리닝 수비형 미드필더",
+      "role_families": [
+        "DM"
+      ],
+      "available_starting_positions": [
+        "DM"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:holding-wing-back",
+      "phase": "OOP",
+      "role_name_ko": "홀딩 윙백",
+      "role_families": [
+        "Wing-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:pressing-wing-back",
+      "phase": "OOP",
+      "role_name_ko": "압박형 윙백",
+      "role_families": [
+        "Wing-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:wing-back",
+      "phase": "OOP",
+      "role_name_ko": "윙백",
+      "role_families": [
+        "Wing-Back"
+      ],
+      "available_starting_positions": [
+        "Wing-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:full-back",
+      "phase": "OOP",
+      "role_name_ko": "풀백",
+      "role_families": [
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:holding-full-back",
+      "phase": "OOP",
+      "role_name_ko": "홀딩 풀백",
+      "role_families": [
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:pressing-full-back",
+      "phase": "OOP",
+      "role_name_ko": "압박형 풀백",
+      "role_families": [
+        "Full-Back"
+      ],
+      "available_starting_positions": [
+        "Full-Back"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:centre-back",
+      "phase": "OOP",
+      "role_name_ko": "중앙 수비수",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_DC_ROLE_AVAILABILITY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:stopping-centre-back",
+      "phase": "OOP",
+      "role_name_ko": "스토핑 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_DC_ROLE_AVAILABILITY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:covering-centre-back",
+      "phase": "OOP",
+      "role_name_ko": "커버링 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_DC_ROLE_AVAILABILITY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:wide-centre-back",
+      "phase": "OOP",
+      "role_name_ko": "와이드 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_WIDE_CB_THREE_ONLY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 와이드 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "OOP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:stopping-wide-centre-back",
+      "phase": "OOP",
+      "role_name_ko": "스토핑 와이드 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_WIDE_CB_THREE_ONLY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 와이드 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "OOP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:covering-wide-centre-back",
+      "phase": "OOP",
+      "role_name_ko": "커버링 와이드 센터백",
+      "role_families": [
+        "Centre-Back"
+      ],
+      "available_starting_positions": [
+        "D(C)"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_OOP_WIDE_CB_THREE_ONLY",
+          "source_kind": "user_ingame_capture",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 OOP 와이드 센터백 역할 활성화 조건"
+        }
+      ],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [
+        {
+          "constraint_type": "formation_player_count",
+          "phase": "OOP",
+          "scope": "centre_back_line",
+          "comparison": "eq",
+          "value": 3,
+          "verification": "user_ingame_verified",
+          "evidence_ids": [
+            "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+          ]
+        }
+      ],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:goalkeeper",
+      "phase": "OOP",
+      "role_name_ko": "골키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:line-holding-keeper",
+      "phase": "OOP",
+      "role_name_ko": "라인 홀딩 키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:sweeper-keeper",
+      "phase": "OOP",
+      "role_name_ko": "스위퍼 키퍼",
+      "role_families": [
+        "Goalkeeper"
+      ],
+      "available_starting_positions": [
+        "Goalkeeper"
+      ],
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "coverage_status": "identity_only",
+      "evidence": [],
+      "behaviours": [],
+      "semantics": {
+        "send": [],
+        "receive": [],
+        "space": [],
+        "movement": []
+      },
+      "expected_role_space": {
+        "status": "unknown",
+        "occupancy": [],
+        "reception_spaces": [],
+        "movement_targets": [],
+        "movement_directions": [],
+        "structural_effects": [],
+        "exclusions": []
+      },
+      "formation_constraints": [],
+      "limitations": [
+        "검증된 semantic 중 Expected Role Space ontology mapping이 적용되는 항목이 없다."
+      ],
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    }
+  ],
+  "summary": {
+    "roles_with_no_evidence": [
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "identity_only_roles": [
+      "catalog:ip:fw:chf",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "partial_roles": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk"
+    ],
+    "unresolved_roles": [
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:winger:playmaking-winger"
+    ],
+    "roles_with_semantics": [
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk"
+    ],
+    "roles_without_semantics": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "ers_supported_roles": [
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb"
+    ],
+    "ers_unknown_roles": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "roles_with_user_ingame_evidence": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back"
+    ],
+    "roles_with_official_evidence": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:wfd"
+    ],
+    "multi_family_role_identities": [
+      "catalog:ip:am:am",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:wing-back:playmaking-wing-back"
+    ],
+    "abbreviation_status": {
+      "verified": 15,
+      "unverified": 54,
+      "unresolved": 0
+    }
+  },
+  "limitations": [
+    "This is a read-only export of registered evidence and mappings; it creates no inference.",
+    "IP and OOP identities remain distinct; shared configured positions do not duplicate identities."
+  ]
+}

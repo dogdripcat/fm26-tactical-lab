@@ -1,0 +1,201 @@
+{
+  "report_type": "official_fm26_role_evidence_candidate_staging",
+  "candidates": [
+    {
+      "role_internal_id": "catalog:ip:winger:wfd",
+      "catalog_match": true,
+      "phase": "IP",
+      "role_name": "Wide Forward",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_WIDE_FORWARD_EN_2026"
+      },
+      "explicit_claims": [
+        "The in-game description highlights the role’s importance of holding width throughout the attack to stretch the defence.",
+        "The in-game description highlights the role’s importance of making dangerous runs in behind."
+      ],
+      "behaviour_candidates": [
+        {"candidate_kind": "existing_behaviour_evidence_augmentation", "behaviour_id": "WFD_IP_MAINTAIN_WIDTH", "claim": "공격을 전개할 때 측면 폭을 유지한다."},
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "WFD_IP_STRETCH_DEFENCE", "claim": "공격 중 폭을 유지해 수비를 넓힌다."},
+        {"candidate_kind": "existing_behaviour_evidence_augmentation", "behaviour_id": "WFD_IP_RUN_BEHIND", "claim": "상대 수비 뒤 공간을 향한 침투로 위협을 준다."}
+      ],
+      "semantic_candidates": [
+        {"semantic_id": "hold_width", "group": "space", "basis": "holding width throughout the attack"},
+        {"semantic_id": "attack_space_in_behind", "group": "movement", "basis": "dangerous runs in behind"}
+      ],
+      "ers_candidates": [
+        {"semantic_id": "hold_width", "field": "occupancy", "concept_id": "wide"},
+        {"semantic_id": "attack_space_in_behind", "field": "movement_targets", "concept_id": "in_behind"}
+      ],
+      "existing_overlap": ["WFD_IP_MAINTAIN_WIDTH", "WFD_IP_RUN_BEHIND", "hold_width", "attack_space_in_behind", "SI_FM26_WIDE_FORWARD_2026"],
+      "new_information": ["holding width is stated to stretch the defence"],
+      "limitations": [
+        "The current Korean official evidence already supports width and in-behind behaviours.",
+        "No semantic is proposed for stretching the defence because the current vocabulary has no directly equivalent semantic.",
+        "The article’s player-instruction suggestions are not role behaviours."
+      ],
+      "ready_for_manual_review": true
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog_match": true,
+      "phase": "OOP",
+      "role_name": "Wide Covering Central Midfielder",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_WIDE_FORWARD_EN_2026"
+      },
+      "explicit_claims": [
+        "The player will move across from their typical position to shift across and support their full-back.",
+        "This movement allows the Wide Covering Central Midfielder to help the team defend against wide threats, often doubling up against the opposition's wide attacking players."
+      ],
+      "behaviour_candidates": [
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "WCCM_OOP_MOVE_TOWARD_WIDE_AREAS", "claim": "일반적인 위치에서 이동해 측면으로 이동한다."},
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "WCCM_OOP_SUPPORT_FULL_BACK", "claim": "풀백을 지원한다."},
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "WCCM_OOP_DEFEND_WIDE_THREATS", "claim": "측면 위협 수비를 돕는다."},
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "WCCM_OOP_DOUBLE_UP_WIDE_ATTACKERS", "claim": "상대 측면 공격수에게 두 명으로 대응할 수 있다."}
+      ],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": ["All listed claims are new to the current catalog identity."],
+      "limitations": ["No current semantic or ERS concept directly expresses movement toward wide areas or defensive doubling."],
+      "ready_for_manual_review": true
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:pressing-full-back",
+      "catalog_match": true,
+      "phase": "OOP",
+      "role_name": "Pressing Full-Back",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_WIDE_FORWARD_EN_2026"
+      },
+      "explicit_claims": ["This aggressive role will stop progression down the flank."],
+      "behaviour_candidates": [
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "PFB_OOP_STOP_FLANK_PROGRESSION", "claim": "측면을 통한 상대 전진을 저지한다."}
+      ],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": ["The role is described as aggressive and as stopping progression down the flank."],
+      "limitations": ["The surrounding press-and-dominate scenario is tactical context, not a role behaviour."],
+      "ready_for_manual_review": true
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:holding-full-back",
+      "catalog_match": true,
+      "phase": "OOP",
+      "role_name": "Holding Full-Back",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_WIDE_FORWARD_EN_2026"
+      },
+      "explicit_claims": ["They’ll ensure a robust structure is maintained as they rarely venture forward, instead prioritising solidity for your defensive shape."],
+      "behaviour_candidates": [
+        {"candidate_kind": "new_behaviour_candidate", "behaviour_id": "HFB_OOP_RARELY_VENTURE_FORWARD", "claim": "좀처럼 앞으로 전진하지 않는다."}
+      ],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": ["The role rarely ventures forward."],
+      "limitations": [
+        "Maintaining a robust structure and prioritising solidity are stated role outcomes/priorities, not direct semantic candidates.",
+        "The counter-attacking-team recommendation is tactical context, not a role behaviour."
+      ],
+      "ready_for_manual_review": true
+    },
+    {
+      "role_internal_id": null,
+      "catalog_match": false,
+      "phase": "OOP",
+      "role_name": "Wide Outlet Winger",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_WIDE_FORWARD_EN_2026"
+      },
+      "explicit_claims": ["The role stays high up the pitch, holds position rather than tracking back, and stays high and wide as a counter-attacking option."],
+      "behaviour_candidates": [],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": [],
+      "limitations": ["No exact OOP Wide Outlet Winger identity exists in the current catalog; no role is added or inferred."],
+      "ready_for_manual_review": false
+    },
+    {
+      "role_internal_id": null,
+      "catalog_match": false,
+      "phase": "OOP",
+      "role_name": "Tracking Centre Forward",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/dominate-dual-strikers-fm26",
+        "evidence_id_candidate": "SI_FM26_DUAL_STRIKERS_2026"
+      },
+      "explicit_claims": ["The role directs the striker to track back defensively, dropping back into a deeper defensive position where they can support midfield teammates."],
+      "behaviour_candidates": [],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": [],
+      "limitations": ["No exact OOP Tracking Centre Forward identity exists in the current catalog; no role is added or inferred."],
+      "ready_for_manual_review": false
+    },
+    {
+      "role_internal_id": null,
+      "catalog_match": false,
+      "phase": "IP",
+      "role_name": "Target Forward",
+      "source": {
+        "source_kind": "official",
+        "url": "https://www.footballmanager.com/the-dugout/hitting-target-target-forward-fm26",
+        "evidence_id_candidate": "SI_FM26_TARGET_FORWARD_2026"
+      },
+      "explicit_claims": ["The Target Forward is described as a specialised physical striker role that can spearhead the attacking line, hold up the ball, and support teammates."],
+      "behaviour_candidates": [],
+      "semantic_candidates": [],
+      "ers_candidates": [],
+      "existing_overlap": [],
+      "new_information": [],
+      "limitations": ["No exact IP Target Forward identity exists in the current catalog; no role is added or inferred."],
+      "ready_for_manual_review": false
+    }
+  ],
+  "source_reviews": [
+    {
+      "url": "https://www.footballmanager.com/fm26/features/possession-out-possession-fm26s-new-tactical-evolution",
+      "source_kind": "official",
+      "status": "source_available_no_role_specific_candidate_staged",
+      "limitations": ["The reviewed feature page is retained as general IP/OOP context only; no role-specific claim from it is staged."]
+    }
+  ],
+  "summary": {
+    "exact_catalog_matches": [
+      "catalog:ip:winger:wfd",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:full-back:holding-full-back"
+    ],
+    "unmatched_official_roles": ["Wide Outlet Winger", "Tracking Centre Forward", "Target Forward"],
+    "behaviour_candidates": 10,
+    "semantic_candidates": 2,
+    "ers_candidates": 2,
+    "manual_review_ready_candidates": [
+      "catalog:ip:winger:wfd",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:full-back:holding-full-back"
+    ]
+  },
+  "limitations": [
+    "Candidate staging changes no source data and does not import evidence.",
+    "No new semantic vocabulary or ERS ontology mapping is created.",
+    "Tactical recommendations and role-pairing advice are excluded from role behaviour candidates."
+  ]
+}

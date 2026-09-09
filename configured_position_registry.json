@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Configured starting-position facts only. This registry contains no role behaviour, expected movement, pass availability, or connectivity score.",
+  "vertical_bands": [
+    {"name": "goalkeeper", "index": 0},
+    {"name": "defensive_line", "index": 1},
+    {"name": "defensive_midfield", "index": 2},
+    {"name": "midfield", "index": 3},
+    {"name": "attacking_midfield", "index": 4},
+    {"name": "forward", "index": 5}
+  ],
+  "positions": [
+    {"position_id": "GK", "position_family": "goalkeeper", "vertical_band": "goalkeeper", "vertical_index": 0, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "LB", "position_family": "full_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "DL", "position_family": "full_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "LCB", "position_family": "centre_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "CB", "position_family": "centre_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "unknown", "phase_agnostic": true},
+    {"position_id": "DC", "position_family": "centre_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "D(C)", "position_family": "centre_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "RCB", "position_family": "centre_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "RB", "position_family": "full_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "DR", "position_family": "full_back", "vertical_band": "defensive_line", "vertical_index": 1, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "DML", "position_family": "defensive_midfield", "vertical_band": "defensive_midfield", "vertical_index": 2, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "DM", "position_family": "defensive_midfield", "vertical_band": "defensive_midfield", "vertical_index": 2, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "DMR", "position_family": "defensive_midfield", "vertical_band": "defensive_midfield", "vertical_index": 2, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "MCL", "position_family": "midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "MC", "position_family": "midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "CM", "position_family": "midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "MCR", "position_family": "midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "ML", "position_family": "wide_midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "WL", "position_family": "wide_midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "MR", "position_family": "wide_midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "WR", "position_family": "wide_midfield", "vertical_band": "midfield", "vertical_index": 3, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "AML", "position_family": "attacking_midfield", "vertical_band": "attacking_midfield", "vertical_index": 4, "lateral_slot": "left", "phase_agnostic": true},
+    {"position_id": "AMC", "position_family": "attacking_midfield", "vertical_band": "attacking_midfield", "vertical_index": 4, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "AM", "position_family": "attacking_midfield", "vertical_band": "attacking_midfield", "vertical_index": 4, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "AMR", "position_family": "attacking_midfield", "vertical_band": "attacking_midfield", "vertical_index": 4, "lateral_slot": "right", "phase_agnostic": true},
+    {"position_id": "ST", "position_family": "forward", "vertical_band": "forward", "vertical_index": 5, "lateral_slot": "centre", "phase_agnostic": true},
+    {"position_id": "CF", "position_family": "forward", "vertical_band": "forward", "vertical_index": 5, "lateral_slot": "centre", "phase_agnostic": true}
+  ]
+}

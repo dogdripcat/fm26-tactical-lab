@@ -1,0 +1,28 @@
+{
+  "role_internal_id": "catalog:ip:winger:wfd",
+  "phase": "IP",
+  "role_name_ko": "와이드 포워드",
+  "source_kind": "official",
+  "verification": "official",
+  "evidence_id": "SI_FM26_WIDE_FORWARD_EN_2026",
+  "evidence": {
+    "evidence_id": "SI_FM26_WIDE_FORWARD_EN_2026",
+    "source_type": "official",
+    "evidence_level": "official_verified",
+    "title": "Mastering the Wide Forward in FM26",
+    "source": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+    "accessed": "2026-09-09",
+    "notes": "Official English article. Staged only; not imported. Claims are limited to the article's in-game-description wording."
+  },
+  "role_description": "The in-game description highlights the role’s importance of holding width throughout the attack to stretch the defence as well as making dangerous runs in behind.",
+  "role_tags": [],
+  "player_instructions": [],
+  "key_attributes": [],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id": "WFD_IP_MAINTAIN_WIDTH", "category": "width", "claim": "공격을 전개할 때 측면 폭을 유지한다.", "verification": "official", "official_claim": "holding width throughout the attack", "semantic_mappings": [{"semantic_id": "hold_width", "group": "space", "verification": "official"}], "ers_mapping": {"field": "occupancy", "concept_id": "wide", "verification": "official"}},
+    {"behaviour_id": "WFD_IP_RUN_BEHIND", "category": "runs", "claim": "상대 수비 뒤 공간을 향한 침투로 위협을 준다.", "verification": "official", "official_claim": "making dangerous runs in behind", "semantic_mappings": [{"semantic_id": "attack_space_in_behind", "group": "movement", "verification": "official"}], "ers_mapping": {"field": "movement_targets", "concept_id": "in_behind", "verification": "official"}},
+    {"behaviour_id": "WFD_IP_STRETCH_DEFENCE", "category": "role_description", "claim": "공격 중 폭을 유지해 수비를 넓힌다.", "verification": "official", "official_claim": "holding width throughout the attack to stretch the defence", "semantic_mappings": [], "limitations": ["This claim is not equated with hold_width and has no semantic or ERS mapping candidate."]}
+  ],
+  "limitations": ["Existing user/official evidence remains distinct from this new official source.", "No player-instruction suggestion or tactical pairing advice is included."]
+}

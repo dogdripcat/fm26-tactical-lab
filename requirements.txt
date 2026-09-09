@@ -1,0 +1,2 @@
+# Production WSGI server. The application itself uses only the Python standard library.
+gunicorn>=25.0.0,<26

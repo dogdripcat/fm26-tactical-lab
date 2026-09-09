@@ -1,0 +1,18 @@
+{
+  "role_internal_id": "catalog:ip:centre-back:cb",
+  "phase": "IP",
+  "role_name_ko": "중앙 수비수",
+  "source_kind": "user_ingame",
+  "evidence_id": "USER_FM26_IP_CB_DESCRIPTION_001",
+  "evidence": {"evidence_id":"USER_FM26_IP_CB_DESCRIPTION_001","source_type":"user_ingame_capture","title":"사용자 제공 FM26 IP 중앙 수비수 역할 설명","source":"conversation:user-provided-FM26-IP-CB-description","accessed":"2026-09-08","notes":"사용자 제공 인게임 텍스트. 행동·태그·지침만 기록."},
+  "role_description": "공 소유 중에도 상대 공격 위협에 빠르게 대응할 수 있는 위치를 유지하고, 공격적인 전술에서 침착하게 팀의 공 점유를 지원하며 창의적인 플레이를 하는 선수에게 간단한 패스를 제공한다.",
+  "role_tags": ["포지션 고수"],
+  "player_instructions": [{"instruction_id":"CB_IP_HOLD_POSITION","name_ko":"포지션 고수"}],
+  "key_attributes": [],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id":"CB_IP_HOLD_POSITION","claim":"상대의 공격 위협에 신속히 대응할 수 있는 위치를 유지한다."},
+    {"behaviour_id":"CB_IP_SUPPORT_POSSESSION","claim":"팀의 공 점유를 지원한다."},
+    {"behaviour_id":"CB_IP_SIMPLE_PASS_TO_CREATIVE_PLAYERS","claim":"창의적인 플레이를 하는 선수들에게 간단한 패스를 제공한다.","semantic_mappings":[]}
+  ]
+}

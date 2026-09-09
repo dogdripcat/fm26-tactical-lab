@@ -1,0 +1,29 @@
+{
+  "role_internal_id": "catalog:oop:cm:wide-covering-central-midfielder",
+  "phase": "OOP",
+  "role_name_ko": "와이드 커버링 중앙 미드필더",
+  "source_kind": "official",
+  "verification": "official",
+  "evidence_id": "SI_FM26_WIDE_COVERING_CM_2026",
+  "evidence": {
+    "evidence_id": "SI_FM26_WIDE_COVERING_CM_2026",
+    "source_type": "official",
+    "evidence_level": "official_verified",
+    "title": "Mastering the Wide Forward in FM26",
+    "source": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+    "accessed": "2026-09-09",
+    "notes": "Official English article. Staged only; not imported. Each record follows one explicit clause."
+  },
+  "role_description": "The player will move across from their typical position to shift across and support their full-back. This movement allows the Wide Covering Central Midfielder to help the team defend against wide threats, often doubling up against the opposition's wide attacking players.",
+  "role_tags": [],
+  "player_instructions": [],
+  "key_attributes": [],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id": "WCCM_OOP_MOVE_TOWARD_WIDE_AREAS", "category": "role_description", "claim": "일반적인 위치에서 이동해 측면으로 이동한다.", "verification": "official", "official_claim": "move across from their typical position to shift across"},
+    {"behaviour_id": "WCCM_OOP_SUPPORT_FULL_BACK", "category": "role_description", "claim": "풀백을 지원한다.", "verification": "official", "official_claim": "support their full-back"},
+    {"behaviour_id": "WCCM_OOP_DEFEND_WIDE_THREATS", "category": "role_description", "claim": "팀의 측면 위협 수비를 돕는다.", "verification": "official", "official_claim": "help the team defend against wide threats"},
+    {"behaviour_id": "WCCM_OOP_DOUBLE_UP_WIDE_ATTACKERS", "category": "role_description", "claim": "상대 측면 공격수에게 두 명으로 대응할 수 있다.", "verification": "official", "official_claim": "often doubling up against the opposition's wide attacking players"}
+  ],
+  "limitations": ["No pressing, tackling, or intensity behaviour is inferred.", "No semantic or ERS mapping is included."]
+}

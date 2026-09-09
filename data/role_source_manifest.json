@@ -1,0 +1,1135 @@
+[
+  {
+    "role_internal_id": "catalog:ip:fw:cfd",
+    "phase": "IP",
+    "role_name_ko": "센터 포워드",
+    "role_families": [
+      "FW"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_CFD_DESCRIPTION_001",
+      "SI_FM26_DUAL_STRIKERS_2025",
+      "SI_FM26_LONE_STRIKERS_2025"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:fw:chf",
+    "phase": "IP",
+    "role_name_ko": "채널 포워드",
+    "role_families": [
+      "FW"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:if",
+    "phase": "IP",
+    "role_name_ko": "인사이드 포워드",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IF_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:am:am",
+    "phase": "IP",
+    "role_name_ko": "공격형 미드필더",
+    "role_families": [
+      "AM",
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_AM_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:wfd",
+    "phase": "IP",
+    "role_name_ko": "와이드 포워드",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "SI_FM26_WIDE_FORWARD_2026"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:pw-legacy-name",
+    "phase": "IP",
+    "role_name_ko": "플레이메이커 윙어",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "unresolved",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "identity_ambiguity"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:dm:dlp",
+    "phase": "IP",
+    "role_name_ko": "딥라잉 플레이메이커",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_DLP_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:dm:bbp",
+    "phase": "IP",
+    "role_name_ko": "박스 투 박스 플레이메이커",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_BBP_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:wing-back:wb",
+    "phase": "IP",
+    "role_name_ko": "윙백",
+    "role_families": [
+      "Wing-Back",
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_WB_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:wing-back:iwb",
+    "phase": "IP",
+    "role_name_ko": "인사이드 윙백",
+    "role_families": [
+      "Wing-Back",
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IWB_DESCRIPTION"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:cb",
+    "phase": "IP",
+    "role_name_ko": "중앙 수비수",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_CB_DESCRIPTION_001"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:goalkeeper:bgk",
+    "phase": "IP",
+    "role_name_ko": "볼 플레잉 골키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "partial",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_BGK_DESCRIPTION_001"
+    ],
+    "missing_fields": []
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:acb",
+    "phase": "IP",
+    "role_name_ko": "전진형 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_THREE_CB_ROLES"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:wcb",
+    "phase": "IP",
+    "role_name_ko": "와이드 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_THREE_CB_ROLES"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:ocb",
+    "phase": "IP",
+    "role_name_ko": "오버래핑 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "user_ingame_verified",
+    "evidence_ids": [
+      "USER_FM26_IP_THREE_CB_ROLES"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:inside-winger",
+    "phase": "IP",
+    "role_name_ko": "인사이드 윙어",
+    "role_families": [
+      "Winger",
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:playmaking-winger",
+    "phase": "IP",
+    "role_name_ko": "플레이메이킹 윙어",
+    "role_families": [
+      "Winger",
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "unresolved",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "identity_ambiguity"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:winger:winger",
+    "phase": "IP",
+    "role_name_ko": "윙어",
+    "role_families": [
+      "Winger",
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:am:advanced-playmaker",
+    "phase": "IP",
+    "role_name_ko": "전진형 플레이메이커",
+    "role_families": [
+      "AM",
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:am:channel-midfielder",
+    "phase": "IP",
+    "role_name_ko": "채널 미드필더",
+    "role_families": [
+      "AM",
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:am:free-role",
+    "phase": "IP",
+    "role_name_ko": "프리 롤",
+    "role_families": [
+      "AM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:am:second-striker",
+    "phase": "IP",
+    "role_name_ko": "세컨드 스트라이커",
+    "role_families": [
+      "AM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:cm:central-midfielder",
+    "phase": "IP",
+    "role_name_ko": "중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:cm:midfield-playmaker",
+    "phase": "IP",
+    "role_name_ko": "미드필드 플레이메이커",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:cm:wide-central-midfielder",
+    "phase": "IP",
+    "role_name_ko": "와이드 중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:wide-midfield:wide-midfielder",
+    "phase": "IP",
+    "role_name_ko": "와이드 미드필더",
+    "role_families": [
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:dm:box-to-box-midfielder",
+    "phase": "IP",
+    "role_name_ko": "박스 투 박스 미드필더",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:dm:defensive-midfielder",
+    "phase": "IP",
+    "role_name_ko": "수비형 미드필더",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:dm:half-back",
+    "phase": "IP",
+    "role_name_ko": "하프백",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:wing-back:advanced-wing-back",
+    "phase": "IP",
+    "role_name_ko": "전진형 윙백",
+    "role_families": [
+      "Wing-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:wing-back:playmaking-wing-back",
+    "phase": "IP",
+    "role_name_ko": "플레이메이킹 윙백",
+    "role_families": [
+      "Wing-Back",
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:full-back:full-back",
+    "phase": "IP",
+    "role_name_ko": "풀백",
+    "role_families": [
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:full-back:inside-full-back",
+    "phase": "IP",
+    "role_name_ko": "인사이드 풀백",
+    "role_families": [
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:ball-playing-centre-back",
+    "phase": "IP",
+    "role_name_ko": "볼 플레잉 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:centre-back:stable-centre-back",
+    "phase": "IP",
+    "role_name_ko": "안정형 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:goalkeeper:goalkeeper",
+    "phase": "IP",
+    "role_name_ko": "골키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:ip:goalkeeper:stable-goalkeeper",
+    "phase": "IP",
+    "role_name_ko": "안정형 골키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:winger:inside-oriented-winger",
+    "phase": "OOP",
+    "role_name_ko": "인사이드 지향 윙어",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:winger:tracking-winger",
+    "phase": "OOP",
+    "role_name_ko": "추적형 윙어",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:winger:winger",
+    "phase": "OOP",
+    "role_name_ko": "윙어",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:winger:wide-oriented-winger",
+    "phase": "OOP",
+    "role_name_ko": "측면 지향 윙어",
+    "role_families": [
+      "Winger"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:am:attacking-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "공격형 미드필더",
+    "role_families": [
+      "AM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:am:central-oriented-attacking-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "중앙 지향 공격형 미드필더",
+    "role_families": [
+      "AM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:am:tracking-attacking-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "추적형 공격형 미드필더",
+    "role_families": [
+      "AM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:cm:central-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:cm:pressing-central-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "압박형 중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:cm:screening-central-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "스크리닝 중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:cm:wide-covering-central-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "와이드 커버링 중앙 미드필더",
+    "role_families": [
+      "CM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "측면 지향 와이드 미드필더",
+    "role_families": [
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wide-midfield:tracking-wide-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "추적형 와이드 미드필더",
+    "role_families": [
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wide-midfield:wide-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "와이드 미드필더",
+    "role_families": [
+      "Wide Midfield"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:dm:dropping-defensive-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "드롭핑 수비형 미드필더",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:dm:defensive-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "수비형 미드필더",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:dm:screening-defensive-midfielder",
+    "phase": "OOP",
+    "role_name_ko": "스크리닝 수비형 미드필더",
+    "role_families": [
+      "DM"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wing-back:holding-wing-back",
+    "phase": "OOP",
+    "role_name_ko": "홀딩 윙백",
+    "role_families": [
+      "Wing-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wing-back:pressing-wing-back",
+    "phase": "OOP",
+    "role_name_ko": "압박형 윙백",
+    "role_families": [
+      "Wing-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:wing-back:wing-back",
+    "phase": "OOP",
+    "role_name_ko": "윙백",
+    "role_families": [
+      "Wing-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:full-back:full-back",
+    "phase": "OOP",
+    "role_name_ko": "풀백",
+    "role_families": [
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:full-back:holding-full-back",
+    "phase": "OOP",
+    "role_name_ko": "홀딩 풀백",
+    "role_families": [
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:full-back:pressing-full-back",
+    "phase": "OOP",
+    "role_name_ko": "압박형 풀백",
+    "role_families": [
+      "Full-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:centre-back",
+    "phase": "OOP",
+    "role_name_ko": "중앙 수비수",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:stopping-centre-back",
+    "phase": "OOP",
+    "role_name_ko": "스토핑 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:covering-centre-back",
+    "phase": "OOP",
+    "role_name_ko": "커버링 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:wide-centre-back",
+    "phase": "OOP",
+    "role_name_ko": "와이드 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:stopping-wide-centre-back",
+    "phase": "OOP",
+    "role_name_ko": "스토핑 와이드 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:centre-back:covering-wide-centre-back",
+    "phase": "OOP",
+    "role_name_ko": "커버링 와이드 센터백",
+    "role_families": [
+      "Centre-Back"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [
+      "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+    ],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:goalkeeper:goalkeeper",
+    "phase": "OOP",
+    "role_name_ko": "골키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:goalkeeper:line-holding-keeper",
+    "phase": "OOP",
+    "role_name_ko": "라인 홀딩 키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  },
+  {
+    "role_internal_id": "catalog:oop:goalkeeper:sweeper-keeper",
+    "phase": "OOP",
+    "role_name_ko": "스위퍼 키퍼",
+    "role_families": [
+      "Goalkeeper"
+    ],
+    "identity_verification": "user_ingame_verified",
+    "availability_verification": "user_ingame_verified",
+    "behaviour_verification": "identity_only",
+    "abbr_verification": "unverified",
+    "evidence_ids": [],
+    "missing_fields": [
+      "behaviour_evidence"
+    ]
+  }
+]

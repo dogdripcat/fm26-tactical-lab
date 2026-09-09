@@ -1,0 +1,26 @@
+{
+  "role_internal_id": "catalog:oop:full-back:holding-full-back",
+  "phase": "OOP",
+  "role_name_ko": "홀딩 풀백",
+  "source_kind": "official",
+  "verification": "official",
+  "evidence_id": "SI_FM26_HOLDING_FULL_BACK_2026",
+  "evidence": {
+    "evidence_id": "SI_FM26_HOLDING_FULL_BACK_2026",
+    "source_type": "official",
+    "evidence_level": "official_verified",
+    "title": "Mastering the Wide Forward in FM26",
+    "source": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+    "accessed": "2026-09-09",
+    "notes": "Official English article. Staged only; not imported. Defensive-shape outcome is not separately behaviourised."
+  },
+  "role_description": "They’ll ensure a robust structure is maintained as they rarely venture forward, instead prioritising solidity for your defensive shape.",
+  "role_tags": [],
+  "player_instructions": [],
+  "key_attributes": [],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id": "HFB_OOP_RARELY_VENTURE_FORWARD", "category": "role_description", "claim": "좀처럼 앞으로 전진하지 않는다.", "verification": "official", "official_claim": "rarely venture forward"}
+  ],
+  "limitations": ["No hold_position, stay_back, or defensive-solidity behaviour is inferred.", "No semantic or ERS mapping is included."]
+}

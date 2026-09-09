@@ -1,0 +1,17 @@
+{
+  "role_internal_id": "catalog:ip:goalkeeper:bgk",
+  "phase": "IP",
+  "role_name_ko": "볼 플레잉 골키퍼",
+  "source_kind": "user_ingame",
+  "evidence_id": "USER_FM26_IP_BGK_DESCRIPTION_001",
+  "evidence": {"evidence_id":"USER_FM26_IP_BGK_DESCRIPTION_001","source_type":"user_ingame_capture","title":"사용자 제공 FM26 IP 볼 플레잉 골키퍼 역할 설명","source":"conversation:user-provided-FM26-IP-BGK-description","accessed":"2026-09-08","notes":"사용자 제공 인게임 텍스트. 의미 확장 없음."},
+  "role_description": "팀의 공격 전개 과정에서 적극적인 역할을 수행하고, 골대를 벗어나 공을 받을 수 있는 위치로 자주 이동하며 높은 수준의 발기술이 요구된다.",
+  "role_tags": ["자유", "위임"],
+  "player_instructions": [{"instruction_id":"BGK_IP_PLAY_MORE_RISKY","name_ko":"더 모험적으로 플레이하라"}],
+  "key_attributes": ["발기술"],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id":"BGK_IP_ACTIVE_BUILDUP_PARTICIPATION","claim":"팀의 공격 전개 과정에서 적극적인 역할을 수행한다."},
+    {"behaviour_id":"BGK_IP_MOVE_TO_RECEIVE","claim":"자주 골대를 벗어나 공을 받을 수 있는 위치로 이동한다.","semantic_mappings":[]}
+  ]
+}

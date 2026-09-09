@@ -1,0 +1,31 @@
+{
+  "name": "Leicester 4-2-3-1",
+  "version": "v0.1-test",
+  "ip_formation": "4231",
+  "oop_formation": "4231",
+  "play_style": "지배형",
+  "ip_roles": {
+    "GK": "BPGK",
+    "LB": "WB",
+    "LCB": "CB",
+    "RCB": "CB",
+    "RB": "IWB",
+    "DML": "DLP",
+    "DMR": "BBP",
+    "AML": "IF",
+    "AMC": "AM",
+    "AMR": "WF",
+    "ST": "CF"
+  },
+  "oop_roles": {
+    "GK": "SK"
+  },
+  "team_instructions": {
+    "tempo": "높게",
+    "press_line": "mid",
+    "defensive_line": "높게",
+    "pressing": "더 자주",
+    "defensive_transition": "역압박"
+  },
+  "notes": "Current Leicester test structure. Keep changes isolated."
+}

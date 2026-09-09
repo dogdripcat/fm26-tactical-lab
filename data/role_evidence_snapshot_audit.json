@@ -1,0 +1,1417 @@
+{
+  "audit_type": "role_evidence_snapshot_consistency",
+  "consistent": true,
+  "source_snapshot_mismatches": [],
+  "abbreviation_rows": [
+    {
+      "role_internal_id": "catalog:ip:fw:cfd",
+      "role_name_ko": "센터 포워드",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "CFD",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:fw:chf",
+      "role_name_ko": "채널 포워드",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "CHF",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:if",
+      "role_name_ko": "인사이드 포워드",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "IF",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:am",
+      "role_name_ko": "공격형 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "AM",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:wfd",
+      "role_name_ko": "와이드 포워드",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "WFD",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:pw-legacy-name",
+      "role_name_ko": "플레이메이커 윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "PW",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:playmaking-winger"
+        ],
+        "note": "기존 확인명과 새 캡처의 ‘플레이메이킹 윙어’가 같은 역할인지 확인되지 않음."
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:dlp",
+      "role_name_ko": "딥라잉 플레이메이커",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "DLP",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:bbp",
+      "role_name_ko": "박스 투 박스 플레이메이커",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "BBP",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:wb",
+      "role_name_ko": "윙백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "WB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:iwb",
+      "role_name_ko": "인사이드 윙백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "IWB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:cb",
+      "role_name_ko": "중앙 수비수",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "CB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:bgk",
+      "role_name_ko": "볼 플레잉 골키퍼",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "BGK",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:acb",
+      "role_name_ko": "전진형 센터백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "ACB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:wcb",
+      "role_name_ko": "와이드 센터백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "WCB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:ocb",
+      "role_name_ko": "오버래핑 센터백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "OCB",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:inside-winger",
+      "role_name_ko": "인사이드 윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:playmaking-winger",
+      "role_name_ko": "플레이메이킹 윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:pw-legacy-name"
+        ],
+        "note": "기존 ‘플레이메이커 윙어’와 같은 역할인지 확인되지 않음."
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:winger",
+      "role_name_ko": "윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:advanced-playmaker",
+      "role_name_ko": "전진형 플레이메이커",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:channel-midfielder",
+      "role_name_ko": "채널 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:free-role",
+      "role_name_ko": "프리 롤",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:am:second-striker",
+      "role_name_ko": "세컨드 스트라이커",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:central-midfielder",
+      "role_name_ko": "중앙 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:midfield-playmaker",
+      "role_name_ko": "미드필드 플레이메이커",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:cm:wide-central-midfielder",
+      "role_name_ko": "와이드 중앙 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wide-midfield:wide-midfielder",
+      "role_name_ko": "와이드 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:box-to-box-midfielder",
+      "role_name_ko": "박스 투 박스 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:defensive-midfielder",
+      "role_name_ko": "수비형 미드필더",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:dm:half-back",
+      "role_name_ko": "하프백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:advanced-wing-back",
+      "role_name_ko": "전진형 윙백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:wing-back:playmaking-wing-back",
+      "role_name_ko": "플레이메이킹 윙백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:full-back:full-back",
+      "role_name_ko": "풀백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:full-back:inside-full-back",
+      "role_name_ko": "인사이드 풀백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:ball-playing-centre-back",
+      "role_name_ko": "볼 플레잉 센터백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:centre-back:stable-centre-back",
+      "role_name_ko": "안정형 센터백",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:goalkeeper",
+      "role_name_ko": "골키퍼",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:goalkeeper:stable-goalkeeper",
+      "role_name_ko": "안정형 골키퍼",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:inside-oriented-winger",
+      "role_name_ko": "인사이드 지향 윙어",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:tracking-winger",
+      "role_name_ko": "추적형 윙어",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:winger",
+      "role_name_ko": "윙어",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:winger:wide-oriented-winger",
+      "role_name_ko": "측면 지향 윙어",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:attacking-midfielder",
+      "role_name_ko": "공격형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:central-oriented-attacking-midfielder",
+      "role_name_ko": "중앙 지향 공격형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:am:tracking-attacking-midfielder",
+      "role_name_ko": "추적형 공격형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:central-midfielder",
+      "role_name_ko": "중앙 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:pressing-central-midfielder",
+      "role_name_ko": "압박형 중앙 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:screening-central-midfielder",
+      "role_name_ko": "스크리닝 중앙 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:cm:wide-covering-central-midfielder",
+      "role_name_ko": "와이드 커버링 중앙 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "role_name_ko": "측면 지향 와이드 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "role_name_ko": "추적형 와이드 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wide-midfield:wide-midfielder",
+      "role_name_ko": "와이드 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:dropping-defensive-midfielder",
+      "role_name_ko": "드롭핑 수비형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:defensive-midfielder",
+      "role_name_ko": "수비형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:dm:screening-defensive-midfielder",
+      "role_name_ko": "스크리닝 수비형 미드필더",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:holding-wing-back",
+      "role_name_ko": "홀딩 윙백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:pressing-wing-back",
+      "role_name_ko": "압박형 윙백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:wing-back:wing-back",
+      "role_name_ko": "윙백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:full-back",
+      "role_name_ko": "풀백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:holding-full-back",
+      "role_name_ko": "홀딩 풀백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:full-back:pressing-full-back",
+      "role_name_ko": "압박형 풀백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:centre-back",
+      "role_name_ko": "중앙 수비수",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:stopping-centre-back",
+      "role_name_ko": "스토핑 센터백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:covering-centre-back",
+      "role_name_ko": "커버링 센터백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:wide-centre-back",
+      "role_name_ko": "와이드 센터백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:stopping-wide-centre-back",
+      "role_name_ko": "스토핑 와이드 센터백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:centre-back:covering-wide-centre-back",
+      "role_name_ko": "커버링 와이드 센터백",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:goalkeeper",
+      "role_name_ko": "골키퍼",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:line-holding-keeper",
+      "role_name_ko": "라인 홀딩 키퍼",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    },
+    {
+      "role_internal_id": "catalog:oop:goalkeeper:sweeper-keeper",
+      "role_name_ko": "스위퍼 키퍼",
+      "phase": "OOP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "resolved",
+      "ambiguity": {
+        "status": "none"
+      }
+    }
+  ],
+  "abbreviation_groups": {
+    "verified": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb"
+    ],
+    "unverified": [
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "unresolved": []
+  },
+  "abbreviation_summary": {
+    "verified": 15,
+    "unverified": 54,
+    "unresolved": 0
+  },
+  "role_identity_unresolved": [
+    {
+      "role_internal_id": "catalog:ip:winger:pw-legacy-name",
+      "role_name_ko": "플레이메이커 윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": "PW",
+        "verification": "user_ingame_verified"
+      },
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:playmaking-winger"
+        ],
+        "note": "기존 확인명과 새 캡처의 ‘플레이메이킹 윙어’가 같은 역할인지 확인되지 않음."
+      }
+    },
+    {
+      "role_internal_id": "catalog:ip:winger:playmaking-winger",
+      "role_name_ko": "플레이메이킹 윙어",
+      "phase": "IP",
+      "abbreviation": {
+        "value": null,
+        "verification": "unverified"
+      },
+      "role_identity_status": "unresolved",
+      "ambiguity": {
+        "status": "unresolved",
+        "candidate_internal_ids": [
+          "catalog:ip:winger:pw-legacy-name"
+        ],
+        "note": "기존 ‘플레이메이커 윙어’와 같은 역할인지 확인되지 않음."
+      }
+    }
+  ],
+  "coverage_sets": {
+    "roles_with_no_evidence": [
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "identity_only_roles": [
+      "catalog:ip:fw:chf",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "partial_roles": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk"
+    ],
+    "unresolved_roles": [
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:winger:playmaking-winger"
+    ],
+    "roles_with_semantics": [
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk"
+    ],
+    "roles_without_semantics": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "ers_supported_roles": [
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb"
+    ],
+    "ers_unknown_roles": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:fw:chf",
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "roles_with_user_ingame_evidence": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back"
+    ],
+    "roles_with_official_evidence": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:wfd"
+    ],
+    "multi_family_role_identities": [
+      "catalog:ip:am:am",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:playmaking-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:wing-back:playmaking-wing-back"
+    ],
+    "abbreviation_status": {
+      "verified": 15,
+      "unverified": 54,
+      "unresolved": 0
+    }
+  },
+  "evidence_overlap": {
+    "identities_with_any_evidence": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back"
+    ],
+    "user_ingame_and_official": [
+      "catalog:ip:fw:cfd"
+    ],
+    "user_ingame_only": [
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back"
+    ],
+    "official_only": [
+      "catalog:ip:winger:wfd"
+    ]
+  },
+  "baseline_comparison": {
+    "declared_abbreviation_baseline": {
+      "verified": 15,
+      "unverified": 54
+    },
+    "current_catalog": {
+      "verified": 15,
+      "unverified": 54
+    },
+    "matches_declared_baseline": true,
+    "historical_file_change_determinable": false,
+    "note": "이전 파일 hash/version이 없으므로 현재 source 값과 제공된 count baseline만 비교한다."
+  },
+  "oop_sweeper_keeper": {
+    "role_internal_id": "catalog:oop:goalkeeper:sweeper-keeper",
+    "role_identity_status": "resolved",
+    "abbreviation": {
+      "value": null,
+      "verification": "unverified"
+    },
+    "ambiguity": {
+      "status": "none"
+    },
+    "note": "SK는 catalog display abbreviation으로 등록되지 않았으며, sample tactic의 raw token은 별도 resolver 문제다."
+  }
+}

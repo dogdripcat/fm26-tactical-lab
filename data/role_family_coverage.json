@@ -1,0 +1,22 @@
+[
+  {"role_family":"FW","phase":"IP","status":"catalog_registered","verified_role_count":2},
+  {"role_family":"FW","phase":"OOP","status":"schema_ready","verified_role_count":0},
+  {"role_family":"Winger","phase":"IP","status":"catalog_registered","verified_role_count":6},
+  {"role_family":"Winger","phase":"OOP","status":"catalog_registered","verified_role_count":4},
+  {"role_family":"AM","phase":"IP","status":"catalog_registered","verified_role_count":5},
+  {"role_family":"AM","phase":"OOP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"CM","phase":"IP","status":"catalog_registered","verified_role_count":6},
+  {"role_family":"CM","phase":"OOP","status":"catalog_registered","verified_role_count":4},
+  {"role_family":"Wide Midfield","phase":"IP","status":"catalog_registered","verified_role_count":4},
+  {"role_family":"Wide Midfield","phase":"OOP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"DM","phase":"IP","status":"catalog_registered","verified_role_count":5},
+  {"role_family":"DM","phase":"OOP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"Wing-Back","phase":"IP","status":"catalog_registered","verified_role_count":4},
+  {"role_family":"Wing-Back","phase":"OOP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"Full-Back","phase":"IP","status":"catalog_registered","verified_role_count":5},
+  {"role_family":"Full-Back","phase":"OOP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"Centre-Back","phase":"IP","status":"catalog_registered","verified_role_count":6},
+  {"role_family":"Centre-Back","phase":"OOP","status":"catalog_registered","verified_role_count":6},
+  {"role_family":"Goalkeeper","phase":"IP","status":"catalog_registered","verified_role_count":3},
+  {"role_family":"Goalkeeper","phase":"OOP","status":"catalog_registered","verified_role_count":3}
+]

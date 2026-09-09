@@ -1,0 +1,26 @@
+{
+  "role_internal_id": "catalog:oop:full-back:pressing-full-back",
+  "phase": "OOP",
+  "role_name_ko": "압박형 풀백",
+  "source_kind": "official",
+  "verification": "official",
+  "evidence_id": "SI_FM26_PRESSING_FULL_BACK_2026",
+  "evidence": {
+    "evidence_id": "SI_FM26_PRESSING_FULL_BACK_2026",
+    "source_type": "official",
+    "evidence_level": "official_verified",
+    "title": "Mastering the Wide Forward in FM26",
+    "source": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+    "accessed": "2026-09-09",
+    "notes": "Official English article. Staged only; not imported. Tactical press context is excluded."
+  },
+  "role_description": "This aggressive role will stop progression down the flank.",
+  "role_tags": [],
+  "player_instructions": [],
+  "key_attributes": [],
+  "formation_constraints": [],
+  "behaviours": [
+    {"behaviour_id": "PFB_OOP_STOP_FLANK_PROGRESSION", "category": "role_description", "claim": "측면을 통한 상대 전진을 저지한다.", "verification": "official", "official_claim": "will stop progression down the flank"}
+  ],
+  "limitations": ["No press_more, close_down, tackle, or pressing-distance behaviour is inferred.", "No semantic or ERS mapping is included."]
+}

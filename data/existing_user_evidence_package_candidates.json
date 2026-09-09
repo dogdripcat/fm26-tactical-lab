@@ -1,0 +1,174 @@
+{
+  "report_type": "existing_user_evidence_role_package_candidates",
+  "candidates": [],
+  "summary": {
+    "identity_only_roles_reviewed": 57,
+    "roles_with_actual_behaviour_evidence_candidates": 0,
+    "ready_for_import_roles": [],
+    "evidence_insufficient_roles": [
+      "catalog:ip:fw:chf",
+      "catalog:ip:centre-back:acb",
+      "catalog:ip:centre-back:wcb",
+      "catalog:ip:centre-back:ocb",
+      "catalog:ip:winger:inside-winger",
+      "catalog:ip:winger:winger",
+      "catalog:ip:am:advanced-playmaker",
+      "catalog:ip:am:channel-midfielder",
+      "catalog:ip:am:free-role",
+      "catalog:ip:am:second-striker",
+      "catalog:ip:cm:central-midfielder",
+      "catalog:ip:cm:midfield-playmaker",
+      "catalog:ip:cm:wide-central-midfielder",
+      "catalog:ip:wide-midfield:wide-midfielder",
+      "catalog:ip:dm:box-to-box-midfielder",
+      "catalog:ip:dm:defensive-midfielder",
+      "catalog:ip:dm:half-back",
+      "catalog:ip:wing-back:advanced-wing-back",
+      "catalog:ip:wing-back:playmaking-wing-back",
+      "catalog:ip:full-back:full-back",
+      "catalog:ip:full-back:inside-full-back",
+      "catalog:ip:centre-back:ball-playing-centre-back",
+      "catalog:ip:centre-back:stable-centre-back",
+      "catalog:ip:goalkeeper:goalkeeper",
+      "catalog:ip:goalkeeper:stable-goalkeeper",
+      "catalog:oop:winger:inside-oriented-winger",
+      "catalog:oop:winger:tracking-winger",
+      "catalog:oop:winger:winger",
+      "catalog:oop:winger:wide-oriented-winger",
+      "catalog:oop:am:attacking-midfielder",
+      "catalog:oop:am:central-oriented-attacking-midfielder",
+      "catalog:oop:am:tracking-attacking-midfielder",
+      "catalog:oop:cm:central-midfielder",
+      "catalog:oop:cm:pressing-central-midfielder",
+      "catalog:oop:cm:screening-central-midfielder",
+      "catalog:oop:cm:wide-covering-central-midfielder",
+      "catalog:oop:wide-midfield:wide-oriented-wide-midfielder",
+      "catalog:oop:wide-midfield:tracking-wide-midfielder",
+      "catalog:oop:wide-midfield:wide-midfielder",
+      "catalog:oop:dm:dropping-defensive-midfielder",
+      "catalog:oop:dm:defensive-midfielder",
+      "catalog:oop:dm:screening-defensive-midfielder",
+      "catalog:oop:wing-back:holding-wing-back",
+      "catalog:oop:wing-back:pressing-wing-back",
+      "catalog:oop:wing-back:wing-back",
+      "catalog:oop:full-back:full-back",
+      "catalog:oop:full-back:holding-full-back",
+      "catalog:oop:full-back:pressing-full-back",
+      "catalog:oop:centre-back:centre-back",
+      "catalog:oop:centre-back:stopping-centre-back",
+      "catalog:oop:centre-back:covering-centre-back",
+      "catalog:oop:centre-back:wide-centre-back",
+      "catalog:oop:centre-back:stopping-wide-centre-back",
+      "catalog:oop:centre-back:covering-wide-centre-back",
+      "catalog:oop:goalkeeper:goalkeeper",
+      "catalog:oop:goalkeeper:line-holding-keeper",
+      "catalog:oop:goalkeeper:sweeper-keeper"
+    ],
+    "semantic_mapping_candidates": 0,
+    "ers_mapping_candidates": 0,
+    "unresolved_excluded_roles": [
+      "catalog:ip:winger:pw-legacy-name",
+      "catalog:ip:winger:playmaking-winger"
+    ],
+    "partial_excluded_roles": [
+      "catalog:ip:fw:cfd",
+      "catalog:ip:winger:if",
+      "catalog:ip:am:am",
+      "catalog:ip:winger:wfd",
+      "catalog:ip:dm:dlp",
+      "catalog:ip:dm:bbp",
+      "catalog:ip:wing-back:wb",
+      "catalog:ip:wing-back:iwb",
+      "catalog:ip:centre-back:cb",
+      "catalog:ip:goalkeeper:bgk"
+    ],
+    "existing_non_behaviour_evidence": [
+      {
+        "role_internal_id": "catalog:ip:centre-back:acb",
+        "phase": "IP",
+        "role_name_ko": "전진형 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_IP_THREE_CB_ROLES"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:ip:centre-back:wcb",
+        "phase": "IP",
+        "role_name_ko": "와이드 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_IP_THREE_CB_ROLES"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:ip:centre-back:ocb",
+        "phase": "IP",
+        "role_name_ko": "오버래핑 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_IP_THREE_CB_ROLES"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:centre-back",
+        "phase": "OOP",
+        "role_name_ko": "중앙 수비수",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:stopping-centre-back",
+        "phase": "OOP",
+        "role_name_ko": "스토핑 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:covering-centre-back",
+        "phase": "OOP",
+        "role_name_ko": "커버링 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_DC_ROLE_AVAILABILITY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:wide-centre-back",
+        "phase": "OOP",
+        "role_name_ko": "와이드 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:stopping-wide-centre-back",
+        "phase": "OOP",
+        "role_name_ko": "스토핑 와이드 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      },
+      {
+        "role_internal_id": "catalog:oop:centre-back:covering-wide-centre-back",
+        "phase": "OOP",
+        "role_name_ko": "커버링 와이드 센터백",
+        "existing_evidence_ids": [
+          "USER_FM26_OOP_WIDE_CB_THREE_ONLY"
+        ],
+        "reason_excluded": "existing evidence records UI availability/formation constraints only; no explicit behaviour claim is registered."
+      }
+    ]
+  },
+  "limitations": [
+    "No identity_only role has a registered explicit behaviour claim in the current snapshot.",
+    "UI availability/formation constraints are not role behaviours and are excluded from import candidates.",
+    "No semantic or ERS mapping is proposed without an explicit imported claim."
+  ]
+}

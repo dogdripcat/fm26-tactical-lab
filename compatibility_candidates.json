@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Design candidates only. These entries are not executable compatibility rules and cannot affect Connectivity.",
+  "candidates": [
+    {
+      "candidate_id": "CAND_DIST_FORWARD_TO_BETWEEN_LINES",
+      "rule_type": "distribution_reception",
+      "phase": "IP",
+      "source_selector": {"selector_type": "semantic", "semantic_id": "send_forward"},
+      "target_selector": {"selector_type": "semantic", "semantic_id": "receive_between_lines"},
+      "required_context": {"position_families": [], "configured_position_relations": []},
+      "candidate_context_hypothesis": {},
+      "connectivity_relevance": "direct",
+      "partnership_relevance": "contextual",
+      "candidate_status": "design_candidate",
+      "production_eligible": false,
+      "missing_evidence": ["compatibility_rule_evidence"],
+      "limitations": ["검증된 role semantic은 compatibility rule 자체를 검증하지 않는다."]
+    },
+    {
+      "candidate_id": "CAND_DIST_FORWARD_TO_CENTRAL_RECEIVE",
+      "rule_type": "distribution_reception",
+      "phase": "IP",
+      "source_selector": {"selector_type": "semantic", "semantic_id": "send_forward"},
+      "target_selector": {"selector_type": "semantic", "semantic_id": "receive_centrally"},
+      "required_context": {"position_families": [], "configured_position_relations": []},
+      "candidate_context_hypothesis": {},
+      "connectivity_relevance": "direct",
+      "partnership_relevance": "contextual",
+      "candidate_status": "design_candidate",
+      "production_eligible": false,
+      "missing_evidence": ["compatibility_rule_evidence"],
+      "limitations": ["검증된 role semantic은 compatibility rule 자체를 검증하지 않는다."]
+    },
+    {
+      "candidate_id": "CAND_SPACE_OPEN_FOR_FULLBACK_WIDE_USAGE",
+      "rule_type": "space_creation_usage",
+      "phase": "IP",
+      "source_selector": {"selector_type": "semantic", "semantic_id": "open_space_for_fullback"},
+      "target_selector": {"selector_type": "ers", "field": "occupancy", "concept_id": "wide"},
+      "required_context": {"position_families": [], "configured_position_relations": []},
+      "candidate_context_hypothesis": {"target_position_families": ["full_back", "wing_back"]},
+      "connectivity_relevance": "none",
+      "partnership_relevance": "contextual",
+      "candidate_status": "design_candidate",
+      "production_eligible": false,
+      "missing_evidence": ["compatibility_rule_evidence", "verified_target_position_family_condition"],
+      "limitations": ["대상 position family는 검증 전 가설이며 required_context가 아니다."]
+    },
+    {
+      "candidate_id": "CAND_FORWARD_SEND_TO_MOVE_TO_RECEIVE",
+      "rule_type": "distribution_reception",
+      "phase": "IP",
+      "source_selector": {"selector_type": "semantic", "semantic_id": "send_forward"},
+      "target_selector": {"selector_type": "semantic", "semantic_id": "move_to_receive"},
+      "required_context": {"position_families": [], "configured_position_relations": []},
+      "candidate_context_hypothesis": {},
+      "connectivity_relevance": "none",
+      "partnership_relevance": "none",
+      "candidate_status": "design_candidate",
+      "production_eligible": false,
+      "missing_evidence": ["compatibility_rule_evidence", "reception_occurrence_or_destination_space"],
+      "limitations": ["move_to_receive는 실제 수신 또는 목적 공간을 뜻하지 않는다."]
+    },
+    {
+      "candidate_id": "CAND_SIMPLE_SEND_TO_MOVE_TO_RECEIVE",
+      "rule_type": "distribution_reception",
+      "phase": "IP",
+      "source_selector": {"selector_type": "semantic", "semantic_id": "send_simple_pass"},
+      "target_selector": {"selector_type": "semantic", "semantic_id": "move_to_receive"},
+      "required_context": {"position_families": [], "configured_position_relations": []},
+      "candidate_context_hypothesis": {},
+      "connectivity_relevance": "none",
+      "partnership_relevance": "none",
+      "candidate_status": "design_candidate",
+      "production_eligible": false,
+      "missing_evidence": ["compatibility_rule_evidence", "pass_direction_distance_and_destination"],
+      "limitations": ["send_simple_pass는 방향, 거리 또는 수신 위치를 특정하지 않는다."]
+    }
+  ]
+}
