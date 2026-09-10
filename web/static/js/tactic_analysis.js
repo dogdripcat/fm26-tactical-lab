@@ -1,0 +1,5 @@
+import {normalizeTacticData} from './tactic_normalization.js';
+import {buildConnectivity} from './connectivity_engine.js';
+import {present} from './analysis_presenter.js';
+import {inputStatus} from './team_instructions.js';
+export function analyzeTactic(tactic,data){const {normalized,changes}=normalizeTacticData(tactic,data.aliases,data.teamInstructions);const connectivity=buildConnectivity(normalized,data);const result={connectivity,normalization:{changes,input_mutated:false},team_instruction_input_status:inputStatus(normalized)};result.tactic_input={in_possession:{formation:tactic.ip_formation,positions:Object.keys(tactic.ip_roles||{}),roles:structuredClone(tactic.ip_roles||{}),team_instructions:structuredClone(tactic.ip_team_instructions||{})},out_of_possession:{formation:tactic.oop_formation,positions:Object.keys(tactic.oop_roles||{}),roles:structuredClone(tactic.oop_roles||{}),team_instructions:structuredClone(tactic.oop_team_instructions||{}),editing_status:'limited'}};result.presentation=present(result);return result;}

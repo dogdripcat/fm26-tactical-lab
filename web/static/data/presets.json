@@ -1,0 +1,12 @@
+{
+  "phase": "IP",
+  "presets": {
+    "4-2-3-1": ["GK", "LB", "LCB", "RCB", "RB", "DML", "DMR", "AML", "AMC", "AMR", "ST"],
+    "4-3-3": ["GK", "LB", "LCB", "RCB", "RB", "DM", "MCL", "MCR", "AML", "AMR", "ST"],
+    "4-4-2": ["GK", "LB", "LCB", "RCB", "RB", "ML", "MCL", "MCR", "MR", "ST", "CF"],
+    "4-2-4": ["GK", "LB", "LCB", "RCB", "RB", "MCL", "MCR", "AML", "AMR", "ST", "CF"],
+    "3-4-2-1": ["GK", "LCB", "DC", "RCB", "wing_back_left", "wing_back_right", "MCL", "MCR", "AML", "AMC", "ST"],
+    "3-4-3": ["GK", "LCB", "DC", "RCB", "wing_back_left", "wing_back_right", "MCL", "MCR", "AML", "AMR", "ST"],
+    "3-5-2": ["GK", "LCB", "DC", "RCB", "wing_back_left", "wing_back_right", "MCL", "MC", "MCR", "ST", "CF"]
+  }
+}

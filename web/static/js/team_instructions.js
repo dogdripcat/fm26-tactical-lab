@@ -1,0 +1,2 @@
+export function groupedTeamInstructions(catalog){return {IP:(catalog.instructions||[]).filter(x=>x.phase==='IP'),OOP:(catalog.instructions||[]).filter(x=>x.phase==='OOP')};}
+export function inputStatus(tactic){return {status:'effect_not_modelled',ip:structuredClone(tactic.ip_team_instructions||{}),oop:structuredClone(tactic.oop_team_instructions||{}),limitation:'Team instruction tactical effects are not yet modelled.'};}

@@ -1,0 +1,16 @@
+import {normalizeConfiguredPosition} from './positional_relationships.js';
+export const POSITION_CONTEXTS={GK:[['Goalkeeper'],[]],LB:[['Full-Back'],[]],RB:[['Full-Back'],[]],wing_back_left:[['Wing-Back'],[]],wing_back_right:[['Wing-Back'],[]],LCB:[['D(C)'],[]],CB:[['D(C)'],[]],DC:[['D(C)'],[]],RCB:[['D(C)'],[]],DML:[['DM'],[]],DM:[['DM'],[]],DMR:[['DM'],[]],MCL:[['CM'],[]],MC:[['CM'],[]],MCR:[['CM'],[]],ML:[['Wide Midfield'],[]],MR:[['Wide Midfield'],[]],AML:[['Winger'],[]],AMC:[['AM'],[]],AMR:[['Winger'],[]],ST:[['FW'],[]],CF:[['FW'],[]]};
+export function centreBackLineCount(positions,registry){const index=new Map((registry.positions||[]).map(row=>[row.position_id,row]));return positions.filter(p=>index.get(normalizeConfiguredPosition(p,registry)||p)?.position_family==='centre_back').length;}
+export function resolveCatalog(catalog, behaviours){
+  return catalog.map(role=>{const ref=role.role_behaviour_ref;const entry=ref&&(behaviours||[]).find(x=>x.phase===ref.phase&&x.role===ref.role);const valid=(entry?.behaviour_verified?entry.behaviours:[]).filter(x=>['official','verified','user_ingame_verified'].includes(x.verification));
+    const evidence=[...(role.evidence||[]),...(entry?.evidence||[])].filter((x,i,a)=>a.findIndex(y=>y.evidence_id===x.evidence_id)===i);
+    return {...role,role_tags:valid.filter(x=>x.category==='role_classification'),described_behaviours:valid.filter(x=>x.category!=='role_classification'),player_instructions:entry?.player_instructions||[],evidence};
+  });
+}
+export function roleAvailability(role, cbCount){if(!(role.formation_constraints||[]).length)return {status:'no_verified_restriction',constraints:[]};if(cbCount==null)return {status:'unknown',constraints:role.formation_constraints};return {status:role.formation_constraints.every(x=>cbCount===x.value)?'active':'inactive',constraints:role.formation_constraints};}
+export function selectableRoles({catalog,behaviours,registry,phase='IP',position,centreBackLineCount:count}){
+  const resolved=resolveCatalog(catalog,behaviours), normalized=normalizeConfiguredPosition(position,registry)||position, [startingPositions,families]=POSITION_CONTEXTS[normalized]||[[],[]];
+  return resolved.filter(role=>role.phase===phase&&!((role.ambiguity||{}).status==='unresolved')&&(!position||(role.available_starting_positions||[]).some(x=>startingPositions.includes(x)))&&(!families.length||(role.role_families||[]).some(x=>families.includes(x)))&&roleAvailability(role,count).status!=='inactive').map(publicRole);
+}
+export function publicRole(role){const verified=role.display_abbr_verification==='user_ingame_verified'?role.display_abbr:null;return {role_internal_id:role.internal_id,phase:role.phase,role_name_ko:role.role_name_ko,role_families:role.role_families,available_starting_positions:role.available_starting_positions,abbreviation:{value:role.display_abbr,verification:role.display_abbr_verification},analysis_token:verified||role.internal_id,accepted_input_tokens:[verified||role.internal_id].filter(Boolean),ambiguity:role.ambiguity||{status:'none'}};}
+export function resolveRoleToken(token,phase,catalog,behaviours,aliases){const canonical=aliases[phase]?.[token]||token;const found=resolveCatalog(catalog,behaviours).filter(x=>x.phase===phase&&(x.display_abbr===canonical||x.internal_id===canonical));return found.length===1?found[0]:null;}

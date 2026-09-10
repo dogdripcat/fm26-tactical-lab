@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Explicit evidence-backed mappings from existing connectivity semantics to expected role space concepts. No role-name or configured-position inference.",
+  "primitives": {
+    "occupancy": ["wide", "between_defence_and_midfield"],
+    "reception_spaces": ["central", "between_lines"],
+    "movement_targets": ["halfspace", "attacking_midfield_zone", "in_behind", "box"],
+    "movement_directions": ["inside"],
+    "structural_effects": ["buildup_line_alignment", "support_central_passing_links", "open_space_for_fullback"],
+    "exclusions": ["byline_activity", "overlapping_attack"]
+  },
+  "mappings": [
+    {"mapping_id": "ERS_HOLD_WIDTH_WIDE", "semantic_id": "hold_width", "field": "occupancy", "concept_id": "wide"},
+    {"mapping_id": "ERS_USE_WIDE_FLANK_WIDE", "semantic_id": "use_wide_flank", "field": "occupancy", "concept_id": "wide"},
+    {"mapping_id": "ERS_OCCUPY_DEFENCE_MIDFIELD", "semantic_id": "occupy_between_defence_and_midfield", "field": "occupancy", "concept_id": "between_defence_and_midfield"},
+    {"mapping_id": "ERS_RECEIVE_CENTRALLY", "semantic_id": "receive_centrally", "field": "reception_spaces", "concept_id": "central"},
+    {"mapping_id": "ERS_RECEIVE_BETWEEN_LINES", "semantic_id": "receive_between_lines", "field": "reception_spaces", "concept_id": "between_lines"},
+    {"mapping_id": "ERS_MOVE_HALFSPACE", "semantic_id": "move_into_halfspace", "field": "movement_targets", "concept_id": "halfspace"},
+    {"mapping_id": "ERS_ATTACK_IN_BEHIND", "semantic_id": "attack_space_in_behind", "field": "movement_targets", "concept_id": "in_behind"},
+    {"mapping_id": "ERS_ENTER_BOX", "semantic_id": "enter_box_for_cross_finish", "field": "movement_targets", "concept_id": "box"},
+    {"mapping_id": "ERS_ADVANCE_AM", "semantic_id": "advance_to_attacking_midfield", "field": "movement_targets", "concept_id": "attacking_midfield_zone"},
+    {"mapping_id": "ERS_MOVE_INSIDE_DIRECTION", "semantic_id": "move_inside", "field": "movement_directions", "concept_id": "inside"},
+    {"mapping_id": "ERS_BUILDUP_LINE_ALIGNMENT", "semantic_id": "align_with_defenders_in_buildup", "field": "structural_effects", "concept_id": "buildup_line_alignment"},
+    {"mapping_id": "ERS_SUPPORT_CENTRAL_LINKS", "semantic_id": "support_central_passing_links", "field": "structural_effects", "concept_id": "support_central_passing_links"},
+    {"mapping_id": "ERS_OPEN_SPACE_FOR_FULLBACK", "semantic_id": "open_space_for_fullback", "field": "structural_effects", "concept_id": "open_space_for_fullback"},
+    {"mapping_id": "ERS_AVOID_BYLINE", "semantic_id": "avoid_byline", "field": "exclusions", "concept_id": "byline_activity"},
+    {"mapping_id": "ERS_NO_OVERLAPPING_ATTACK", "semantic_id": "no_overlapping_attack", "field": "exclusions", "concept_id": "overlapping_attack"}
+  ]
+}
