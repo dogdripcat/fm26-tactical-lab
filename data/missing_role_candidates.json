@@ -1,0 +1,58 @@
+{
+  "registry_type": "missing_role_candidates",
+  "purpose": "Research and identity-verification queue only. These entries are not role_catalog identities and never feed the production selector.",
+  "candidates": [
+    {
+      "candidate_name": "Target Forward",
+      "source_name": "Target Forward guide",
+      "phase_if_known": "IP",
+      "starting_position_if_known": null,
+      "source_kind": "official_staging",
+      "source_url_or_evidence_id": "https://www.footballmanager.com/the-dugout/hitting-target-target-forward-fm26",
+      "identity_status": "requires_identity_verification",
+      "korean_name_status": "unverified",
+      "abbreviation_status": "unverified",
+      "reason_not_imported": "Official English role name is staged, but Korean in-game name, verified configured starting position, and display abbreviation are not recorded.",
+      "required_verification": ["Korean in-game display name", "configured starting position", "phase confirmation from game UI", "display abbreviation if shown"]
+    },
+    {
+      "candidate_name": "Tracking Centre Forward",
+      "source_name": "Dominate with Dual Strikers in FM26",
+      "phase_if_known": "OOP",
+      "starting_position_if_known": null,
+      "source_kind": "official_staging",
+      "source_url_or_evidence_id": "https://www.footballmanager.com/the-dugout/dominate-dual-strikers-fm26",
+      "identity_status": "requires_identity_verification",
+      "korean_name_status": "unverified",
+      "abbreviation_status": "unverified",
+      "reason_not_imported": "It cannot be equated with any current OOP Centre Forward identity because no exact Korean UI identity or configured starting position is recorded.",
+      "required_verification": ["Korean in-game display name", "configured starting position", "exact OOP role identity", "display abbreviation if shown"]
+    },
+    {
+      "candidate_name": "Poacher",
+      "source_name": "Repair Phase 2 supplied striker research list",
+      "phase_if_known": null,
+      "starting_position_if_known": null,
+      "source_kind": "user_provided_research_list",
+      "source_url_or_evidence_id": null,
+      "identity_status": "requires_identity_verification",
+      "korean_name_status": "unverified",
+      "abbreviation_status": "unverified",
+      "reason_not_imported": "The current project source set has no role-specific evidence record for this name; no Korean translation or role mapping is inferred.",
+      "required_verification": ["FM26 role existence source", "Korean in-game display name", "phase", "configured starting position", "display abbreviation if shown"]
+    },
+    {
+      "candidate_name": "Wide Outlet Winger",
+      "source_name": "FM26 Wide Forward guide",
+      "phase_if_known": "OOP",
+      "starting_position_if_known": null,
+      "source_kind": "official_staging",
+      "source_url_or_evidence_id": "https://www.footballmanager.com/the-dugout/mastering-wide-forward-fm26",
+      "identity_status": "requires_identity_verification",
+      "korean_name_status": "unverified",
+      "abbreviation_status": "unverified",
+      "reason_not_imported": "No exact Korean in-game identity match exists in the OOP Winger catalogue.",
+      "required_verification": ["Korean in-game display name", "configured starting position", "exact OOP role identity", "display abbreviation if shown"]
+    }
+  ]
+}

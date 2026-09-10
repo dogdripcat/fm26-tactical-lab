@@ -75,11 +75,17 @@ class WebApplication:
                 return _json_response(200, {"status": "ok"})
             if path == "/api/presets":
                 return _json_response(200, api.formation_presets_payload())
+            if path == "/api/pitch-layout":
+                return _json_response(200, api.pitch_layout_payload_for_presets())
             if path == "/api/roles":
                 count = query.get("centre_back_line_count", [None])[0]
                 return _json_response(200, api.roles_payload(query.get("phase", [None])[0], query.get("position", [None])[0], int(count) if count else None))
             if path == "/api/sample":
                 return _json_response(200, api.sample_tactic())
+            if path == "/api/team-instructions":
+                return _json_response(200, api.team_instructions_payload(query.get("phase", [None])[0]))
+            if path == "/api/sample-team-instructions":
+                return _json_response(200, api.sample_team_instructions_payload())
             return _error(404, "not_found", "API endpoint was not found.")
         if method == "POST" and path in ("/api/analyze", "/api/evidence-sufficiency"):
             payload = _read_json(body)

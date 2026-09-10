@@ -1,0 +1,32 @@
+{
+  "ip_team_instructions": {
+    "passing_directness": "passing_directness_standard",
+    "tempo": "tempo_high",
+    "time_wasting": "time_wasting_less_often",
+    "attacking_transition": "attacking_transition_continuous",
+    "attacking_width": "attacking_width_standard",
+    "creativity": "creativity_balanced",
+    "build_up_tactic": "build_up_tactic_break_press",
+    "goal_kick": "goal_kick_short",
+    "goalkeeper_distribution": "goalkeeper_distribution_centre_back",
+    "attacking_involvement": "attacking_involvement_balanced",
+    "dribbling": "dribbling_balanced",
+    "progression": "progression_balanced",
+    "passing_style": "passing_style_balanced",
+    "patience": "patience_standard",
+    "long_shots": "long_shots_balanced",
+    "cross_style": "cross_style_low_crosses",
+    "goalkeeper_distribution_speed": "goalkeeper_distribution_speed_distribute_quickly"
+  },
+  "oop_team_instructions": {
+    "pressing_line": "pressing_line_mid_block",
+    "defensive_line": "defensive_line_standard",
+    "pressing_execution": "pressing_execution_more_often",
+    "defensive_transition": "defensive_transition_counter_press",
+    "tackling": "tackling_tackle_harder",
+    "cross_play": "cross_play_balanced",
+    "pressing_trap": "pressing_trap_balanced",
+    "goalkeeper_short_distribution": "goalkeeper_short_distribution_yes",
+    "defensive_line_action": "defensive_line_action_higher"
+  }
+}

@@ -54,6 +54,29 @@ def validate_configured_position_registry(registry: Dict[str, Any]) -> Dict[str,
             raise ValueError("Configured position vertical band/index mismatch")
         if item["phase_agnostic"] is not True:
             raise ValueError("Configured position registry entries must be phase agnostic")
+    canonical_ids = registry.get("canonical_position_ids", [])
+    if not isinstance(canonical_ids, list) or not canonical_ids or len(canonical_ids) != len(set(canonical_ids)):
+        raise ValueError("Configured position registry requires unique canonical_position_ids")
+    if not set(canonical_ids) <= seen:
+        raise ValueError("Canonical configured position ID is not registered")
+    aliases = registry.get("legacy_input_aliases", [])
+    if not isinstance(aliases, list):
+        raise ValueError("Configured position legacy_input_aliases must be an array")
+    alias_names = set()
+    for alias in aliases:
+        if not isinstance(alias, dict) or not {"raw_position", "canonical_position_id", "status", "basis"} <= alias.keys():
+            raise ValueError("Configured position alias is incomplete")
+        raw = alias["raw_position"]
+        if not isinstance(raw, str) or not raw or raw in alias_names:
+            raise ValueError("Configured position alias must be unique")
+        alias_names.add(raw)
+        if alias["status"] not in {"resolved", "unresolved"}:
+            raise ValueError("Configured position alias status is invalid")
+        target = alias["canonical_position_id"]
+        if alias["status"] == "resolved" and target not in canonical_ids:
+            raise ValueError("Resolved configured position alias has invalid canonical target")
+        if alias["status"] == "unresolved" and target is not None:
+            raise ValueError("Unresolved configured position alias cannot have a canonical target")
     return copy.deepcopy(registry)
 
 
@@ -62,13 +85,37 @@ def _position_index(registry: Dict[str, Any] | None = None) -> Dict[str, Dict[st
     return {item["position_id"]: item for item in data["positions"]}
 
 
+def normalize_configured_position(raw_position: str, registry: Dict[str, Any] | None = None) -> str | None:
+    """Resolve only an explicit legacy input alias; unresolved values fail closed."""
+    data = load_configured_position_registry() if registry is None else validate_configured_position_registry(registry)
+    if not isinstance(raw_position, str):
+        return None
+    canonical = set(data["canonical_position_ids"])
+    if raw_position in canonical:
+        return raw_position
+    alias = next((row for row in data["legacy_input_aliases"] if row["raw_position"] == raw_position), None)
+    if alias and alias["status"] == "resolved":
+        return alias["canonical_position_id"]
+    return None
+
+
+def configured_position_alias_status(raw_position: str, registry: Dict[str, Any] | None = None) -> str | None:
+    """Return explicit alias status, or None when the input is not an alias record."""
+    data = load_configured_position_registry() if registry is None else validate_configured_position_registry(registry)
+    if not isinstance(raw_position, str):
+        return None
+    alias = next((row for row in data["legacy_input_aliases"] if row["raw_position"] == raw_position), None)
+    return alias["status"] if alias else None
+
+
 def build_position_node(phase: str, configured_position: str, role_internal_id: str | None = None,
                         registry: Dict[str, Any] | None = None) -> Dict[str, Any]:
     """Return a position-only node; unknown positions deliberately carry no geometry."""
     if phase not in _PHASES:
         raise ValueError("phase must be IP or OOP")
-    position_id = configured_position.upper() if isinstance(configured_position, str) else str(configured_position)
-    definition = _position_index(registry).get(position_id)
+    raw_position = configured_position if isinstance(configured_position, str) else str(configured_position)
+    position_id = normalize_configured_position(raw_position, registry) or raw_position
+    definition = None if configured_position_alias_status(raw_position, registry) == "unresolved" else _position_index(registry).get(position_id)
     base = {
         "node_id": f"{phase}:{position_id}", "phase": phase,
         "configured_position": position_id, "role_internal_id": role_internal_id,

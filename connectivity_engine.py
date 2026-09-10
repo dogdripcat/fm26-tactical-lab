@@ -21,7 +21,11 @@ RECEIVER_CATEGORIES = frozenset(("ball_receiving", "link_play"))
 
 
 def _position_zone(position: str) -> str:
-    position = position.upper()
+    if not isinstance(position, str):
+        return "unknown"
+    if positional_relationships.configured_position_alias_status(position) == "unresolved":
+        return "unknown"
+    position = positional_relationships.normalize_configured_position(position) or position
     if position in {"GK", "LCB", "CB", "RCB", "DC", "D(C)"}:
         return "defence"
     if position in {"DML", "DM", "DMR", "MCL", "MC", "MCR", "CM"}:
@@ -30,7 +34,7 @@ def _position_zone(position: str) -> str:
         return "attacking_midfield"
     if position in {"ST", "CF"}:
         return "forward"
-    if position in {"LB", "RB", "DL", "DR", "AML", "AMR", "ML", "MR", "WL", "WR"}:
+    if position in {"LB", "RB", "DL", "DR", "AML", "AMR", "ML", "MR", "WL", "WR", "wing_back_left", "wing_back_right"}:
         return "wide"
     return "unknown"
 
@@ -110,11 +114,12 @@ def _build_ip_nodes(tactic: Dict[str, Any], by_abbr: Dict[Tuple[str, str], List[
         return []
     nodes = []
     for position, raw_role in roles.items():
+        normalized_position = positional_relationships.normalize_configured_position(position) or position
         canonical = aliases.get(("IP", raw_role), raw_role) if isinstance(raw_role, str) else raw_role
         candidates = by_abbr.get(("IP", canonical), []) if isinstance(canonical, str) else []
         if len(candidates) != 1:
             node = {
-                "node_id": f"IP:{position}", "phase": "IP", "configured_position": position,
+                "node_id": f"IP:{normalized_position}", "phase": "IP", "configured_position": normalized_position,
                 "role_internal_id": None,
                 "resolved_role": {"status": "unresolved", "raw_value": raw_role},
                 "evidence_ids": [],
@@ -123,7 +128,7 @@ def _build_ip_nodes(tactic: Dict[str, Any], by_abbr: Dict[Tuple[str, str], List[
             continue
         role = candidates[0]
         node = {
-            "node_id": f"IP:{position}", "phase": "IP", "configured_position": position,
+            "node_id": f"IP:{normalized_position}", "phase": "IP", "configured_position": normalized_position,
             "role_internal_id": role["internal_id"],
             "resolved_role": {
                 "status": "resolved", "role_name_ko": role["role_name_ko"],

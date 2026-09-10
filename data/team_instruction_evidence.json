@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "evidence": [
+    {"evidence_id":"USER_FM26_IP_TEAM_INSTRUCTIONS_001","source_kind":"user_ingame","source_type":"user_ingame_capture","phase":"IP","category_internal_id":null,"observed_value":null,"verification":"user_ingame_verified","notes":"18 IP category identities and the registered current values were read from the user-provided FM26 UI. The set_piece_inducement value was truncated."},
+    {"evidence_id":"USER_FM26_OOP_TEAM_INSTRUCTIONS_001","source_kind":"user_ingame","source_type":"user_ingame_capture","phase":"OOP","category_internal_id":null,"observed_value":null,"verification":"user_ingame_verified","notes":"9 OOP category identities and the registered current values were read from the user-provided FM26 UI."}
+  ]
+}

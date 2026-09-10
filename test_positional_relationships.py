@@ -32,11 +32,12 @@ class ConfiguredPositionRegistryTests(unittest.TestCase):
 
     def test_vertical_indexes_are_deterministic(self):
         self.assertEqual([(row["name"], row["index"]) for row in self.registry["vertical_bands"]], [
-            ("goalkeeper", 0), ("defensive_line", 1), ("defensive_midfield", 2),
-            ("midfield", 3), ("attacking_midfield", 4), ("forward", 5),
+            ("goalkeeper", 0), ("defensive_line", 1), ("wing_back_line", 2),
+            ("defensive_midfield", 3), ("midfield", 4), ("attacking_midfield", 5),
+            ("forward", 6),
         ])
-        self.assertEqual(node("DML")["vertical_index"], 2)
-        self.assertEqual(node("AMC")["vertical_index"], 4)
+        self.assertEqual(node("DML")["vertical_index"], 3)
+        self.assertEqual(node("AMC")["vertical_index"], 5)
 
     def test_lateral_slot_validation(self):
         broken = copy.deepcopy(self.registry)
@@ -84,9 +85,35 @@ class ConfiguredPositionRegistryTests(unittest.TestCase):
         self.assertIn("forward_diagonal", relations("DML", "AMC")["relations"])
         self.assertIn("backward_diagonal", relations("AMC", "DML")["relations"])
 
-    def test_unknown_lateral_does_not_create_lateral_or_diagonal_relations(self):
+    def test_unresolved_legacy_alias_fails_closed(self):
         output = relations("CB", "DMR")["relations"]
-        self.assertEqual(output, ["one_band_forward"])
+        self.assertEqual(output, [])
+
+    def test_dedicated_wing_backs_have_separate_geometry(self):
+        left = node("wing_back_left")
+        right = node("wing_back_right")
+        self.assertEqual("wing_back", left["position_family"])
+        self.assertEqual("wing_back_line", left["vertical_band"])
+        self.assertEqual("left", left["lateral_slot"])
+        self.assertEqual("right", right["lateral_slot"])
+        self.assertNotEqual(left["position_family"], node("ML")["position_family"])
+        self.assertNotEqual(left["position_family"], node("LB")["position_family"])
+
+    def test_wing_back_relations_are_deterministic_not_connectivity_rules(self):
+        self.assertIn("one_band_forward", relations("LCB", "wing_back_left")["relations"])
+        self.assertIn("multiple_bands_forward", relations("wing_back_left", "MCL")["relations"])
+        self.assertIn("multiple_bands_forward", relations("wing_back_left", "AML")["relations"])
+        self.assertIn("adjacent_lateral_slot", relations("wing_back_left", "AMC")["relations"])
+        self.assertIn("one_band_forward", relations("RCB", "wing_back_right")["relations"])
+        self.assertIn("multiple_bands_forward", relations("wing_back_right", "MCR")["relations"])
+        self.assertIn("multiple_bands_forward", relations("wing_back_right", "AMR")["relations"])
+        self.assertIn("adjacent_lateral_slot", relations("wing_back_right", "AMC")["relations"])
+
+    def test_resolved_and_unknown_aliases_are_distinct(self):
+        self.assertEqual("LB", positions.normalize_configured_position("DL"))
+        self.assertEqual("DC", positions.normalize_configured_position("D(C)"))
+        self.assertIsNone(positions.normalize_configured_position("CB"))
+        self.assertIsNone(positions.normalize_configured_position("NOT_A_POSITION"))
 
     def test_expected_role_space_is_always_unknown_here(self):
         self.assertEqual(node("LB", role_internal_id="catalog:ip:wb:iwb")["expected_role_space"], {

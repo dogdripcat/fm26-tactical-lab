@@ -13,7 +13,7 @@ class WebApplicationTests(unittest.TestCase):
         self.assertEqual(200, health.status)
         self.assertEqual({"status": "ok"}, __import__("json").loads(health.body))
         self.assertEqual(200, index.status)
-        self.assertIn(b"FM26 Tactical Lab v0.2.1", index.body)
+        self.assertIn(b"v0.2.1", index.body)
         self.assertNotIn(b"__FM26_VERSION__", index.body)
 
     def test_static_allowlist_blocks_arbitrary_and_traversal_paths(self):
@@ -40,6 +40,20 @@ class WebApplicationTests(unittest.TestCase):
         with patch.dict(os.environ, {"PORT": "70000"}, clear=False):
             with self.assertRaises(ValueError):
                 WebSettings.from_environment()
+
+    def test_team_instruction_endpoints(self):
+        catalogue = __import__("json").loads(application.handle("GET", "/api/team-instructions?phase=IP").body)
+        self.assertEqual({"IP"}, set(catalogue))
+        self.assertEqual(18, len(catalogue["IP"]))
+        self.assertEqual(200, application.handle("GET", "/api/sample-team-instructions").status)
+
+    def test_workspace_is_pitch_and_instruction_focused(self):
+        index = application.handle("GET", "/").body.decode("utf-8")
+        self.assertNotIn("레스터 예시 불러오기", index)
+        self.assertNotIn("PLAYER / ROLE INSPECTOR", index)
+        self.assertIn("id=\"pitch\"", index)
+        self.assertIn("id=\"evaluation\"", index)
+        self.assertIn("팀 지침", index)
 
 
 if __name__ == "__main__":

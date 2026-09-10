@@ -194,8 +194,11 @@ def run(args,db_path,dictionary,aliases):
         from core.pipeline import analyze_tactic_data
         catalog = role_constraints.load_role_catalog()
         knowledge = role_behaviours.load_knowledge_base()
+        from core.team_instructions import validate_catalog
+        instruction_catalog = validate_catalog(json.loads((Path(__file__).resolve().parent / 'data' / 'team_instruction_catalog.json').read_text(encoding='utf-8-sig')))
         report=analyze_tactic_data(tactic,dictionary,aliases,catalog,knowledge,observations,
-                                   str(source)+(f'#tactic={args.tactic}' if not args.file else ''))
+                                   str(source)+(f'#tactic={args.tactic}' if not args.file else ''),
+                                   team_instruction_catalog=instruction_catalog)
         text=json.dumps(report,ensure_ascii=True,indent=2)
         if args.out:
             dest=Path(args.out).resolve()
