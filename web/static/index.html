@@ -1,2 +1,24 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FM26 Tactical Lab</title><link rel="stylesheet" href="./style.css"></head>
-<body><header class="app-header"><h1>FM26 Tactical Lab</h1><span>공 소유 시 역할·연결성 분석</span></header><main><section class="workspace"><div class="toolbar"><label>포메이션 <select id="formation"></select></label><button id="reset">초기화</button><button id="analyze" class="primary">분석</button><span id="analysis-state">분석 필요</span></div><div id="pitch" class="pitch" aria-label="공 소유 시 전술판" role="region"></div><div class="pitch-legend"><span class="connected">━ 연결 근거 확인</span><span class="weakly_connected">━ 일부 근거</span><span class="unknown">┄ 근거 부족</span><span class="structurally_unsupported">⚠ 구조적 비지원</span></div><pre id="error" hidden></pre></section><aside class="instructions"><h2>팀 지침</h2><p>확인된 입력값만 표시합니다. 전술 효과는 아직 분석하지 않습니다.</p><section><h3>공 소유 시 (18)</h3><div id="ip-team-instructions"></div></section><section><h3>공 미소유 시 (9)</h3><div id="oop-team-instructions"></div></section><div class="instruction-legend">● 입력값 확인됨<br>● 선택값 검증 필요<br>ⓘ OOP 구조·역할 편집은 제한적입니다.</div></aside></main><section id="evaluation" class="evaluation" hidden><h2>전술 평가</h2><p id="tactical-summary"></p><div class="evaluation-grid"><article><h3>공 연결성</h3><div id="connectivity-result"></div></article><article><h3>전진 경로</h3><div id="progression-result"></div></article><article><h3>파트너십</h3><p>파트너십 분석 — 근거 모델 준비 중</p></article><article><h3>공간 / 구조</h3><p>공간 / 구조 분석 — 현재 근거 부족</p></article></div><article><h3>개선 포인트</h3><ul id="suggestions"></ul></article><details><summary>근거 및 한계</summary><div id="evidence-result"></div></details></section><footer>전술 입력과 분석은 브라우저에서 로컬로 처리됩니다. 근거 부족은 부정적 평가가 아닙니다. FM26 역할·팀 지침 효과는 검증된 근거 범위에서만 분석합니다. <span>v0.2.1</span></footer><script type="module" src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FM26 Tactical Lab</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header class="app-header"><h1>FM26 Tactical Lab</h1><span>공 소유 시 역할·구조적 연결성 분석</span></header>
+<main>
+  <section class="workspace">
+    <div class="toolbar"><label>포메이션 <select id="formation"></select></label><button id="reset">초기화</button><button id="analyze" class="primary">분석</button><span id="analysis-state">분석 필요</span></div>
+    <div id="pitch" class="pitch" aria-label="공 소유 시 전술판" role="region"></div>
+    <div class="connection-controls" role="group" aria-label="연결 표시"><button id="show-primary" class="active">주요 연결</button><button id="show-all">전체 연결</button></div>
+    <div class="pitch-legend" aria-label="구조적 연결 범례"><span class="primary-link">━ 주요 진행 경로</span><span class="secondary-link">━ 보조 연결</span><span class="reinforced">━ 역할 근거가 있는 연결</span></div>
+    <pre id="error" hidden></pre>
+  </section>
+  <aside class="instructions">
+    <h2>팀 지침</h2><p>확인된 입력값만 표시합니다. 전술 효과는 아직 분석하지 않습니다.</p>
+    <div class="instruction-tabs" role="tablist" aria-label="팀 지침 국면"><button id="instruction-tab-IP" role="tab" aria-selected="true">공 소유 시 <small>(18)</small></button><button id="instruction-tab-OOP" role="tab" aria-selected="false">미소유 시 <small>(9)</small></button></div>
+    <section id="instruction-panel-IP" role="tabpanel" aria-labelledby="instruction-tab-IP"><div id="ip-team-instructions"></div></section>
+    <section id="instruction-panel-OOP" role="tabpanel" aria-labelledby="instruction-tab-OOP" hidden><div id="oop-team-instructions"></div></section>
+    <div class="instruction-legend">● 입력값 확인됨<br>● 선택값 검증 필요<br>ⓘ OOP 구조·역할 편집은 제한적입니다.</div>
+  </aside>
+</main>
+<section id="evaluation" class="evaluation" hidden><h2>공 연결성 분석</h2><p id="tactical-summary"></p><div class="evaluation-grid"><article><h3>공 연결성</h3><div id="connectivity-result"></div></article><article><h3>전진 경로</h3><div id="progression-result"></div></article></div><section class="region-cards" id="region-result" aria-label="좌 중앙 우 연결"></section><div class="evaluation-grid"><article><h3>연결 의존도</h3><div id="dependency-result"></div></article><article><h3>지원과 순환</h3><div id="support-result"></div></article></div><article class="conditional-analysis"><h3>구조적 연결 제한</h3><div id="dead-end-result"></div></article><details><summary>역할에 따른 보정</summary><ul id="role-adjustments"></ul></details><details><summary>근거 및 한계</summary><div id="evidence-result"></div></details></section>
+<footer>전술 입력과 분석은 브라우저에서 로컬로 처리됩니다. 구조적 연결 경로는 실제 경기 패스 성공을 뜻하지 않습니다. FM26 역할·팀 지침 효과는 검증된 근거 범위에서만 분석합니다. <span>v0.2.1</span></footer><script type="module" src="./app.js"></script>
+</body></html>
