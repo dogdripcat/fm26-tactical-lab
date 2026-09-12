@@ -105,8 +105,18 @@ class WebApiTests(unittest.TestCase):
         tactic.update(api.sample_team_instructions_payload())
         result = api.analyze_payload(tactic)
         self.assertIn("connectivity", result)
-        self.assertEqual("limited", result["tactic_input"]["out_of_possession"]["editing_status"])
+        self.assertEqual("configured_not_evaluated", result["tactic_input"]["out_of_possession"]["editing_status"])
         self.assertEqual(tactic["ip_team_instructions"], result["tactic_input"]["in_possession"]["team_instructions"])
+
+    def test_oop_catalogue_is_phase_filtered_and_keeps_three_back_constraints(self):
+        winger = api.roles_payload("OOP", "AML")
+        self.assertEqual(4, len(winger["roles"]))
+        self.assertTrue(all(row["phase"] == "OOP" for row in winger["roles"]))
+        self.assertNotIn("catalog:ip:winger:if", {row["role_internal_id"] for row in winger["roles"]})
+        two = {row["role_internal_id"] for row in api.roles_payload("OOP", "LCB", 2)["roles"]}
+        three = {row["role_internal_id"] for row in api.roles_payload("OOP", "LCB", 3)["roles"]}
+        self.assertNotIn("catalog:oop:centre-back:wide-centre-back", two)
+        self.assertIn("catalog:oop:centre-back:wide-centre-back", three)
 
     def test_pitch_layout_is_display_only_and_covers_every_preset(self):
         payload = api.pitch_layout_payload_for_presets()

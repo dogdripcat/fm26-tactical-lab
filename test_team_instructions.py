@@ -61,6 +61,23 @@ class TeamInstructionCatalogueTests(unittest.TestCase):
         self.assertIn("tactic.oop_team_instructions=old.oop_team_instructions||{}", script)
         self.assertIn("function inputValidation", script)
 
+    def test_desktop_input_workspace_keeps_phase_catalogues_compact_and_separate(self):
+        script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        stylesheet = (api.ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")
+        self.assertIn("groups[phase].forEach(category", script)
+        self.assertIn(".app-layout>.instructions{grid-column:2;grid-row:1", stylesheet)
+        self.assertIn("#ip-team-instructions,#oop-team-instructions{display:grid;grid-template-columns:repeat(2", stylesheet)
+        self.assertIn("#instruction-panel-${value}`).hidden=value!==phase", script)
+
+    def test_role_phase_control_is_separate_from_team_instruction_phase_control(self):
+        html = (api.ROOT / "web" / "static" / "index.html").read_text(encoding="utf-8")
+        script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        self.assertIn('id="role-phase-tab-IP"', html)
+        self.assertIn('id="role-phase-tab-OOP"', html)
+        self.assertIn("function setRolePhase(phase)", script)
+        self.assertIn("activeRolePhase='IP'", script)
+        self.assertIn("roles(p,phase)", script)
+
 
 if __name__ == "__main__":
     unittest.main()

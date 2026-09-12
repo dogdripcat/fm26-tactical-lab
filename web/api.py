@@ -185,7 +185,8 @@ def analyze_payload(tactic: Any) -> Dict[str, Any]:
             "positions": list((tactic.get("oop_roles") or {}).keys()),
             "roles": copy.deepcopy(tactic.get("oop_roles") or {}),
             "team_instructions": copy.deepcopy(tactic.get("oop_team_instructions") or {}),
-            "editing_status": "limited",
+            "editing_status": "configured_not_evaluated",
+            "limitation": "OOP roles are retained as tactic input and are not consumed by the current evaluators.",
         },
     }
     report["presentation"] = present_analysis(report)
