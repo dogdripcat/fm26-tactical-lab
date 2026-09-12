@@ -21,6 +21,11 @@ class WebApplicationTests(unittest.TestCase):
         self.assertEqual(404, application.handle("GET", "/role_catalog.json").status)
         self.assertEqual(405, application.handle("POST", "/app.js", b"{}").status)
 
+    def test_static_analysis_modules_are_served_for_browser_runtime(self):
+        self.assertEqual(200, application.handle("GET", "/js/data_loader.js").status)
+        self.assertEqual(200, application.handle("GET", "/js/tactic_analysis.js").status)
+        self.assertEqual(200, application.handle("GET", "/data/role_catalog.json").status)
+
     def test_api_errors_are_consistent_and_do_not_expose_exceptions(self):
         for response in (
             application.handle("PUT", "/api/health"),

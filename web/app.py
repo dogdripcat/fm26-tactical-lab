@@ -17,7 +17,11 @@ from web.version import VERSION
 
 STATIC = Path(__file__).resolve().parent / "static"
 MAX_JSON_BODY_BYTES = 1_048_576
-STATIC_ASSETS = {"/": "index.html", "/index.html": "index.html", "/app.js": "app.js", "/style.css": "style.css"}
+STATIC_ASSETS = {
+    "/": "index.html",
+    **{f"/{path.relative_to(STATIC).as_posix()}": path.relative_to(STATIC).as_posix()
+       for path in STATIC.rglob("*") if path.is_file()},
+}
 
 
 @dataclass(frozen=True)
