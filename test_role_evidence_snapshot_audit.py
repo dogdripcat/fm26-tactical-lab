@@ -10,7 +10,7 @@ def test_abbreviation_audit_does_not_conflate_identity_ambiguity():
     audit = role_evidence_snapshot_audit.build_role_evidence_snapshot_audit(
         snapshot, role_constraints.load_role_catalog(), role_behaviours.load_knowledge_base())
     assert audit["consistent"] is True
-    assert audit["abbreviation_summary"] == {"verified": 15, "unverified": 54, "unresolved": 0}
+    assert audit["abbreviation_summary"] == {"verified": 22, "unverified": 54, "unresolved": 0}
     pw = next(row for row in audit["abbreviation_rows"] if row["role_internal_id"] == "catalog:ip:winger:pw-legacy-name")
     assert pw["role_identity_status"] == "unresolved"
     assert pw["abbreviation"]["verification"] == "user_ingame_verified"

@@ -158,3 +158,9 @@ class ConfiguredPositionRegistryTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_forward_lateral_slots_are_canonical_forward_lanes(self):
+        rows={row['position_id']:row for row in self.registry['positions']}
+        self.assertEqual(('forward','left'),(rows['forward_left']['position_family'],rows['forward_left']['lateral_slot']))
+        self.assertEqual(('forward','centre'),(rows['forward_centre']['position_family'],rows['forward_centre']['lateral_slot']))
+        self.assertEqual(('forward','right'),(rows['forward_right']['position_family'],rows['forward_right']['lateral_slot']))

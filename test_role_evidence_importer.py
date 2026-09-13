@@ -94,7 +94,7 @@ class RoleEvidenceImporterTests(unittest.TestCase):
             applied_catalog = role_constraints.load_role_catalog(catalog_path)
             applied_kb = role_behaviours.load_knowledge_base(behaviour_path)
             self.assertEqual(result["proposed_changes"]["coverage_after"]["partial"], 10)
-            self.assertEqual(len(applied_catalog), 69)
+            self.assertEqual(len(applied_catalog), 76)
             self.assertTrue(any(row["behaviour_id"] == "TEST_CB_REVIEWED_TEXT" for row in next(row for row in applied_kb if row["role"] == "CB")["behaviours"]))
 
     def test_official_package_stages_existing_semantic_provenance_without_new_semantic(self):

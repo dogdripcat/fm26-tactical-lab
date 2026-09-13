@@ -68,7 +68,7 @@ class ConnectivityEvaluationPresenterTests(unittest.TestCase):
         index=(ROOT/'web'/'static'/'index.html').read_text(encoding='utf-8')
         self.assertIn('presentConnectivityEvaluation(analysis.connectivity_evaluation,analysis.connectivity_v2)',app)
         self.assertIn('selectedRegionEdges()',app)
-        self.assertIn('show-primary',index); self.assertIn('show-all',index)
+        self.assertNotIn('show-primary',index); self.assertNotIn('show-all',index)
         self.assertIn('역할에 따른 보정',index); self.assertIn('근거 및 한계',index)
 
 if __name__=='__main__': unittest.main()

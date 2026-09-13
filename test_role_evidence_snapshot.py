@@ -16,12 +16,12 @@ class RoleEvidenceSnapshotTests(unittest.TestCase):
 
     def test_snapshot_preserves_catalog_counts_and_coverage(self):
         report = role_evidence_snapshot.build_role_evidence_snapshot(self.catalog, self.knowledge)
-        self.assertEqual(report["catalog_summary"], {"total": 69, "ip": 37, "oop": 32})
+        self.assertEqual(report["catalog_summary"], {"total": 76, "ip": 41, "oop": 35})
         self.assertEqual(len(report["summary"]["partial_roles"]), 10)
-        self.assertEqual(len(report["summary"]["identity_only_roles"]), 57)
+        self.assertEqual(len(report["summary"]["identity_only_roles"]), 64)
         self.assertEqual(len(report["summary"]["unresolved_roles"]), 2)
         self.assertEqual(len(report["summary"]["ers_supported_roles"]), 7)
-        self.assertEqual(len(report["summary"]["ers_unknown_roles"]), 62)
+        self.assertEqual(len(report["summary"]["ers_unknown_roles"]), 69)
 
     def test_snapshot_keeps_cfd_provenance_and_shared_am_identity(self):
         report = role_evidence_snapshot.build_role_evidence_snapshot(self.catalog, self.knowledge)
@@ -39,7 +39,7 @@ class RoleEvidenceSnapshotTests(unittest.TestCase):
             target = Path(temp) / "snapshot.json"
             role_evidence_snapshot.write_role_evidence_snapshot(target, self.catalog, self.knowledge)
             self.assertTrue(target.exists())
-            self.assertEqual(json.loads(target.read_text(encoding="utf-8"))["catalog_summary"]["total"], 69)
+            self.assertEqual(json.loads(target.read_text(encoding="utf-8"))["catalog_summary"]["total"], 76)
         after = [hashlib.sha256(path.read_bytes()).hexdigest() for path in (catalog_path, kb_path)]
         self.assertEqual(before, after)
 

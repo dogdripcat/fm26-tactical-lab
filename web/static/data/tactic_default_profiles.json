@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "tactical_lab_project_default_v1",
+  "provenance": "project_default",
+  "official_status": "not_official",
+  "purpose_ko": "새 포메이션을 바로 편집할 수 있게 하는 결정론적 시작 구성입니다. FM26의 공식 전술 기본값이나 역할 효과를 주장하지 않습니다.",
+  "role_defaults_by_family": {
+    "IP": {
+      "goalkeeper": "catalog:ip:goalkeeper:goalkeeper",
+      "centre_back": "catalog:ip:centre-back:cb",
+      "full_back": "catalog:ip:full-back:full-back",
+      "wing_back": "catalog:ip:wing-back:wb",
+      "defensive_midfield": "catalog:ip:dm:defensive-midfielder",
+      "midfield": "catalog:ip:cm:central-midfielder",
+      "wide_midfield": "catalog:ip:wide-midfield:wide-midfielder",
+      "attacking_midfield": "catalog:ip:am:am",
+      "forward": "catalog:ip:fw:cfd"
+    },
+    "OOP": {
+      "goalkeeper": "catalog:oop:goalkeeper:goalkeeper",
+      "centre_back": "catalog:oop:centre-back:centre-back",
+      "full_back": "catalog:oop:full-back:full-back",
+      "wing_back": "catalog:oop:wing-back:wing-back",
+      "defensive_midfield": "catalog:oop:dm:defensive-midfielder",
+      "midfield": "catalog:oop:cm:central-midfielder",
+      "wide_midfield": "catalog:oop:wide-midfield:wide-midfielder",
+      "attacking_midfield": "catalog:oop:am:attacking-midfielder"
+    }
+  },
+  "team_instruction_defaults": {
+    "IP": {
+      "passing_directness": "passing_directness_standard",
+      "tempo": "tempo_standard",
+      "attacking_width": "attacking_width_standard"
+    },
+    "OOP": {}
+  },
+  "limitations": [
+    "역할과 팀 지침의 전술 효과는 이 기본값으로부터 추론하지 않습니다.",
+    "확인된 중립 선택값이 없는 팀 지침은 미설정으로 둡니다.",
+    "각 기본 역할은 현재 위치에서 카탈로그로 선택 가능한지 확인한 뒤에만 적용됩니다.",
+    "공 미소유 시 최전방 역할은 현재 표시명 확인이 끝나지 않아 기본값을 넣지 않습니다."
+  ],
+  "role_defaults_by_position": {
+    "IP": {
+      "AML": "catalog:ip:winger:winger",
+      "AMR": "catalog:ip:winger:winger"
+    },
+    "OOP": {
+      "AML": "catalog:oop:winger:winger",
+      "AMR": "catalog:oop:winger:winger"
+    }
+  }
+}

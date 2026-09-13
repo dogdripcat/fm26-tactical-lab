@@ -1,7 +1,45 @@
 {
   "schema_version": "1.0",
   "evidence": [
-    {"evidence_id":"USER_FM26_IP_TEAM_INSTRUCTIONS_001","source_kind":"user_ingame","source_type":"user_ingame_capture","phase":"IP","category_internal_id":null,"observed_value":null,"verification":"user_ingame_verified","notes":"18 IP category identities and the registered current values were read from the user-provided FM26 UI. The set_piece_inducement value was truncated."},
-    {"evidence_id":"USER_FM26_OOP_TEAM_INSTRUCTIONS_001","source_kind":"user_ingame","source_type":"user_ingame_capture","phase":"OOP","category_internal_id":null,"observed_value":null,"verification":"user_ingame_verified","notes":"9 OOP category identities and the registered current values were read from the user-provided FM26 UI."}
+    {
+      "evidence_id": "USER_FM26_IP_TEAM_INSTRUCTIONS_001",
+      "source_kind": "user_ingame",
+      "source_type": "user_ingame_capture",
+      "phase": "IP",
+      "category_internal_id": null,
+      "observed_value": null,
+      "verification": "user_ingame_verified",
+      "notes": "18 IP category identities and the registered current values were read from the user-provided FM26 UI. The set_piece_inducement value was truncated."
+    },
+    {
+      "evidence_id": "USER_FM26_OOP_TEAM_INSTRUCTIONS_001",
+      "source_kind": "user_ingame",
+      "source_type": "user_ingame_capture",
+      "phase": "OOP",
+      "category_internal_id": null,
+      "observed_value": null,
+      "verification": "user_ingame_verified",
+      "notes": "9 OOP category identities and the registered current values were read from the user-provided FM26 UI."
+    },
+    {
+      "evidence_id": "USER_FM26_IP_TEAM_INSTRUCTIONS_002",
+      "source_kind": "user_ingame",
+      "source_type": "user_ingame_capture",
+      "phase": "IP",
+      "category_internal_id": "set_piece_inducement",
+      "observed_value": null,
+      "verification": "user_ingame_verified",
+      "notes": "The user confirmed the two visible set-piece choices: 세트피스를 노려라 and 인플레이 상황을 유지하라."
+    },
+    {
+      "evidence_id": "USER_FM26_TEAM_INSTRUCTION_OPTION_SETS_001",
+      "source_kind": "user_ingame",
+      "source_type": "user_ingame_capture",
+      "phase": null,
+      "category_internal_id": null,
+      "observed_value": null,
+      "verification": "user_ingame_verified",
+      "notes": "User-reconfirmed visible FM26 option sets: passing directness, tempo, attacking width, and pressing line. Input only; effects are not modelled."
+    }
   ]
 }

@@ -110,7 +110,7 @@ class ExpectedRoleSpaceTests(unittest.TestCase):
 
     def test_coverage_and_unmapped_semantics_are_calculated(self):
         coverage = ers.expected_role_space_coverage(self.catalog, self.kb)
-        self.assertEqual((coverage["roles_total"], coverage["supported"], coverage["unknown"]), (69, 7, 62))
+        self.assertEqual((coverage["roles_total"], coverage["supported"], coverage["unknown"]), (76, 7, 69))
         self.assertEqual(coverage["by_field"], {
             "occupancy": 3, "reception_spaces": 2, "movement_targets": 4, "movement_directions": 1,
             "structural_effects": 3, "exclusions": 2,

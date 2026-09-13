@@ -90,6 +90,9 @@ class WebApplication:
                 return _json_response(200, api.team_instructions_payload(query.get("phase", [None])[0]))
             if path == "/api/sample-team-instructions":
                 return _json_response(200, api.sample_team_instructions_payload())
+            if path == "/api/role-attribute-profiles":
+                return _json_response(200, api.role_attribute_profiles_payload(
+                    query.get("role_internal_id", [None])[0], query.get("phase", [None])[0]))
             return _error(404, "not_found", "API endpoint was not found.")
         if method == "POST" and path in ("/api/analyze", "/api/evidence-sufficiency"):
             payload = _read_json(body)
@@ -110,7 +113,8 @@ class WebApplication:
         content_type = mimetypes.guess_type(filename)[0] or "application/octet-stream"
         if content_type.startswith("text/") or filename.endswith(".js"):
             content_type += "; charset=utf-8"
-        return Response(200, content_type, b"" if head_only else content)
+        cache_headers = (("Cache-Control", "no-cache"),) if filename == "index.html" or filename.endswith(".js") else ()
+        return Response(200, content_type, b"" if head_only else content, cache_headers)
 
 
 application = WebApplication()

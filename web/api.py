@@ -10,6 +10,7 @@ from core.pipeline import analyze_tactic_data
 from fm26lab import ROLE_ALIASES, ROLE_DICTIONARY
 from current_tactic_evidence_sufficiency import build_current_tactic_evidence_sufficiency
 import role_behaviours
+import role_attribute_profiles
 import role_constraints
 import role_knowledge_coverage
 import positional_relationships
@@ -34,8 +35,21 @@ POSITION_CONTEXTS = {
     "MCL": (("CM",), ()), "MC": (("CM",), ()), "MCR": (("CM",), ()),
     "ML": (("Wide Midfield",), ()), "MR": (("Wide Midfield",), ()),
     "AML": (("Winger",), ()), "AMC": (("AM",), ()), "AMR": (("Winger",), ()),
-    "ST": (("FW",), ()), "CF": (("FW",), ()),
+    "attacking_midfield_left": (("AM",), ()), "attacking_midfield_centre": (("AM",), ()), "attacking_midfield_right": (("AM",), ()),
+    "ST": (("FW",), ()), "CF": (("FW",), ()), "forward_left": (("FW",), ()), "forward_centre": (("FW",), ()), "forward_right": (("FW",), ()),
 }
+
+# These canonical lateral slots retain their configured lane for analysis.
+# Only preset comparison treats a centre-lane variant as its legacy preset slot.
+PRESET_POSITION_EQUIVALENTS = {
+    "forward_centre": "ST",
+    "attacking_midfield_centre": "AMC",
+}
+
+
+def _preset_position(position: str) -> str:
+    return PRESET_POSITION_EQUIVALENTS.get(position, position)
+
 
 # Presets are configured-position arrays only. They carry no role selection or analysis rule.
 FORMATION_PRESETS = {
@@ -117,7 +131,7 @@ def _public_role(role: Dict[str, Any], centre_back_line_count: int | None, cover
     identity_status = "unresolved" if role.get("ambiguity", {}).get("status") == "unresolved" else "verified"
     return {
         "role_internal_id": role["internal_id"], "phase": role["phase"],
-        "role_name_ko": role["role_name_ko"], "role_families": copy.deepcopy(role["role_families"]),
+        "role_name_ko": role["role_name_ko"] or role["display_abbr"] or "표시명 확인 필요", "role_families": copy.deepcopy(role["role_families"]),
         "available_starting_positions": copy.deepcopy(role["available_starting_positions"]),
         "abbreviation": {"value": role["display_abbr"], "verification": role["display_abbr_verification"]},
         "analysis_token": analysis_token,
@@ -202,7 +216,7 @@ def validate_web_tactic_input(tactic: Dict[str, Any]) -> None:
         raise ValueError("ip_roles must be an object")
     formation = tactic.get("ip_formation")
     positions = FORMATION_PRESETS.get(formation, list(roles))
-    if formation in FORMATION_PRESETS and set(roles) != set(positions):
+    if formation in FORMATION_PRESETS and {_preset_position(position) for position in roles} != set(positions):
         raise ValueError("IP role positions must match the selected formation")
     count = centre_back_line_count(positions)
     for position, token in roles.items():
@@ -222,3 +236,16 @@ def evidence_sufficiency_payload(tactic: Any) -> Dict[str, Any]:
     return build_current_tactic_evidence_sufficiency(
         tactic, role_constraints.load_role_catalog(), role_behaviours.load_knowledge_base(), ROLE_ALIASES,
     )
+
+
+def role_attribute_profiles_payload(role_internal_id: str | None = None,
+                                    phase: str | None = None) -> Dict[str, Any]:
+    """Evidence-backed role profile data only; it contains neither player data nor a fit score."""
+    if phase is not None and phase not in ("IP", "OOP"):
+        raise ValueError("phase must be IP or OOP")
+    registry = role_attribute_profiles.load_role_attribute_profiles()
+    profiles = [profile for profile in registry["profiles"]
+                if (role_internal_id is None or profile["role_internal_id"] == role_internal_id)
+                and (phase is None or profile["phase"] == phase)]
+    return {"profiles": profiles, "player_data_available": False,
+            "limitation": "Profiles list verified role attribute names only; no player values, thresholds, or fit score are supplied."}

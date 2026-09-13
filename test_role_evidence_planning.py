@@ -65,10 +65,10 @@ class RoleEvidencePlanningTests(unittest.TestCase):
         self.assertTrue(self.role("catalog:ip:centre-back:cb")["shared_role_identity"])
 
     def test_oop_and_global_coverage_are_read_from_current_data(self):
-        self.assertEqual(self.plan["oop_gap"]["coverage"], {"identity_only": 32})
+        self.assertEqual(self.plan["oop_gap"]["coverage"], {"identity_only": 35})
         global_coverage = self.plan["global_coverage"]
-        self.assertEqual(global_coverage["roles_total"], 69)
-        self.assertEqual(global_coverage["behaviour_status_totals"], {"verified": 0, "partial": 10, "identity_only": 57, "unresolved": 2})
+        self.assertEqual(global_coverage["roles_total"], 76)
+        self.assertEqual(global_coverage["behaviour_status_totals"], {"verified": 0, "partial": 10, "identity_only": 64, "unresolved": 2})
         self.assertEqual(global_coverage["ers_coverage"]["supported"], 7)
 
     def test_planning_does_not_mutate_inputs_or_coverage(self):

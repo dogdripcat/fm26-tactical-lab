@@ -21,7 +21,7 @@ class RoleKnowledgeCoverageTests(unittest.TestCase):
         return next(row['status'] for row in self.report['roles'] if row['internal_id'] == internal_id)
 
     def test_current_coverage_distinguishes_partial_identity_and_ambiguity(self):
-        self.assertEqual((self.report['verified'], self.report['partial'], self.report['identity_only'], self.report['unresolved']), (0, 10, 57, 2))
+        self.assertEqual((self.report['verified'], self.report['partial'], self.report['identity_only'], self.report['unresolved']), (0, 10, 64, 2))
         self.assertEqual(self.status_for('catalog:ip:winger:if'), 'partial')
         self.assertEqual(self.status_for('catalog:ip:winger:inside-winger'), 'identity_only')
         self.assertEqual(self.status_for('catalog:ip:winger:playmaking-winger'), 'unresolved')

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "styles": [
+    {
+      "style_id": "possession",
+      "name_ko": "점유율 중시",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "gegenpress",
+      "name_ko": "게겐프레스",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "tiki_taka",
+      "name_ko": "티키타카",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "vertical_tiki_taka",
+      "name_ko": "전진 티키타카",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "wing_play",
+      "name_ko": "측면 플레이",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "route_one",
+      "name_ko": "길게 차기",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "fluid_counter_attack",
+      "name_ko": "유연한 역습",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "fast_counter_attack",
+      "name_ko": "빠른 역습",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "catenaccio",
+      "name_ko": "카테나치오",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    },
+    {
+      "style_id": "park_the_bus",
+      "name_ko": "버스 세우기",
+      "verification": "user_ingame_verified",
+      "evidence_ids": [
+        "USER_FM26_TACTICAL_STYLES_001"
+      ],
+      "team_instruction_preset": null,
+      "limitations": [
+        "Style identity is verified; no complete instruction preset mapping is stored, so applying it does not alter formation or instructions."
+      ]
+    }
+  ]
+}

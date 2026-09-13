@@ -48,7 +48,8 @@ class RoleCatalogueIntegrityTests(unittest.TestCase):
         channel_forward = roles["catalog:ip:fw:chf"]
         self.assertEqual("verified", channel_forward["role_identity_status"])
         self.assertEqual("identity_only", channel_forward["behaviour_coverage"])
-        self.assertEqual(2, len(roles))
+        self.assertEqual(6, len(roles))
+        self.assertEqual({"CFD", "CHF", "DLF", "F9", "P", "TF"}, {row["abbreviation"]["value"] for row in roles.values()})
 
     def test_selector_does_not_filter_by_semantic_or_ers_coverage(self):
         roles = {row["role_internal_id"] for row in api.roles_payload("IP", "DML")["roles"]}

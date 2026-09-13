@@ -13,8 +13,8 @@ class RoleCatalogExpansionTests(unittest.TestCase):
         )
 
     def test_user_confirmed_role_counts_are_registered_by_phase(self):
-        self.assertEqual(len(self.catalog), 69)
-        self.assertEqual(Counter(role["phase"] for role in self.catalog), {"IP": 37, "OOP": 32})
+        self.assertEqual(len(self.catalog), 76)
+        self.assertEqual(Counter(role["phase"] for role in self.catalog), {"IP": 41, "OOP": 35})
 
     def test_role_family_memberships_preserve_shared_starting_positions(self):
         counts = Counter(
@@ -26,7 +26,7 @@ class RoleCatalogExpansionTests(unittest.TestCase):
         self.assertEqual(counts[("IP", "CM")], 6)
         self.assertEqual(counts[("IP", "Full-Back")], 5)
         self.assertEqual(counts[("OOP", "Centre-Back")], 6)
-        self.assertEqual(counts[("OOP", "FW")], 0)
+        self.assertEqual(counts[("OOP", "FW")], 3)
 
     def test_existing_behaviour_references_are_kept_and_new_roles_remain_unknown(self):
         behaviours_by_role = {
@@ -40,7 +40,7 @@ class RoleCatalogExpansionTests(unittest.TestCase):
 
     def test_unverified_abbreviations_are_not_invented(self):
         statuses = Counter(role["display_abbr_verification"] for role in self.catalog)
-        self.assertEqual(statuses, {"user_ingame_verified": 15, "unverified": 54})
+        self.assertEqual(statuses, {"user_ingame_verified": 22, "unverified": 54})
         for role in self.catalog:
             if role["display_abbr_verification"] == "unverified":
                 self.assertIsNone(role["display_abbr"])

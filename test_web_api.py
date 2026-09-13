@@ -14,6 +14,17 @@ class WebApiTests(unittest.TestCase):
         self.assertTrue(all(row["phase"] == "IP" for row in payload["roles"]))
         self.assertTrue(all("FW" in row["available_starting_positions"] for row in payload["roles"]))
 
+    def test_lateral_am_slots_resolve_am_roles_and_preserve_the_configured_lane(self):
+        centre = {row["role_internal_id"] for row in api.roles_payload("IP", "AMC")["roles"]}
+        for position in ("attacking_midfield_left", "attacking_midfield_centre", "attacking_midfield_right"):
+            self.assertEqual(centre, {row["role_internal_id"] for row in api.roles_payload("IP", position)["roles"]})
+
+        tactic = api.sample_tactic()
+        tactic["ip_roles"]["attacking_midfield_left"] = tactic["ip_roles"].pop("AMC")
+        result = api.analyze_payload(tactic)
+        self.assertIn("attacking_midfield_left", result["tactic_input"]["in_possession"]["positions"])
+        self.assertNotIn("AMC", result["tactic_input"]["in_possession"]["positions"])
+
     def test_three_cb_constraint_uses_existing_availability(self):
         two = api.roles_payload("IP", "LCB", 2)
         three = api.roles_payload("IP", "LCB", 3)
@@ -122,6 +133,12 @@ class WebApiTests(unittest.TestCase):
         payload = api.pitch_layout_payload_for_presets()
         self.assertTrue(payload["display_only"])
         self.assertEqual(set(api.FORMATION_PRESETS), set(payload["coordinates"]))
+
+    def test_role_attribute_profile_endpoint_has_no_player_data_or_fit_score(self):
+        payload = api.role_attribute_profiles_payload("catalog:ip:fw:cfd", "IP")
+        self.assertEqual(1, len(payload["profiles"]))
+        self.assertFalse(payload["player_data_available"])
+        self.assertIn("no player values", payload["limitation"])
 
 
 if __name__ == "__main__": unittest.main()

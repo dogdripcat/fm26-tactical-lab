@@ -1557,5 +1557,244 @@
     "role_behaviour_ref": null,
     "evidence": [],
     "formation_constraints": []
+  },
+  {
+    "internal_id": "catalog:ip:fw:dlf",
+    "phase": "IP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": "딥라잉 포워드",
+    "role_name_en": null,
+    "display_abbr": "DLF",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": true,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "user_confirmed",
+    "display_label_provenance": "user_confirmed",
+    "source_note": "Direct user confirmation of FM26 Korean display label."
+  },
+  {
+    "internal_id": "catalog:ip:fw:f9",
+    "phase": "IP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": "폴스 나인",
+    "role_name_en": null,
+    "display_abbr": "F9",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": true,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "user_confirmed",
+    "display_label_provenance": "user_confirmed",
+    "source_note": "Direct user confirmation of FM26 Korean display label."
+  },
+  {
+    "internal_id": "catalog:ip:fw:p",
+    "phase": "IP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": "포처",
+    "role_name_en": null,
+    "display_abbr": "P",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": true,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "user_confirmed",
+    "display_label_provenance": "user_confirmed",
+    "source_note": "Direct user confirmation of FM26 Korean display label."
+  },
+  {
+    "internal_id": "catalog:ip:fw:tf",
+    "phase": "IP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": "타깃형 포워드",
+    "role_name_en": null,
+    "display_abbr": "TF",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": true,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "user_confirmed",
+    "display_label_provenance": "user_confirmed",
+    "source_note": "Direct user confirmation of FM26 Korean display label."
+  },
+  {
+    "internal_id": "catalog:oop:fw:cfd",
+    "phase": "OOP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": null,
+    "role_name_en": null,
+    "display_abbr": "CFD",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": false,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "display_label_unresolved"
+  },
+  {
+    "internal_id": "catalog:oop:fw:ocf",
+    "phase": "OOP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": null,
+    "role_name_en": null,
+    "display_abbr": "OCF",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": false,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "display_label_unresolved"
+  },
+  {
+    "internal_id": "catalog:oop:fw:tcf",
+    "phase": "OOP",
+    "role_families": [
+      "FW"
+    ],
+    "available_starting_positions": [
+      "FW"
+    ],
+    "available_starting_positions_verification": "user_ingame_verified",
+    "role_name_ko": null,
+    "role_name_en": null,
+    "display_abbr": "TCF",
+    "display_abbr_verification": "user_ingame_verified",
+    "name_verified": false,
+    "role_behaviour_ref": null,
+    "evidence": [
+      {
+        "evidence_id": "USER_FM26_FW_ROLE_IDENTITIES_001",
+        "source_type": "user_ingame_capture",
+        "title": "사용자 제공 FM26 FW 역할 identity 목록",
+        "source": "conversation:user-provided-FM26-FW-role-identities",
+        "accessed": "2026-09-12",
+        "notes": "역할 identity와 표시 약어만 확인됨. 한국어 표시명과 행동은 미확정."
+      }
+    ],
+    "formation_constraints": [],
+    "ambiguity": {
+      "status": "none",
+      "note": "Korean in-game label unresolved; no behaviour is inferred."
+    },
+    "display_label_status": "display_label_unresolved"
   }
 ]

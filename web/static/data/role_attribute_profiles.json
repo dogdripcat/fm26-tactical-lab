@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "profile_id": "role-attribute:catalog:ip:fw:cfd",
+      "role_internal_id": "catalog:ip:fw:cfd",
+      "phase": "IP",
+      "position_family": "FW",
+      "role_name_ko": "센터 포워드",
+      "key_attributes": [
+        {"attribute_id": "finishing", "name_ko": "골 결정력", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "heading", "name_ko": "헤더", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "off_the_ball", "name_ko": "오프 더 볼", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "first_touch", "name_ko": "퍼스트 터치", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "flair", "name_ko": "개인기", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "acceleration", "name_ko": "가속도", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "strength", "name_ko": "몸싸움", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"},
+        {"attribute_id": "composure", "name_ko": "침착성", "evidence_ids": ["USER_FM26_IP_CFD_KEY_ATTRIBUTES_001"], "verification": "user_ingame_verified"}
+      ],
+      "unresolved_attributes": [],
+      "evidence": [
+        {
+          "evidence_id": "USER_FM26_IP_CFD_KEY_ATTRIBUTES_001",
+          "source_kind": "user_ingame",
+          "verification": "user_ingame_verified",
+          "title": "사용자 제공 FM26 IP 센터 포워드 주요 능력치",
+          "source": "conversation:user-provided-FM26-IP-CFD-key-attributes",
+          "notes": "인게임 역할 화면의 주요 능력치 명칭만 전사했다. 화면의 선택 선수 수치는 역할 요구치나 기준값으로 저장하지 않는다."
+        }
+      ]
+    }
+  ]
+}

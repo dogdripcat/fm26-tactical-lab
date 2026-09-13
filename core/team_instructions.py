@@ -17,19 +17,29 @@ def validate_catalog(catalog: Dict[str, Any]) -> Dict[str, Any]:
         raise ValueError("Team instruction catalogue must contain instructions")
     seen_categories, seen_values = set(), set()
     for item in catalog["instructions"]:
-        required = ("internal_id", "phase", "display_name_ko", "identity_verification",
-                    "selectable_values", "analysis_status", "evidence_ids", "limitations")
+        required = ("id", "internal_id", "phase", "display_name_ko", "identity_verification",
+                    "selectable_values", "analysis_status", "effect_model_status", "evidence_ids",
+                    "provenance", "completion_status", "default_option", "unconfigured_option", "limitations")
         if not isinstance(item, dict) or any(key not in item for key in required):
             raise ValueError("Invalid team instruction category")
-        if item["phase"] not in ("IP", "OOP") or item["internal_id"] in seen_categories:
+        if (item["phase"] not in ("IP", "OOP") or item["internal_id"] in seen_categories
+                or item["id"] != item["internal_id"] or item["completion_status"] not in ("complete", "partial", "unresolved")):
             raise ValueError("Duplicate or invalid team instruction category")
         seen_categories.add(item["internal_id"])
-        if item["analysis_status"] != EFFECT_NOT_MODELLED:
+        if item["analysis_status"] != EFFECT_NOT_MODELLED or item["effect_model_status"] != EFFECT_NOT_MODELLED:
             raise ValueError("Team instruction effects must not be modelled")
+        if (not isinstance(item["unconfigured_option"], dict)
+                or item["unconfigured_option"].get("id") is not None
+                or item["unconfigured_option"].get("display_label_ko") != "미설정"):
+            raise ValueError("Invalid unconfigured team instruction option")
+        if item["default_option"] is not None and not isinstance(item["default_option"], str):
+            raise ValueError("Invalid team instruction default option")
         for value in item["selectable_values"]:
-            if not isinstance(value, dict) or {"internal_id", "display_name_ko", "verification", "evidence_ids", "analysis_status"} - set(value):
+            if not isinstance(value, dict) or {"id", "internal_id", "display_label_ko", "display_name_ko", "verification", "provenance", "source_reference", "evidence_ids", "analysis_status"} - set(value):
                 raise ValueError("Invalid team instruction value")
-            if value["internal_id"] in seen_values or value["analysis_status"] != EFFECT_NOT_MODELLED:
+            if (value["internal_id"] in seen_values or value["analysis_status"] != EFFECT_NOT_MODELLED
+                    or value["id"] != value["internal_id"] or value["display_label_ko"] != value["display_name_ko"]
+                    or value["display_label_ko"] == "미설정"):
                 raise ValueError("Duplicate value or modelled team instruction effect")
             seen_values.add(value["internal_id"])
     return copy.deepcopy(catalog)

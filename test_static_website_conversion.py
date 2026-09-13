@@ -48,7 +48,7 @@ class StaticWebsiteConversionTests(unittest.TestCase):
 
     def test_required_static_catalogues_and_seven_presets_exist(self):
         static_data = ROOT / "web" / "static" / "data"
-        for filename in ("role_catalog.json", "role_behaviours.json", "configured_position_registry.json", "team_instruction_catalog.json", "team_instruction_evidence.json", "connectivity_semantic_vocabulary.json", "expected_role_space_ontology.json"):
+        for filename in ("role_catalog.json", "role_behaviours.json", "role_attribute_profiles.json", "configured_position_registry.json", "team_instruction_catalog.json", "team_instruction_evidence.json", "tactic_default_profiles.json", "connectivity_semantic_vocabulary.json", "expected_role_space_ontology.json"):
             self.assertTrue((static_data / filename).is_file(), filename)
         self.assertEqual(len(json.loads((static_data / "presets.json").read_text(encoding="utf-8"))["presets"]), 7)
 
