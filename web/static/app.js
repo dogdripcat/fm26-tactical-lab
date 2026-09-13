@@ -1,11 +1,11 @@
 import {loadStaticData} from './js/data_loader.js';
-import {selectableRoles,centreBackLineCount} from './js/role_resolution.js?v=matchup-ux-1';
-import {getConfiguredPositionDisplayLabel,normalizeConfiguredPositionForPreset} from './js/configured_position_display.js?v=matchup-ux-1';
+import {selectableRoles,centreBackLineCount} from './js/role_resolution.js?v=visual-density-v1';
+import {getConfiguredPositionDisplayLabel,normalizeConfiguredPositionForPreset} from './js/configured_position_display.js?v=visual-density-v1';
 import {analyzeTactic} from './js/tactic_analysis.js';
 import {presentConnectivityEvaluation} from './js/connectivity_evaluation_presenter.js';
 import {presentProgressionEvaluation} from './js/progression_evaluation_presenter.js';
 import {presentSupportEvaluation} from './js/support_evaluation_presenter.js';
-import {presentAnalysisResults} from './js/analysis_results_presenter.js?v=matchup-ux-1';
+import {presentAnalysisResults} from './js/analysis_results_presenter.js?v=visual-density-v1';
 import {OPPONENT_SHAPES,buildMatchupObservations,zoneStyle} from './js/matchup_overlay.js';
 import {classifyConnectivityLinks} from './js/connectivity_display_classifier.js';
 
