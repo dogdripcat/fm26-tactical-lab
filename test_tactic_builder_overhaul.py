@@ -77,8 +77,8 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn('id="analyze" class="primary">전술 분석', self.html)
         self.assertIn('id="pitch-legend"', self.html)
         self.assertIn("$('#pitch-legend').hidden=!analysis||activeRolePhase!=='IP'", self.app)
-        self.assertIn('현재 미설정: ${missing.length}명', self.app)
-        self.assertIn('validationAttempted&&missing', self.app)
+        self.assertIn('overviewPresentation(missing)', self.app)
+        self.assertIn("incomplete.hidden=!missing.length", self.app)
 
     def test_interaction_layers_are_explicitly_click_through(self):
         stylesheet = (ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")

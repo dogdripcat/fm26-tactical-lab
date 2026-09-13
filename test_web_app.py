@@ -61,9 +61,9 @@ class WebApplicationTests(unittest.TestCase):
         self.assertIn("팀 지침", index)
     def test_browser_shell_disables_stale_html_and_module_cache(self):
         index = application.handle("GET", "/")
-        script = application.handle("GET", "/app.js?v=team-instruction-recovery-1")
+        script = application.handle("GET", "/app.js?v=matchup-ux-1")
         self.assertIn(("Cache-Control", "no-cache"), index.headers)
         self.assertIn(("Cache-Control", "no-cache"), script.headers)
-        self.assertIn(b"app.js?v=team-instruction-recovery-1", index.body)
+        self.assertIn(b"app.js?v=matchup-ux-1", index.body)
 if __name__ == "__main__":
     unittest.main()

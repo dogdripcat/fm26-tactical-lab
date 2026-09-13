@@ -35,10 +35,11 @@ class MatchupOverlayTests(unittest.TestCase):
         source = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         html = (ROOT / "web" / "static" / "index.html").read_text(encoding="utf-8")
         self.assertIn("renderMatchupOverlay", source)
-        self.assertIn("showMatchupZoneDetail", source)
-        self.assertIn("details.id='matchup-zone-detail'", source)
+        self.assertIn("focusMatchup", source)
+        self.assertIn("details.id='matchup-details'", source)
+        self.assertIn("detail.open=true", source)
         self.assertLess(html.index("</main>"), html.index('id="opponent-mode"'))
-        self.assertIn("경기 데이터 기반 모델 준비 중", html)
+        self.assertNotIn("예상 승률", html)
 
 
 if __name__ == "__main__":
