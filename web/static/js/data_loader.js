@@ -1,4 +1,4 @@
-const DATA_VERSION='visual-density-v1';
+const DATA_VERSION='product-mvp-1';
 const dataUrl = name => {const url=new URL(`../data/${name}`, import.meta.url);url.searchParams.set('v',DATA_VERSION);return url;};
 export async function loadJson(name) {
   const response = await fetch(dataUrl(name));

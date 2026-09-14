@@ -55,6 +55,16 @@ class AnalysisResultsUxTests(unittest.TestCase):
         self.assertIn("$('#show-details').onclick", app)
         self.assertNotIn("win probability", app.lower())
 
+    def test_product_flow_keeps_configuration_order_and_a_clear_analysis_action(self):
+        index = (ROOT / "web" / "static" / "index.html").read_text(encoding="utf-8")
+        app = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        self.assertIn("전술을 구성하고 연결성 · 전진성 · 지원 구조를 분석해보세요.", index)
+        self.assertIn("포메이션 → 공 소유·미소유 시 역할 → 팀 지침", index)
+        self.assertIn('id="analyze" class="primary">분석하기', index)
+        self.assertIn("다시 분석 필요", app)
+        self.assertIn("scrollIntoView({behavior:'smooth',block:'start'})", app)
+        self.assertIn("구조 분석은 선수 능력치와 실제 경기 상황을 포함하지 않습니다.", index)
+
 
 if __name__ == "__main__":
     unittest.main()

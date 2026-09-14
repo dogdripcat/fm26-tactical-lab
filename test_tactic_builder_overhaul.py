@@ -74,7 +74,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("회색 연결 안됨", self.html)
 
     def test_desktop_polish_keeps_validation_compact_and_legend_analysis_only(self):
-        self.assertIn('id="analyze" class="primary">전술 분석', self.html)
+        self.assertIn('id="analyze" class="primary">분석하기', self.html)
         self.assertIn('id="pitch-legend"', self.html)
         self.assertIn("$('#pitch-legend').hidden=!analysis||activeRolePhase!=='IP'", self.app)
         self.assertIn('overviewPresentation(missing)', self.app)

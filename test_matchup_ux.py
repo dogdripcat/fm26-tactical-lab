@@ -33,7 +33,7 @@ class MatchupUxTests(unittest.TestCase):
         self.assertIn("matchupSelected=item", app)
         self.assertIn("own_positions?.includes", app)
         self.assertIn("details.id='matchup-details'", app)
-        self.assertIn("현재 상대 비교는 포지션 구조 기준입니다.", app)
+        self.assertIn("상대 역할과 팀 지침은 현재 비교에 포함되지 않습니다.", app)
         self.assertNotIn("예상 승률", index)
         self.assertNotIn("xG", app)
         self.assertNotIn("win probability", app.lower())

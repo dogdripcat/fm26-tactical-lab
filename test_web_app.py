@@ -1,5 +1,6 @@
 import os
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from web.app import MAX_JSON_BODY_BYTES, application
@@ -61,9 +62,12 @@ class WebApplicationTests(unittest.TestCase):
         self.assertIn("팀 지침", index)
     def test_browser_shell_disables_stale_html_and_module_cache(self):
         index = application.handle("GET", "/")
-        script = application.handle("GET", "/app.js?v=visual-density-v1")
+        script = application.handle("GET", "/app.js?v=product-mvp-1")
         self.assertIn(("Cache-Control", "no-cache"), index.headers)
         self.assertIn(("Cache-Control", "no-cache"), script.headers)
-        self.assertIn(b"app.js?v=visual-density-v1", index.body)
+        self.assertIn(b"app.js?v=product-mvp-1", index.body)
+        app = (Path(__file__).resolve().parent / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        self.assertIn("?v=product-mvp-1", app)
+        self.assertNotIn("visual-density-v1", app)
 if __name__ == "__main__":
     unittest.main()
