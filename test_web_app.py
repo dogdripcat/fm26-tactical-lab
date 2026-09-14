@@ -1,5 +1,6 @@
 import os
 import unittest
+import json
 from pathlib import Path
 from unittest.mock import patch
 
@@ -60,14 +61,20 @@ class WebApplicationTests(unittest.TestCase):
         self.assertIn("id=\"pitch\"", index)
         self.assertIn("id=\"evaluation\"", index)
         self.assertIn("팀 지침", index)
+
+    def test_all_public_own_tactic_formations_have_eleven_configured_slots(self):
+        presets = json.loads((Path(__file__).resolve().parent / "web" / "static" / "data" / "presets.json").read_text(encoding="utf-8"))["presets"]
+        for formation in ("4-3-3", "4-2-3-1", "4-4-2", "4-1-4-1", "3-4-2-1", "3-5-2", "3-4-3"):
+            with self.subTest(formation=formation):
+                self.assertEqual(11, len(presets[formation]))
     def test_browser_shell_disables_stale_html_and_module_cache(self):
         index = application.handle("GET", "/")
-        script = application.handle("GET", "/app.js?v=product-mvp-1")
+        script = application.handle("GET", "/app.js?v=fm26-tactical-lab-v1")
         self.assertIn(("Cache-Control", "no-cache"), index.headers)
         self.assertIn(("Cache-Control", "no-cache"), script.headers)
-        self.assertIn(b"app.js?v=product-mvp-1", index.body)
+        self.assertIn(b"app.js?v=fm26-tactical-lab-v1", index.body)
         app = (Path(__file__).resolve().parent / "web" / "static" / "app.js").read_text(encoding="utf-8")
-        self.assertIn("?v=product-mvp-1", app)
+        self.assertIn("?v=fm26-tactical-lab-v1", app)
         self.assertNotIn("visual-density-v1", app)
 if __name__ == "__main__":
     unittest.main()

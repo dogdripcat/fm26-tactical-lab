@@ -73,6 +73,14 @@ class SupportUserAnalysisUiTests(unittest.TestCase):
         self.assertIn("종착 위치", source)
         self.assertIn("구조를 해석하는 보조 근거", source)
 
+    def test_support_dependency_uses_a_natural_korean_subject_particle(self):
+        source = (
+            f"import {{presentSupportEvaluation}} from {json.dumps((ROOT / 'web' / 'static' / 'js' / 'support_evaluation_presenter.js').as_uri())};"
+            "console.log(JSON.stringify(presentSupportEvaluation({support_dependencies:[{support_node:'ST',dependent_receiver:'CF',lost_support_categories:['lateral']}]}).dependencies));"
+        )
+        result = json.loads(subprocess.check_output(["node", "--input-type=module", "-e", source], text=True, encoding="utf-8"))
+        self.assertEqual("스트라이커가 빠지면 센터 포워드의 측면 방향의 후속 연결이 사라집니다.", result[0]["text"])
+
     def test_seven_presets_keep_compact_neutral_support_presentation(self):
         for formation, positions in PRESETS.items():
             with self.subTest(formation=formation):

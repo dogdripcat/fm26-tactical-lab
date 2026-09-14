@@ -65,6 +65,11 @@ class AnalysisResultsUxTests(unittest.TestCase):
         self.assertIn("scrollIntoView({behavior:'smooth',block:'start'})", app)
         self.assertIn("구조 분석은 선수 능력치와 실제 경기 상황을 포함하지 않습니다.", index)
 
+    def test_stale_analysis_is_hidden_when_tactic_input_changes(self):
+        app = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        self.assertIn("$('#analysis-overview').hidden=true", app)
+        self.assertIn("$('#details-panel').hidden=true", app)
+
 
 if __name__ == "__main__":
     unittest.main()

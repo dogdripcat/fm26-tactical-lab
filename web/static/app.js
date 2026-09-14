@@ -1,11 +1,11 @@
 import {loadStaticData} from './js/data_loader.js';
-import {selectableRoles,centreBackLineCount} from './js/role_resolution.js?v=product-mvp-1';
-import {getConfiguredPositionDisplayLabel,normalizeConfiguredPositionForPreset} from './js/configured_position_display.js?v=product-mvp-1';
+import {selectableRoles,centreBackLineCount} from './js/role_resolution.js?v=fm26-tactical-lab-v1';
+import {getConfiguredPositionDisplayLabel,normalizeConfiguredPositionForPreset} from './js/configured_position_display.js?v=fm26-tactical-lab-v1';
 import {analyzeTactic} from './js/tactic_analysis.js';
 import {presentConnectivityEvaluation} from './js/connectivity_evaluation_presenter.js';
 import {presentProgressionEvaluation} from './js/progression_evaluation_presenter.js';
 import {presentSupportEvaluation} from './js/support_evaluation_presenter.js';
-import {presentAnalysisResults} from './js/analysis_results_presenter.js?v=product-mvp-1';
+import {presentAnalysisResults} from './js/analysis_results_presenter.js?v=fm26-tactical-lab-v1';
 import {OPPONENT_SHAPES,buildMatchupObservations,zoneStyle} from './js/matchup_overlay.js';
 import {classifyConnectivityLinks} from './js/connectivity_display_classifier.js';
 
@@ -32,7 +32,7 @@ const analysisPositionLabel={GK:'골키퍼',LB:'좌 풀백',LCB:'좌 센터백',
 const analysisBandLabel={goalkeeper:'골키퍼 라인',defensive_line:'수비 라인',defensive_midfield:'수비형 미드필드 라인',midfield:'미드필드 라인',attacking_midfield:'공격형 미드필드 라인',wing_back_line:'윙백 라인',forward:'최전방 라인'};
 const friendlyPosition=nodeId=>analysisPositionLabel[String(nodeId||'').split(':').at(-1)]||'해당 위치';
 function updateAnalysisState(){const state=$('#analysis-state');if(analysis){state.textContent='● 분석 완료';state.dataset.state='complete';return;}const missing=inputValidation().length;state.textContent=missing?`● 역할 미설정 ${missing}명`:'● 다시 분석 필요';state.dataset.state=missing?'incomplete':'needs-analysis';}
-function clear(){analysis=null;selectedNode=null;selectedRegion=null;selectedProgressionRouteId=null;selectedProgressionDependencyNode=null;selectedSupportFocus=null;validationAttempted=false;$('#error').hidden=true;$('#evaluation').hidden=true;$('#progression-evaluation').hidden=true;$('#support-evaluation').hidden=true;updateAnalysisState();render();}
+function clear(){analysis=null;selectedNode=null;selectedRegion=null;selectedProgressionRouteId=null;selectedProgressionDependencyNode=null;selectedSupportFocus=null;validationAttempted=false;$('#error').hidden=true;$('#analysis-overview').hidden=true;$('#details-panel').hidden=true;$('#evaluation').hidden=true;$('#progression-evaluation').hidden=true;$('#support-evaluation').hidden=true;updateAnalysisState();render();}
 function updateTacticalStyleStatus(){const status=$('#tactical-style-status'),style=(data.tacticalStyles?.styles||[]).find(item=>item.style_id===tactic.tactical_style);status.textContent=!style?'':tactic.tactical_style_modified?`${style.name_ko} · 사용자 수정`:(style.team_instruction_preset?`${style.name_ko} · 확인된 팀 지침 적용`:`${style.name_ko} · 확인된 팀 지침 매핑 없음`);}
 function applyTacticalStyle(style){tactic.tactical_style=style?.style_id||null;tactic.tactical_style_modified=false;for(const phase of ['IP','OOP']){const preset=style?.team_instruction_preset?.[phase];if(preset)tactic[phase==='IP'?'ip_team_instructions':'oop_team_instructions']={...tactic[phase==='IP'?'ip_team_instructions':'oop_team_instructions'],...preset};}renderInstructions();updateTacticalStyleStatus();clear(style?.team_instruction_preset?'전술 스타일의 확인된 팀 지침을 적용했습니다.':'전술 스타일 변경됨 — 확인된 팀 지침 매핑이 없습니다.');}
 function initTacticalStyles(){const select=$('#tactical-style'),none=document.createElement('option');none.value='';none.textContent='미설정';select.append(none);(data.tacticalStyles?.styles||[]).forEach(style=>{const option=document.createElement('option');option.value=style.style_id;option.textContent=style.name_ko;select.append(option);});select.onchange=()=>applyTacticalStyle((data.tacticalStyles?.styles||[]).find(style=>style.style_id===select.value)||null);}
