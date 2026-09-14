@@ -42,9 +42,10 @@ class PitchLayoutTests(unittest.TestCase):
         script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         self.assertIn("renderPitchMarkings", script)
         self.assertIn("cx=\"50\" cy=\"75\" r=\"13\"", script)
-        self.assertIn("x1=\"1\" y1=\"75\" x2=\"99\" y2=\"75\"", script)
-        self.assertIn("width=\"56\" height=\"18\"", script)
+        self.assertIn("x1=\"2\" y1=\"75\" x2=\"98\" y2=\"75\"", script)
+        self.assertIn("width=\"58\" height=\"18\"", script)
         self.assertIn("width=\"30\" height=\"7\"", script)
+        self.assertIn("A5 5", script)
 
 
 if __name__ == "__main__":

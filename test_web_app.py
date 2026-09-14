@@ -69,12 +69,12 @@ class WebApplicationTests(unittest.TestCase):
                 self.assertEqual(11, len(presets[formation]))
     def test_browser_shell_disables_stale_html_and_module_cache(self):
         index = application.handle("GET", "/")
-        script = application.handle("GET", "/app.js?v=fm26-tactical-lab-v1")
+        script = application.handle("GET", "/app.js?v=fm26-tactical-lab-v1-1-compact")
         self.assertIn(("Cache-Control", "no-cache"), index.headers)
         self.assertIn(("Cache-Control", "no-cache"), script.headers)
-        self.assertIn(b"app.js?v=fm26-tactical-lab-v1", index.body)
+        self.assertIn(b"app.js?v=fm26-tactical-lab-v1-1-compact", index.body)
         app = (Path(__file__).resolve().parent / "web" / "static" / "app.js").read_text(encoding="utf-8")
-        self.assertIn("?v=fm26-tactical-lab-v1", app)
+        self.assertIn("?v=fm26-tactical-lab-v1-1-compact", app)
         self.assertNotIn("visual-density-v1", app)
 if __name__ == "__main__":
     unittest.main()

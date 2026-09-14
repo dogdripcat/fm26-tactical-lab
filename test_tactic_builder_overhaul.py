@@ -68,15 +68,11 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("classifyConnectivityLinks", self.app)
         stylesheet = (ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")
         self.assertIn("connectivity-very-strong", stylesheet)
-        self.assertIn("파랑 연결 매우 강력", self.html)
-        self.assertIn("초록 연결 원활", self.html)
-        self.assertIn("핑크 연결 약함", self.html)
-        self.assertIn("회색 연결 안됨", self.html)
+        self.assertNotIn('id="pitch-legend"', self.html)
 
     def test_desktop_polish_keeps_validation_compact_and_legend_analysis_only(self):
         self.assertIn('id="analyze" class="primary">분석하기', self.html)
-        self.assertIn('id="pitch-legend"', self.html)
-        self.assertIn("$('#pitch-legend').hidden=!analysis||activeRolePhase!=='IP'", self.app)
+        self.assertNotIn('id="pitch-legend"', self.html)
         self.assertIn('overviewPresentation(missing)', self.app)
         self.assertIn("incomplete.hidden=!missing.length", self.app)
 
@@ -92,7 +88,8 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("$('#role-phase-tab-IP').onclick=()=>setRolePhase('IP')", self.app)
         self.assertIn("$('#role-phase-tab-OOP').onclick=()=>setRolePhase('OOP')", self.app)
         self.assertIn("$('#analyze').onclick=analyze", self.app)
-        self.assertIn("select.onchange=()=>{tactic=blank(select.value)", self.app)
+        self.assertIn("function initFormation(){updateFormationStatus();}", self.app)
+        self.assertIn("const knownFormation=phase=>", self.app)
 
     def test_role_popover_has_explicit_toggle_switch_and_outside_close_state(self):
         self.assertIn("activeRolePlayerId=null", self.app)
@@ -121,7 +118,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("available.find(item=>item.role_internal_id===requested)", self.app)
         self.assertIn("ip_roles:defaultRoles(formation,'IP')", self.app)
         self.assertIn("oop_roles:defaultRoles(formation,'OOP')", self.app)
-        self.assertIn("const formation=tactic.ip_formation;tactic=blank(formation)", self.app)
+        self.assertIn("const recognized=knownFormation('IP'),formation=recognized==='사용자 구성'?tactic.ip_formation:recognized;tactic=blank(formation)", self.app)
 
     def test_direct_drag_snaps_to_canonical_slots_and_keeps_role_editor_click_focused(self):
         self.assertIn("function nearestDragSlot(clientX,clientY,origin=null)", self.app)
@@ -185,14 +182,15 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
 
     def test_team_instruction_click_rerenders_selected_phase_state(self):
         self.assertIn("const key=phase==='IP'?'ip_team_instructions':'oop_team_instructions'", self.app)
-        self.assertIn("button.classList.toggle('active',(tactic[key]?.[category.internal_id]||'')===value.internal_id)", self.app)
-        self.assertIn("updateTacticalStyleStatus();clear();renderInstructions();", self.app)
+        self.assertIn("select.value=tactic[key]?.[category.internal_id]||''", self.app)
+        self.assertIn("select.onchange=()=>{if(select.value)tactic[key][category.internal_id]=select.value;else delete tactic[key][category.internal_id]", self.app)
+        self.assertIn("updateTacticalStyleStatus();clear();", self.app)
 
     def test_current_browser_ui_contract_keeps_instruction_events_and_visible_overlay_separate(self):
-        self.assertIn("button.onclick=()=>{if(value.internal_id)tactic[key][category.internal_id]=value.internal_id;else delete tactic[key][category.internal_id];", self.app)
-        self.assertIn("updateTacticalStyleStatus();clear();renderInstructions();", self.app)
+        self.assertIn("select.onchange=()=>{if(select.value)tactic[key][category.internal_id]=select.value;else delete tactic[key][category.internal_id]", self.app)
+        self.assertIn("updateTacticalStyleStatus();clear();", self.app)
         self.assertIn("if(analysis&&activeRolePhase==='IP')overlay();", self.app)
-        self.assertIn("$('#pitch-legend').hidden=!analysis||activeRolePhase!=='IP';", self.app)
+        self.assertNotIn("$('#pitch-legend')", self.app)
         self.assertIn("$('#pitch').append(svg);", self.app)
 
     def test_classifier_state_is_normalized_to_the_visible_css_class(self):

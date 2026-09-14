@@ -40,6 +40,16 @@
       "observed_value": null,
       "verification": "user_ingame_verified",
       "notes": "User-reconfirmed visible FM26 option sets: passing directness, tempo, attacking width, and pressing line. Input only; effects are not modelled."
+    },
+    {
+      "evidence_id": "CHATGPT_LIBRARY_FM26_TERMS_001",
+      "source_kind": "chatgpt_file_library",
+      "source_type": "terminology_research_reference",
+      "phase": null,
+      "category_internal_id": null,
+      "observed_value": null,
+      "verification": "terminology_supported",
+      "notes": "fm_terms_ko_en.md terminology summary supplied through ChatGPT File Library. It supports term discovery only; it does not independently establish an exact FM26 selectable UI value or category membership."
     }
   ]
 }

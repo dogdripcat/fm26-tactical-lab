@@ -102,20 +102,20 @@ class TeamInstructionCatalogueTests(unittest.TestCase):
         script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         self.assertIn('id="ip-team-instructions"', html)
         self.assertIn('id="oop-team-instructions"', html)
-        self.assertIn("전술 효과는 아직 분석하지 않습니다", html)
+        self.assertIn("현재 선택된 국면의 팀 지침입니다", html)
         self.assertIn("instruction-options", script)
 
     def test_web_state_reinitializes_only_verified_instruction_defaults_on_formation_change(self):
         script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         self.assertIn("const defaultInstructions=phase=>structuredClone(data.tacticDefaults?.team_instruction_defaults?.[phase]||{})", script)
-        self.assertIn("tactic=blank(select.value)", script)
+        self.assertIn("const recognized=knownFormation('IP')", script)
         self.assertIn("ip_team_instructions:defaultInstructions('IP')", script)
         self.assertIn("oop_team_instructions:defaultInstructions('OOP')", script)
         self.assertIn("function inputValidation", script)
 
     def test_web_renders_unset_state_for_every_category_and_keeps_phases_independent(self):
         script = (api.ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
-        self.assertIn("const choices=[{internal_id:'',display_name_ko:'미설정'},...category.selectable_values]", script)
+        self.assertIn("unset.textContent='미설정'", script)
         self.assertIn("else delete tactic[key][category.internal_id]", script)
         self.assertIn("const key=phase==='IP'?'ip_team_instructions':'oop_team_instructions'", script)
         self.assertIn("tactic=blank(formation)", script)
@@ -125,7 +125,7 @@ class TeamInstructionCatalogueTests(unittest.TestCase):
         stylesheet = (api.ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")
         self.assertIn("groups[phase].forEach(category", script)
         self.assertIn(".app-layout>.instructions{grid-column:2;grid-row:1", stylesheet)
-        self.assertIn("#ip-team-instructions,#oop-team-instructions{display:grid;grid-template-columns:repeat(2", stylesheet)
+        self.assertIn("#ip-team-instructions,#oop-team-instructions{display:grid;grid-template-columns:1fr", stylesheet)
         self.assertIn("#instruction-panel-${value}`).hidden=value!==phase", script)
 
     def test_role_phase_control_synchronises_team_instruction_phase(self):
