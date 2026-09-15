@@ -20,7 +20,7 @@ export function normalizeTeamInstructions(raw, phase, catalog) {
     const category=byId.get(categoryId);
     if (!category || category.phase !== phase) throw new Error(`Unknown or cross-phase team instruction: ${categoryId}`);
     const value=(category.selectable_values||[]).find(row=>row.internal_id===valueId);
-    if (!value || value.verification !== 'user_ingame_verified') throw new Error(`Unverified team instruction value: ${valueId}`);
+    if (!value || !['user_ingame_verified','terminology_supported'].includes(value.verification) || value.selectable===false) throw new Error(`Unverified team instruction value: ${valueId}`);
     out[categoryId]=valueId;
   }
   return out;

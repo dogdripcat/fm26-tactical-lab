@@ -22,7 +22,7 @@ class TeamInstructionEvidenceRecoveryTests(unittest.TestCase):
         for category in self.canonical["instructions"]:
             for value in category["selectable_values"]:
                 self.assertNotEqual("미설정", value["display_label_ko"])
-                self.assertIn(value["provenance"], {"user_ingame_verified", "user_transcribed", "project_evidence"})
+                self.assertIn(value["provenance"], {"user_ingame_verified", "user_transcribed", "project_evidence", "terminology_supported"})
                 self.assertTrue(value["source_reference"])
                 self.assertEqual(value["source_reference"], value["evidence_ids"])
                 self.assertTrue(set(value["source_reference"]).issubset(self.evidence))

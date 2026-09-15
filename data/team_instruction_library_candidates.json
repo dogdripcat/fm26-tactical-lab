@@ -3,49 +3,373 @@
   "source_evidence_id": "CHATGPT_LIBRARY_FM26_TERMS_001",
   "purpose": "Read-only recovery candidates from the ChatGPT File Library terminology reference. These records are not FM26 selectable values.",
   "candidates": [
-    {"phase":"IP","category_internal_id":"attacking_transition","term_ko":"형태 유지","term_en":"Hold Shape","status":"terminology_supported","reason":"Terminology identifies a transition concept, but no direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"attacking_transition","term_ko":"역습","term_en":"Counter / Counter-Attack","status":"terminology_supported","reason":"Terminology identifies a transition concept, but no direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"defensive_transition","term_ko":"즉시 압박","term_en":"Counter-Press","status":"terminology_supported","reason":"The canonical direct-UI value is 역압박; this alternate terminology is not added as a second value."},
-    {"phase":"OOP","category_internal_id":"defensive_transition","term_ko":"재정비","term_en":"Regroup","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"goalkeeper_distribution","term_ko":"센터백에게 배급","term_en":"Distribute to Centre-Backs","status":"already_verified","canonical_value_id":"goalkeeper_distribution_centre_backs","canonical_label_ko":"센터백","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."},
-    {"phase":"IP","category_internal_id":"goalkeeper_distribution","term_ko":"풀백에게 배급","term_en":"Distribute to Full-Backs","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"goalkeeper_distribution","term_ko":"플레이메이커에게 배급","term_en":"Distribute to Playmaker","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"goalkeeper_distribution","term_ko":"타깃 포워드에게 배급","term_en":"Distribute to Target Forward","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"goal_kick","term_ko":"짧은 골킥","term_en":"Short Goal Kicks","status":"already_verified","canonical_value_id":"goal_kick_short","canonical_label_ko":"짧게","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."},
-    {"phase":"IP","category_internal_id":"goal_kick","term_ko":"긴 골킥","term_en":"Long Goal Kicks","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":null,"term_ko":"빠르게 배급","term_en":"Distribute Quickly","status":"already_verified","canonical_value_id":"goalkeeper_distribution_speed_distribute_quickly","canonical_label_ko":"빠르게 배급하라","reason":"The direct UI evidence has priority; category membership for the shorter terminology label is not separately asserted."},
-    {"phase":"IP","category_internal_id":null,"term_ko":"템포 늦추기","term_en":"Slow Pace Down","status":"unresolved","reason":"The terminology reference alone does not establish membership in the existing goalkeeper-distribution-speed category."},
-    {"phase":"OOP","category_internal_id":"pressing_line","term_ko":"높은 압박","term_en":"High Press","status":"already_verified","canonical_value_id":"pressing_line_high_press","canonical_label_ko":"강한 압박","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."},
-    {"phase":"OOP","category_internal_id":"pressing_line","term_ko":"미드 블록","term_en":"Mid Block","status":"already_verified","canonical_value_id":"pressing_line_mid_block","canonical_label_ko":"중간 블록","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."},
-    {"phase":"OOP","category_internal_id":"pressing_line","term_ko":"로우 블록","term_en":"Low Block","status":"already_verified","canonical_value_id":"pressing_line_low_block","canonical_label_ko":"낮은 블록","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."},
-    {"phase":"OOP","category_internal_id":"defensive_line_action","term_ko":"더 전진하라","term_en":"Step Up More","status":"terminology_supported","reason":"It is not normalized to the separately user-verified label 더 높은 위치로."},
-    {"phase":"OOP","category_internal_id":"defensive_line_action","term_ko":"더 내려서라","term_en":"Drop Off More","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"pressing_trap","term_ko":"바깥쪽으로 압박 유도","term_en":"Trap Outside","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"pressing_trap","term_ko":"안쪽으로 압박 유도","term_en":"Trap Inside","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"goalkeeper_short_distribution","term_ko":"상대 골키퍼 짧은 패스 차단","term_en":"Prevent Short GK Distribution","status":"terminology_supported","reason":"It is not normalized to the user-verified UI state 예, and no opposite UI state is inferred."},
-    {"phase":"OOP","category_internal_id":"cross_play","term_ko":"크로스 차단","term_en":"Stop Crosses","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"cross_play","term_ko":"크로스 허용","term_en":"Invite Crosses","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"OOP","category_internal_id":"tackling","term_ko":"거칠게 태클하라","term_en":"Get Stuck In","status":"terminology_supported","reason":"It is not normalized to the separately user-verified label 강하게 태클하라."},
-    {"phase":"OOP","category_internal_id":"tackling","term_ko":"서서 수비하라","term_en":"Stay On Feet","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"passing_style","term_ko":"발 밑으로 패스","term_en":"Pass to Feet","status":"terminology_supported","reason":"Terminology alone does not establish selectable membership."},
-    {"phase":"IP","category_internal_id":"passing_style","term_ko":"공간을 향해 패스","term_en":"Pass Into Space","status":"terminology_supported","reason":"Terminology alone does not establish selectable membership."},
-    {"phase":"IP","category_internal_id":"build_up_tactic","term_ko":"압박을 뚫고 전개","term_en":"Play Through Press","status":"terminology_supported","reason":"It is not normalized to the user-verified label 압박 돌파."},
-    {"phase":"IP","category_internal_id":"build_up_tactic","term_ko":"압박을 건너뛰어 전개","term_en":"Bypass Press","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"build_up_tactic","term_ko":"수비 진영에서 빌드업","term_en":"Play Out Of Defence","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"dribbling","term_ko":"드리블 자제","term_en":"Discourage Dribbling","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"dribbling","term_ko":"드리블 권장","term_en":"Encourage Dribbling","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"progression","term_ko":"중앙을 통해 전개","term_en":"Progress Through Middle","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"progression","term_ko":"좌측을 통해 전개","term_en":"Progress Through Left","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"progression","term_ko":"우측을 통해 전개","term_en":"Progress Through Right","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":null,"term_ko":"오버랩","term_en":"Overlap","status":"unresolved","reason":"No existing category membership is independently proven."},
-    {"phase":"IP","category_internal_id":null,"term_ko":"언더랩","term_en":"Underlap","status":"unresolved","reason":"No existing category membership is independently proven."},
-    {"phase":"IP","category_internal_id":null,"term_ko":"침착하게 박스 안에서 기회 만들기","term_en":"Work Ball Into Box","status":"unresolved","reason":"No existing category membership is independently proven."},
-    {"phase":"IP","category_internal_id":"cross_style","term_ko":"빠른 크로스","term_en":"Hit Early Crosses","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"cross_style","term_ko":"낮은 크로스","term_en":"Low Crosses","status":"already_verified","canonical_value_id":"cross_style_low_crosses","canonical_label_ko":"낮은 크로스","reason":"The exact direct-UI value is already present."},
-    {"phase":"IP","category_internal_id":"cross_style","term_ko":"휘어지는 크로스","term_en":"Whipped Crosses","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"cross_style","term_ko":"높은 크로스","term_en":"Floated Crosses","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"long_shots","term_ko":"중거리 슛 자제","term_en":"Discourage Shots From Distance","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"long_shots","term_ko":"중거리 슛 권장","term_en":"Encourage Shots From Distance","status":"terminology_supported","reason":"No direct FM26 UI option evidence is stored."},
-    {"phase":"IP","category_internal_id":"set_piece_inducement","term_ko":"세트피스 노리기","term_en":"Play For Set Pieces","status":"already_verified","canonical_value_id":"set_piece_inducement_play_for_set_pieces","canonical_label_ko":"세트피스를 노려라","reason":"The direct UI evidence has priority; the terminology wording does not replace the canonical label."}
+    {
+      "phase": "IP",
+      "category_internal_id": "attacking_transition",
+      "term_ko": "형태 유지",
+      "term_en": "Hold Shape",
+      "status": "selectable_terminology_supported",
+      "reason": "Terminology identifies a transition concept, but no direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "attacking_transition",
+      "term_ko": "역습",
+      "term_en": "Counter / Counter-Attack",
+      "status": "selectable_terminology_supported",
+      "reason": "Terminology identifies a transition concept, but no direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "defensive_transition",
+      "term_ko": "즉시 압박",
+      "term_en": "Counter-Press",
+      "status": "terminology_supported",
+      "reason": "The canonical direct-UI value is 역압박; this alternate terminology is not added as a second value."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "defensive_transition",
+      "term_ko": "재정비",
+      "term_en": "Regroup",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goalkeeper_distribution",
+      "term_ko": "센터백에게 배급",
+      "term_en": "Distribute to Centre-Backs",
+      "status": "already_verified",
+      "canonical_value_id": "goalkeeper_distribution_centre_backs",
+      "canonical_label_ko": "센터백",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goalkeeper_distribution",
+      "term_ko": "풀백에게 배급",
+      "term_en": "Distribute to Full-Backs",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goalkeeper_distribution",
+      "term_ko": "플레이메이커에게 배급",
+      "term_en": "Distribute to Playmaker",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goalkeeper_distribution",
+      "term_ko": "타깃 포워드에게 배급",
+      "term_en": "Distribute to Target Forward",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goal_kick",
+      "term_ko": "짧은 골킥",
+      "term_en": "Short Goal Kicks",
+      "status": "already_verified",
+      "canonical_value_id": "goal_kick_short",
+      "canonical_label_ko": "짧게",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "goal_kick",
+      "term_ko": "긴 골킥",
+      "term_en": "Long Goal Kicks",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": null,
+      "term_ko": "빠르게 배급",
+      "term_en": "Distribute Quickly",
+      "status": "already_verified",
+      "canonical_value_id": "goalkeeper_distribution_speed_distribute_quickly",
+      "canonical_label_ko": "빠르게 배급하라",
+      "reason": "The direct UI evidence has priority; category membership for the shorter terminology label is not separately asserted."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": null,
+      "term_ko": "템포 늦추기",
+      "term_en": "Slow Pace Down",
+      "status": "unresolved",
+      "reason": "The terminology reference alone does not establish membership in the existing goalkeeper-distribution-speed category."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "pressing_line",
+      "term_ko": "높은 압박",
+      "term_en": "High Press",
+      "status": "already_verified",
+      "canonical_value_id": "pressing_line_high_press",
+      "canonical_label_ko": "강한 압박",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "pressing_line",
+      "term_ko": "미드 블록",
+      "term_en": "Mid Block",
+      "status": "already_verified",
+      "canonical_value_id": "pressing_line_mid_block",
+      "canonical_label_ko": "중간 블록",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "pressing_line",
+      "term_ko": "로우 블록",
+      "term_en": "Low Block",
+      "status": "already_verified",
+      "canonical_value_id": "pressing_line_low_block",
+      "canonical_label_ko": "낮은 블록",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "defensive_line_action",
+      "term_ko": "더 전진하라",
+      "term_en": "Step Up More",
+      "status": "selectable_terminology_supported",
+      "reason": "It is not normalized to the separately user-verified label 더 높은 위치로."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "defensive_line_action",
+      "term_ko": "더 내려서라",
+      "term_en": "Drop Off More",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "pressing_trap",
+      "term_ko": "바깥쪽으로 압박 유도",
+      "term_en": "Trap Outside",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "pressing_trap",
+      "term_ko": "안쪽으로 압박 유도",
+      "term_en": "Trap Inside",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "goalkeeper_short_distribution",
+      "term_ko": "상대 골키퍼 짧은 패스 차단",
+      "term_en": "Prevent Short GK Distribution",
+      "status": "selectable_terminology_supported",
+      "reason": "It is not normalized to the user-verified UI state 예, and no opposite UI state is inferred."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "cross_play",
+      "term_ko": "크로스 차단",
+      "term_en": "Stop Crosses",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "cross_play",
+      "term_ko": "크로스 허용",
+      "term_en": "Invite Crosses",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "tackling",
+      "term_ko": "거칠게 태클하라",
+      "term_en": "Get Stuck In",
+      "status": "selectable_terminology_supported",
+      "reason": "It is not normalized to the separately user-verified label 강하게 태클하라."
+    },
+    {
+      "phase": "OOP",
+      "category_internal_id": "tackling",
+      "term_ko": "서서 수비하라",
+      "term_en": "Stay On Feet",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "passing_style",
+      "term_ko": "발 밑으로 패스",
+      "term_en": "Pass to Feet",
+      "status": "selectable_terminology_supported",
+      "reason": "Terminology alone does not establish selectable membership."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "passing_style",
+      "term_ko": "공간을 향해 패스",
+      "term_en": "Pass Into Space",
+      "status": "selectable_terminology_supported",
+      "reason": "Terminology alone does not establish selectable membership."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "build_up_tactic",
+      "term_ko": "압박을 뚫고 전개",
+      "term_en": "Play Through Press",
+      "status": "selectable_terminology_supported",
+      "reason": "It is not normalized to the user-verified label 압박 돌파."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "build_up_tactic",
+      "term_ko": "압박을 건너뛰어 전개",
+      "term_en": "Bypass Press",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "build_up_tactic",
+      "term_ko": "수비 진영에서 빌드업",
+      "term_en": "Play Out Of Defence",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "dribbling",
+      "term_ko": "드리블 자제",
+      "term_en": "Discourage Dribbling",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "dribbling",
+      "term_ko": "드리블 권장",
+      "term_en": "Encourage Dribbling",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "progression",
+      "term_ko": "중앙을 통해 전개",
+      "term_en": "Progress Through Middle",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "progression",
+      "term_ko": "좌측을 통해 전개",
+      "term_en": "Progress Through Left",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "progression",
+      "term_ko": "우측을 통해 전개",
+      "term_en": "Progress Through Right",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": null,
+      "term_ko": "오버랩",
+      "term_en": "Overlap",
+      "status": "unresolved",
+      "reason": "No existing category membership is independently proven."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": null,
+      "term_ko": "언더랩",
+      "term_en": "Underlap",
+      "status": "unresolved",
+      "reason": "No existing category membership is independently proven."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": null,
+      "term_ko": "침착하게 박스 안에서 기회 만들기",
+      "term_en": "Work Ball Into Box",
+      "status": "unresolved",
+      "reason": "No existing category membership is independently proven."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "cross_style",
+      "term_ko": "빠른 크로스",
+      "term_en": "Hit Early Crosses",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "cross_style",
+      "term_ko": "낮은 크로스",
+      "term_en": "Low Crosses",
+      "status": "already_verified",
+      "canonical_value_id": "cross_style_low_crosses",
+      "canonical_label_ko": "낮은 크로스",
+      "reason": "The exact direct-UI value is already present."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "cross_style",
+      "term_ko": "휘어지는 크로스",
+      "term_en": "Whipped Crosses",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "cross_style",
+      "term_ko": "높은 크로스",
+      "term_en": "Floated Crosses",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "long_shots",
+      "term_ko": "중거리 슛 자제",
+      "term_en": "Discourage Shots From Distance",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "long_shots",
+      "term_ko": "중거리 슛 권장",
+      "term_en": "Encourage Shots From Distance",
+      "status": "selectable_terminology_supported",
+      "reason": "No direct FM26 UI option evidence is stored."
+    },
+    {
+      "phase": "IP",
+      "category_internal_id": "set_piece_inducement",
+      "term_ko": "세트피스 노리기",
+      "term_en": "Play For Set Pieces",
+      "status": "already_verified",
+      "canonical_value_id": "set_piece_inducement_play_for_set_pieces",
+      "canonical_label_ko": "세트피스를 노려라",
+      "reason": "The direct UI evidence has priority; the terminology wording does not replace the canonical label."
+    }
   ]
 }

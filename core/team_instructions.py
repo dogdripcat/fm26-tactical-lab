@@ -64,7 +64,7 @@ def normalize_team_instructions(raw: Any, phase: str, catalog: Dict[str, Any]) -
         value = next((row for row in category["selectable_values"] if row["internal_id"] == value_id), None)
         if value is None:
             raise ValueError(f"Unknown team instruction value: {value_id}")
-        if value["verification"] != "user_ingame_verified":
+        if value["verification"] not in ("user_ingame_verified", "terminology_supported") or value.get("selectable") is False:
             raise ValueError(f"Unverified team instruction value: {value_id}")
         normalized[category_id] = value_id
     return normalized, changes

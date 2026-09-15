@@ -260,6 +260,42 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "attacking_transition_hold_shape",
+          "display_name_ko": "형태 유지",
+          "display_label_ko": "형태 유지",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "attacking_transition_hold_shape",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "attacking_transition_counter_counter_attack",
+          "display_name_ko": "역습",
+          "display_label_ko": "역습",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "attacking_transition_counter_counter_attack",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -493,6 +529,60 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "build_up_tactic_play_through_press",
+          "display_name_ko": "압박을 뚫고 전개",
+          "display_label_ko": "압박을 뚫고 전개",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "build_up_tactic_play_through_press",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "build_up_tactic_bypass_press",
+          "display_name_ko": "압박을 건너뛰어 전개",
+          "display_label_ko": "압박을 건너뛰어 전개",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "build_up_tactic_bypass_press",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "build_up_tactic_play_out_of_defence",
+          "display_name_ko": "수비 진영에서 빌드업",
+          "display_label_ko": "수비 진영에서 빌드업",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "build_up_tactic_play_out_of_defence",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -532,6 +622,24 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "goal_kick_long_goal_kicks",
+          "display_name_ko": "긴 골킥",
+          "display_label_ko": "긴 골킥",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "goal_kick_long_goal_kicks",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -570,6 +678,60 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "goalkeeper_distribution_distribute_to_full_backs",
+          "display_name_ko": "풀백에게 배급",
+          "display_label_ko": "풀백에게 배급",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "goalkeeper_distribution_distribute_to_full_backs",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "goalkeeper_distribution_distribute_to_playmaker",
+          "display_name_ko": "플레이메이커에게 배급",
+          "display_label_ko": "플레이메이커에게 배급",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "goalkeeper_distribution_distribute_to_playmaker",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "goalkeeper_distribution_distribute_to_target_forward",
+          "display_name_ko": "타깃 포워드에게 배급",
+          "display_label_ko": "타깃 포워드에게 배급",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "goalkeeper_distribution_distribute_to_target_forward",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],
@@ -649,6 +811,42 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "dribbling_discourage_dribbling",
+          "display_name_ko": "드리블 자제",
+          "display_label_ko": "드리블 자제",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "dribbling_discourage_dribbling",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "dribbling_encourage_dribbling",
+          "display_name_ko": "드리블 권장",
+          "display_label_ko": "드리블 권장",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "dribbling_encourage_dribbling",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -688,6 +886,60 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "progression_progress_through_middle",
+          "display_name_ko": "중앙을 통해 전개",
+          "display_label_ko": "중앙을 통해 전개",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "progression_progress_through_middle",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "progression_progress_through_left",
+          "display_name_ko": "좌측을 통해 전개",
+          "display_label_ko": "좌측을 통해 전개",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "progression_progress_through_left",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "progression_progress_through_right",
+          "display_name_ko": "우측을 통해 전개",
+          "display_label_ko": "우측을 통해 전개",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "progression_progress_through_right",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -726,6 +978,42 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "passing_style_pass_to_feet",
+          "display_name_ko": "발 밑으로 패스",
+          "display_label_ko": "발 밑으로 패스",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "passing_style_pass_to_feet",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "passing_style_pass_into_space",
+          "display_name_ko": "공간을 향해 패스",
+          "display_label_ko": "공간을 향해 패스",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "passing_style_pass_into_space",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],
@@ -805,6 +1093,42 @@
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "long_shots_discourage_shots_from_distance",
+          "display_name_ko": "중거리 슛 자제",
+          "display_label_ko": "중거리 슛 자제",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "long_shots_discourage_shots_from_distance",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "long_shots_encourage_shots_from_distance",
+          "display_name_ko": "중거리 슛 권장",
+          "display_label_ko": "중거리 슛 권장",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "long_shots_encourage_shots_from_distance",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -843,6 +1167,60 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_IP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "cross_style_hit_early_crosses",
+          "display_name_ko": "빠른 크로스",
+          "display_label_ko": "빠른 크로스",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "cross_style_hit_early_crosses",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "cross_style_whipped_crosses",
+          "display_name_ko": "휘어지는 크로스",
+          "display_label_ko": "휘어지는 크로스",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "cross_style_whipped_crosses",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "cross_style_floated_crosses",
+          "display_name_ko": "높은 크로스",
+          "display_label_ko": "높은 크로스",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "cross_style_floated_crosses",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],
@@ -1070,6 +1448,24 @@
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "defensive_transition_regroup",
+          "display_name_ko": "재정비",
+          "display_label_ko": "재정비",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "defensive_transition_regroup",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -1108,6 +1504,42 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "tackling_get_stuck_in",
+          "display_name_ko": "거칠게 태클하라",
+          "display_label_ko": "거칠게 태클하라",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "tackling_get_stuck_in",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "tackling_stay_on_feet",
+          "display_name_ko": "서서 수비하라",
+          "display_label_ko": "서서 수비하라",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "tackling_stay_on_feet",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],
@@ -1148,6 +1580,42 @@
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "cross_play_stop_crosses",
+          "display_name_ko": "크로스 차단",
+          "display_label_ko": "크로스 차단",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "cross_play_stop_crosses",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "cross_play_invite_crosses",
+          "display_name_ko": "크로스 허용",
+          "display_label_ko": "크로스 허용",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "cross_play_invite_crosses",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -1186,6 +1654,42 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "pressing_trap_trap_outside",
+          "display_name_ko": "바깥쪽으로 압박 유도",
+          "display_label_ko": "바깥쪽으로 압박 유도",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "pressing_trap_trap_outside",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "pressing_trap_trap_inside",
+          "display_name_ko": "안쪽으로 압박 유도",
+          "display_label_ko": "안쪽으로 압박 유도",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "pressing_trap_trap_inside",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],
@@ -1226,6 +1730,24 @@
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
           ]
+        },
+        {
+          "internal_id": "goalkeeper_short_distribution_prevent_short_gk_distribution",
+          "display_name_ko": "상대 골키퍼 짧은 패스 차단",
+          "display_label_ko": "상대 골키퍼 짧은 패스 차단",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "goalkeeper_short_distribution_prevent_short_gk_distribution",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
         }
       ],
       "analysis_status": "effect_not_modelled",
@@ -1264,6 +1786,42 @@
           "provenance": "user_ingame_verified",
           "source_reference": [
             "USER_FM26_OOP_TEAM_INSTRUCTIONS_001"
+          ]
+        },
+        {
+          "internal_id": "defensive_line_action_step_up_more",
+          "display_name_ko": "더 전진하라",
+          "display_label_ko": "더 전진하라",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "defensive_line_action_step_up_more",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ]
+        },
+        {
+          "internal_id": "defensive_line_action_drop_off_more",
+          "display_name_ko": "더 내려서라",
+          "display_label_ko": "더 내려서라",
+          "verification": "terminology_supported",
+          "evidence_level": "terminology_supported",
+          "label_verification": "needs_ingame_confirmation",
+          "selectable": true,
+          "evidence_ids": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
+          ],
+          "analysis_status": "effect_not_modelled",
+          "id": "defensive_line_action_drop_off_more",
+          "provenance": "terminology_supported",
+          "source_reference": [
+            "CHATGPT_LIBRARY_FM26_TERMS_001"
           ]
         }
       ],

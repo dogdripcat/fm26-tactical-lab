@@ -25,8 +25,8 @@ class TeamInstructionLibraryEvidenceTests(unittest.TestCase):
         selectable = {value["display_label_ko"] for category in self.catalog["instructions"] for value in category["selectable_values"]}
         for candidate in self.candidates["candidates"]:
             with self.subTest(candidate=candidate["term_ko"]):
-                self.assertIn(candidate["status"], {"already_verified", "terminology_supported", "unresolved"})
-                if candidate["status"] != "already_verified":
+                self.assertIn(candidate["status"], {"already_verified", "terminology_supported", "selectable_terminology_supported", "unresolved"})
+                if candidate["status"] in {"terminology_supported", "unresolved"}:
                     self.assertNotIn(candidate["term_ko"], selectable)
 
     def test_direct_ui_labels_and_catalogue_parity_remain_authoritative(self):

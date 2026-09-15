@@ -28,12 +28,11 @@ class MatchupUxTests(unittest.TestCase):
     def test_matchup_ui_has_summary_limitations_collapsed_details_and_existing_overlay_focus(self):
         app = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         index = (ROOT / "web" / "static" / "index.html").read_text(encoding="utf-8")
-        self.assertIn("function matchupSummary(observations)", app)
+        self.assertIn("matchup-state-cards", app)
         self.assertIn("function focusMatchup(item)", app)
         self.assertIn("matchupSelected=item", app)
-        self.assertIn("own_positions?.includes", app)
         self.assertIn("details.id='matchup-details'", app)
-        self.assertIn("상대 역할과 팀 지침은 현재 비교에 포함되지 않습니다.", app)
+        self.assertIn("matchup-limitation", app)
         self.assertNotIn("예상 승률", index)
         self.assertNotIn("xG", app)
         self.assertNotIn("win probability", app.lower())
@@ -41,7 +40,7 @@ class MatchupUxTests(unittest.TestCase):
     def test_own_tactic_analysis_remains_separate_from_matchup_presentation(self):
         app = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         self.assertIn("analysis=analyzeTactic(tactic,data)", app)
-        self.assertIn("buildMatchupObservations(active('IP'),shape)", app)
+        self.assertIn("buildMatchupObservations(active('IP'),opponentActive())", app)
         self.assertNotIn("analyzeTactic(tactic,data,shape)", app)
 
 

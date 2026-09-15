@@ -15,7 +15,7 @@ class WebApplicationTests(unittest.TestCase):
         self.assertEqual(200, health.status)
         self.assertEqual({"status": "ok"}, __import__("json").loads(health.body))
         self.assertEqual(200, index.status)
-        self.assertIn(b"v0.2.1", index.body)
+        self.assertIn(b"v1.2.0", index.body)
         self.assertNotIn(b"__FM26_VERSION__", index.body)
 
     def test_static_allowlist_blocks_arbitrary_and_traversal_paths(self):
@@ -27,6 +27,8 @@ class WebApplicationTests(unittest.TestCase):
         self.assertEqual(200, application.handle("GET", "/js/data_loader.js").status)
         self.assertEqual(200, application.handle("GET", "/js/tactic_analysis.js").status)
         self.assertEqual(200, application.handle("GET", "/data/role_catalog.json").status)
+        self.assertEqual(200, application.handle("GET", "/data/formation_families.json").status)
+        self.assertEqual(200, application.handle("GET", "/js/formation_recognition.js").status)
 
     def test_api_errors_are_consistent_and_do_not_expose_exceptions(self):
         for response in (
@@ -69,12 +71,12 @@ class WebApplicationTests(unittest.TestCase):
                 self.assertEqual(11, len(presets[formation]))
     def test_browser_shell_disables_stale_html_and_module_cache(self):
         index = application.handle("GET", "/")
-        script = application.handle("GET", "/app.js?v=fm26-tactical-lab-v1-1-compact")
+        script = application.handle("GET", "/app.js?v=fm26-tactical-lab-v1-2-0")
         self.assertIn(("Cache-Control", "no-cache"), index.headers)
         self.assertIn(("Cache-Control", "no-cache"), script.headers)
-        self.assertIn(b"app.js?v=fm26-tactical-lab-v1-1-compact", index.body)
+        self.assertIn(b"app.js?v=fm26-tactical-lab-v1-2-0", index.body)
         app = (Path(__file__).resolve().parent / "web" / "static" / "app.js").read_text(encoding="utf-8")
-        self.assertIn("?v=fm26-tactical-lab-v1-1-compact", app)
+        self.assertIn("?v=fm26-tactical-lab-v1-2-0", app)
         self.assertNotIn("visual-density-v1", app)
 if __name__ == "__main__":
     unittest.main()

@@ -47,7 +47,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
 
     def test_analysis_and_matchup_keep_ip_as_evaluator_input(self):
         self.assertIn("active('IP').filter", self.app)
-        self.assertIn("buildMatchupObservations(active('IP'),shape)", self.app)
+        self.assertIn("buildMatchupObservations(active('IP'),opponentActive())", self.app)
 
     def test_buttons_and_style_catalogue_do_not_imply_instruction_effects(self):
         self.assertIn("instruction-options", self.app)
@@ -89,7 +89,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("$('#role-phase-tab-OOP').onclick=()=>setRolePhase('OOP')", self.app)
         self.assertIn("$('#analyze').onclick=analyze", self.app)
         self.assertIn("function initFormation(){updateFormationStatus();}", self.app)
-        self.assertIn("const knownFormation=phase=>", self.app)
+        self.assertIn("const knownFormation=phase=>recognizeFormation(active(phase),data.registry,data.formationFamilies).formation", self.app)
 
     def test_role_popover_has_explicit_toggle_switch_and_outside_close_state(self):
         self.assertIn("activeRolePlayerId=null", self.app)
@@ -118,7 +118,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("available.find(item=>item.role_internal_id===requested)", self.app)
         self.assertIn("ip_roles:defaultRoles(formation,'IP')", self.app)
         self.assertIn("oop_roles:defaultRoles(formation,'OOP')", self.app)
-        self.assertIn("const recognized=knownFormation('IP'),formation=recognized==='사용자 구성'?tactic.ip_formation:recognized;tactic=blank(formation)", self.app)
+        self.assertIn("const recognized=knownFormation('IP'),formation=data.presets[recognized]?recognized:tactic.ip_formation;tactic=blank(formation)", self.app)
 
     def test_direct_drag_snaps_to_canonical_slots_and_keeps_role_editor_click_focused(self):
         self.assertIn("function nearestDragSlot(clientX,clientY,origin=null)", self.app)
@@ -126,6 +126,7 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("node.onpointermove=movePointerDrag", self.app)
         self.assertIn("node.onpointerup=event=>finishPointerDrag(event)", self.app)
         self.assertIn("if(destination&&destination!==state.origin){movePlayer(state.playerId,destination);}", self.app)
+        self.assertIn("position!=='CB'&&Object.hasOwn(base,position)", self.app)
         self.assertNotIn("destinationInitial.textContent='위치 이동'", self.app)
 
     def test_lateral_forward_slots_keep_st_as_the_only_display_label(self):
@@ -164,7 +165,8 @@ class TacticBuilderOverhaulTests(unittest.TestCase):
         self.assertIn("positions=tactic[positionKey(phase)]", self.app)
         self.assertIn("forward_centre: 'ST'", (ROOT / "web" / "static" / "js" / "configured_position_display.js").read_text(encoding="utf-8"))
         self.assertIn("attacking_midfield_centre: 'AMC'", (ROOT / "web" / "static" / "js" / "configured_position_display.js").read_text(encoding="utf-8"))
-        self.assertIn("normalizeConfiguredPositionForPreset", self.app)
+        self.assertIn("recognizeFormation", self.app)
+        self.assertNotIn("normalizeConfiguredPositionForPreset", self.app)
 
     def test_role_popover_uses_rendered_geometry_and_container_clamping(self):
         stylesheet = (ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")

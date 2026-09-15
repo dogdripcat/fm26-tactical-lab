@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.1",
+  "values": [
+    {
+      "id": "normal",
+      "label": "일반형",
+      "display_name_ko": "일반형",
+      "selectable": true,
+      "evidence_level": "design_reference",
+      "label_verification": "needs_ingame_confirmation",
+      "source_kind": "design_reference",
+      "evidence_ids": ["CHATGPT_LIBRARY_FM26_PLAYING_APPROACH_DESIGN_001"],
+      "source_reference": "ChatGPT File Library FM26 Tactical Lab UI reference images",
+      "limitations": ["프로젝트 디자인 자료에서 확인된 명칭이며, FM26 인게임 표기 자체를 검증하지 않습니다."]
+    }
+  ],
+  "status": "design_reference_only",
+  "limitations": ["미설정은 UI의 무선택 상태입니다.", "일반형 외의 플레이 성향 값은 현재 근거가 없어 추가하지 않습니다."]
+}

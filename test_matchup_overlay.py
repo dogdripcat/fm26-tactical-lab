@@ -34,11 +34,11 @@ class MatchupOverlayTests(unittest.TestCase):
     def test_static_ui_keeps_detail_collapsed_until_zone_selection(self):
         source = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
         html = (ROOT / "web" / "static" / "index.html").read_text(encoding="utf-8")
-        self.assertIn("renderMatchupOverlay", source)
+        self.assertNotIn("renderMatchupOverlay", source)
         self.assertIn("focusMatchup", source)
         self.assertIn("details.id='matchup-details'", source)
         self.assertIn("detail.open=true", source)
-        self.assertLess(html.index("</main>"), html.index('id="opponent-mode"'))
+        self.assertIn('id="opponent-editor"', html)
         self.assertNotIn("예상 승률", html)
 
 

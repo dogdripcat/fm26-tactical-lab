@@ -70,7 +70,7 @@ class TeamInstructionCatalogueTests(unittest.TestCase):
             for option in category["selectable_values"]:
                 self.assertEqual(option["internal_id"], option["id"])
                 self.assertEqual(option["display_name_ko"], option["display_label_ko"])
-                self.assertEqual("user_ingame_verified", option["provenance"])
+                self.assertIn(option["provenance"], {"user_ingame_verified", "terminology_supported"})
                 self.assertEqual(option["evidence_ids"], option["source_reference"])
                 self.assertTrue(set(option["source_reference"]).issubset(evidence_ids))
 
@@ -125,7 +125,7 @@ class TeamInstructionCatalogueTests(unittest.TestCase):
         stylesheet = (api.ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")
         self.assertIn("groups[phase].forEach(category", script)
         self.assertIn(".app-layout>.instructions{grid-column:2;grid-row:1", stylesheet)
-        self.assertIn("#ip-team-instructions,#oop-team-instructions{display:grid;grid-template-columns:1fr", stylesheet)
+        self.assertIn("#ip-team-instructions,#oop-team-instructions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))", stylesheet)
         self.assertIn("#instruction-panel-${value}`).hidden=value!==phase", script)
 
     def test_role_phase_control_synchronises_team_instruction_phase(self):
