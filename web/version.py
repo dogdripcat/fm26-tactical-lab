@@ -1,3 +1,3 @@
-"""Single Web MVP version source."""
+"""FM26 Tactical Lab public web release version."""
 
-VERSION = "0.2.1"
+VERSION = "1.2.0"

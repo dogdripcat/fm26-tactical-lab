@@ -1,4 +1,4 @@
-const DATA_VERSION='fm26-tactical-lab-v1-2-0';
+const DATA_VERSION='fm26-tactical-lab-v1-2-analysis-ux-1';
 const dataUrl = name => {const url=new URL(`../data/${name}`, import.meta.url);url.searchParams.set('v',DATA_VERSION);return url;};
 export async function loadJson(name) {
   const response = await fetch(dataUrl(name));

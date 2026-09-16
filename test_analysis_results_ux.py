@@ -72,6 +72,14 @@ class AnalysisResultsUxTests(unittest.TestCase):
         self.assertIn("$('#analysis-overview').hidden=true", app)
         self.assertIn("$('#details-panel').hidden=true", app)
 
+    def test_card_actions_are_grouped_and_stack_on_small_screens(self):
+        app = (ROOT / "web" / "static" / "app.js").read_text(encoding="utf-8")
+        css = (ROOT / "web" / "static" / "style.css").read_text(encoding="utf-8")
+        self.assertIn("actions.className='dimension-card-actions'", app)
+        self.assertIn("actions.append(focus,detail)", app)
+        self.assertIn("grid-template-columns:1fr 1fr", css)
+        self.assertIn("@media (max-width:640px){.dimension-card-actions{grid-template-columns:1fr}}", css)
+
 
 if __name__ == "__main__":
     unittest.main()

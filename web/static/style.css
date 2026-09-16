@@ -169,3 +169,9 @@
   .app-layout>.workspace,.app-layout>.right-panel{grid-column:1;grid-row:auto}
   .right-panel{min-height:566px}
 }
+
+/* Analysis UX refinement: keep the three axes compact and action-oriented. */
+.dimension-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:.45rem;margin-top:.7rem}
+.dimension-card-actions button{width:100%;min-height:34px;margin:0;white-space:normal}
+.result-groups .result-list button{text-align:left}
+@media (max-width:640px){.dimension-card-actions{grid-template-columns:1fr}}
